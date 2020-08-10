@@ -2,6 +2,8 @@
 
 namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
 
+use Albion\OnlineDataProject\Domain\Range;
+use Albion\OnlineDataProject\Domain\WeaponClass;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Promise\PromiseInterface;
@@ -28,6 +30,92 @@ class EventClient extends AbstractClient
         }
 
         return $this->httpClient->getAsync('events', ['query' => $query])
+            ->otherwise(
+                static function (ClientException $exception) {
+                    throw new FailedToPerformRequestException($exception);
+                }
+            )
+            ->then(
+                static function (Response $response) {
+                    return json_decode($response->getBody()->getContents(), true);
+                }
+            );
+    }
+
+    public function getTopEventsByGuildFame(Range $range = null, int $limit = 10, int $offset = 0): PromiseInterface
+    {
+        $query = [
+            'range' => $range ? $range->toString() : Range::DAY,
+            'limit' => max(0, min($limit, 51)),
+            'offset' => max(0, min($offset, 1000)),
+        ];
+
+        return $this->httpClient->getAsync('events/guildfame', ['query' => $query])
+            ->otherwise(
+                static function (ClientException $exception) {
+                    throw new FailedToPerformRequestException($exception);
+                }
+            )
+            ->then(
+                static function (Response $response) {
+                    return json_decode($response->getBody()->getContents(), true);
+                }
+            );
+    }
+
+    public function getTopEventsByPlayerFame(Range $range = null, int $limit = 10, int $offset = 0): PromiseInterface
+    {
+        $query = [
+            'range' => $range ? $range->toString() : Range::DAY,
+            'limit' => max(0, min($limit, 51)),
+            'offset' => max(0, min($offset, 1000)),
+        ];
+
+        return $this->httpClient->getAsync('events/playerfame', ['query' => $query])
+            ->otherwise(
+                static function (ClientException $exception) {
+                    throw new FailedToPerformRequestException($exception);
+                }
+            )
+            ->then(
+                static function (Response $response) {
+                    return json_decode($response->getBody()->getContents(), true);
+                }
+            );
+    }
+
+    public function getTopEventsByPlayerWeaponFame(Range $range = null,
+                                                   WeaponClass $weaponCategory = null,
+                                                   int $limit = 10,
+                                                   int $offset = 0) {
+        $query = [
+            'range' => $range ? $range->toString() : Range::DAY,
+            'weaponCategory' => $weaponCategory ? $weaponCategory->toString() : WeaponClass::ALL,
+            'limit' => max(0, min($limit, 51)),
+            'offset' => max(0, min($offset, 1000)),
+        ];
+
+        return $this->httpClient->getAsync('events/playerweaponfame', ['query' => $query])
+            ->otherwise(
+                static function (ClientException $exception) {
+                    throw new FailedToPerformRequestException($exception);
+                }
+            )
+            ->then(
+                static function (Response $response) {
+                    return json_decode($response->getBody()->getContents(), true);
+                }
+            );
+    }
+
+    public function getTopEventsByKillFame(Range $range = null, int $limit = 10, int $offset = 0) {
+        $query = [
+            'range' => $range ? $range->toString() : Range::DAY,
+            'limit' => max(0, min($limit, 51)),
+            'offset' => max(0, min($offset, 1000)),
+        ];
+
+        return $this->httpClient->getAsync('events/killfame', ['query' => $query])
             ->otherwise(
                 static function (ClientException $exception) {
                     throw new FailedToPerformRequestException($exception);
