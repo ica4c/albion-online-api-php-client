@@ -26,7 +26,7 @@ class PlayerClient extends AbstractClient
                         throw new PlayerNotFoundException($playerID, $exception);
                     }
 
-                    throw new PlayerNotFoundException($playerID, $exception);
+                    throw new FailedToPerformRequestException($exception);
                 }
             )
             ->then(
@@ -48,7 +48,7 @@ class PlayerClient extends AbstractClient
                         throw new PlayerNotFoundException($playerID, $exception);
                     }
 
-                    throw new PlayerNotFoundException($playerID, $exception);
+                    throw new FailedToPerformRequestException($exception);
                 }
             )
             ->then(
@@ -98,7 +98,7 @@ class PlayerClient extends AbstractClient
         return $this->httpClient->getAsync('players/statistics', ['query' => $query])
             ->otherwise(
                 static function (ClientException $exception) {
-                    throw new PlayerNotFoundException($playerID, $exception);
+                    throw new FailedToPerformRequestException($exception);
                 }
             )
             ->then(
