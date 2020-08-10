@@ -1,0 +1,30 @@
+{
+  "name": "ica4c/albion-online-data",
+  "description": "Albion Online Data Project client",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ruslan Gataullin",
+      "email": "fisher7410@yandex.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Albion\\OnlineDataProject\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.1.3",
+    "guzzlehttp/guzzle": "^6.5",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  }
+}
