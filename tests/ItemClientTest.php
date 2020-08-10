@@ -72,6 +72,25 @@ class ItemClientTest extends GuzzleTestCase
             $this->itemClient->getItemData($gear['Type'])
         );
 
-        var_dump($data);
+        $this->assertNotNull($data);
+        $this->assertNotEmpty($data);
+    }
+
+    public function testWeaponCategories(): void {
+        $data = $this->awaitPromise(
+            $this->itemClient->getWeaponCategories()
+        );
+
+        $this->assertNotNull($data);
+        $this->assertNotEmpty($data);
+    }
+
+    public function testItemCategories(): void {
+        $data = $this->awaitPromise(
+            $this->itemClient->getItemCategories()
+        );
+
+        $this->assertNotNull($data);
+        $this->assertNotEmpty($data);
     }
 }
