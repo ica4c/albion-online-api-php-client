@@ -42,43 +42,48 @@ class GuildClientTest extends GuzzleTestCase
 
     public function testGetGuildInfo(): void
     {
-        $firstOne = $this->getFirst('man');
+        $firstOne = $this->getFirst('Elevate');
 
         $guild = $this->awaitPromise(
             $this->guildClient->getGuildInfo($firstOne['Id'])
         );
 
+        $this->assertNotNull($guild);
         $this->assertNotEmpty($guild);
+        $this->assertSame($guild['Id'], $firstOne['Id']);
     }
 
     public function testGetGuildMembers(): void
     {
-        $firstOne = $this->getFirst('man');
+        $firstOne = $this->getFirst('Elevate');
 
-        $guild = $this->awaitPromise(
+        $members = $this->awaitPromise(
             $this->guildClient->getGuildMembers($firstOne['Id'])
         );
 
-        $this->assertNotNull($guild);
+        $this->assertNotNull($members);
+        $this->assertNotEmpty($members);
     }
 
     public function testGetGuildData(): void
     {
-        $firstOne = $this->getFirst('man');
+        $firstOne = $this->getFirst('Elevate');
 
         $data = $this->awaitPromise(
             $this->guildClient->getGuildData($firstOne['Id'])
         );
 
         $this->assertNotNull($data);
+        $this->assertNotEmpty($data);
+        $this->assertSame($data['guild']['Id'], $firstOne['Id']);
     }
 
-    public function testGetGuildTop(): void
+    public function testGetGuildTopMembers(): void
     {
-        $firstOne = $this->getFirst('man');
+        $firstOne = $this->getFirst('Elevate');
 
         $kills = $this->awaitPromise(
-            $this->guildClient->getGuildTop(
+            $this->guildClient->getGuildTopMembers(
                 $firstOne['Id'],
                 Range::of(Range::MONTH),
                 5,
@@ -87,6 +92,35 @@ class GuildClientTest extends GuzzleTestCase
             )
         );
 
+        $this->assertNotEmpty($kills);
         $this->assertNotNull($kills);
+    }
+
+    public function testGetGuildTopByAttacks(): void
+    {
+        $guilds = $this->awaitPromise(
+            $this->guildClient->getGuildTopByAttacks(
+                Range::of(Range::WEEK),
+                5,
+                0
+            )
+        );
+
+        $this->assertNotNull($guilds);
+        $this->assertNotEmpty($guilds);
+    }
+
+    public function testGetGuildTopByDefences(): void
+    {
+        $guilds = $this->awaitPromise(
+            $this->guildClient->getGuildTopByDefences(
+                Range::of(Range::WEEK),
+                5,
+                0
+            )
+        );
+
+        $this->assertNotNull($guilds);
+        $this->assertNotEmpty($guilds);
     }
 }
