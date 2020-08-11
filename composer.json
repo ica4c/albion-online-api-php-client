@@ -1,8 +1,11 @@
 {
-  "name": "ica4c/albion-online-data",
-  "description": "Albion Online Data Project client",
+  "name": "ica4c/albion-online-api-client",
+  "description": "Albion Online API Client",
   "type": "library",
   "license": "MIT",
+  "keywords": [
+    "albion online", "api", "games", "mmo"
+  ],
   "authors": [
     {
       "name": "Ruslan Gataullin",
