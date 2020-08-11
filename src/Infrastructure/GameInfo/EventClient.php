@@ -12,6 +12,8 @@ use GuzzleHttp\Psr7\Response;
 class EventClient extends AbstractClient
 {
     /**
+     * Get recent events
+     *
      * @param int         $limit
      * @param int         $offset
      * @param string|null $guildId
@@ -42,6 +44,15 @@ class EventClient extends AbstractClient
             );
     }
 
+    /**
+     * Get top events by guild fame
+     *
+     * @param \Albion\OnlineDataProject\Domain\Range|null $range
+     * @param int                                         $limit
+     * @param int                                         $offset
+     *
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
     public function getTopEventsByGuildFame(Range $range = null, int $limit = 10, int $offset = 0): PromiseInterface
     {
         $query = [
@@ -63,6 +74,15 @@ class EventClient extends AbstractClient
             );
     }
 
+    /**
+     * Get top events by player fame
+     *
+     * @param \Albion\OnlineDataProject\Domain\Range|null $range
+     * @param int                                         $limit
+     * @param int                                         $offset
+     *
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
     public function getTopEventsByPlayerFame(Range $range = null, int $limit = 10, int $offset = 0): PromiseInterface
     {
         $query = [
@@ -84,10 +104,21 @@ class EventClient extends AbstractClient
             );
     }
 
+    /**
+     * Get top events by player fame filtered by weapon type
+     *
+     * @param \Albion\OnlineDataProject\Domain\Range|null       $range
+     * @param \Albion\OnlineDataProject\Domain\WeaponClass|null $weaponCategory
+     * @param int                                               $limit
+     * @param int                                               $offset
+     *
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
     public function getTopEventsByPlayerWeaponFame(Range $range = null,
                                                    WeaponClass $weaponCategory = null,
                                                    int $limit = 10,
-                                                   int $offset = 0) {
+                                                   int $offset = 0): PromiseInterface
+    {
         $query = [
             'range' => $range ? $range->toString() : Range::DAY,
             'weaponCategory' => $weaponCategory ? $weaponCategory->toString() : WeaponClass::ALL,
@@ -108,6 +139,15 @@ class EventClient extends AbstractClient
             );
     }
 
+    /**
+     * Get top events by acquired PvP fame
+     *
+     * @param \Albion\OnlineDataProject\Domain\Range|null $range
+     * @param int                                         $limit
+     * @param int                                         $offset
+     *
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
     public function getTopEventsByKillFame(Range $range = null, int $limit = 10, int $offset = 0) {
         $query = [
             'range' => $range ? $range->toString() : Range::DAY,

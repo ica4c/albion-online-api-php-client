@@ -11,6 +11,16 @@ use GuzzleHttp\Psr7\Response;
 
 class BattleClient extends AbstractClient
 {
+    /**
+     * Get recent battles
+     *
+     * @param \Albion\OnlineDataProject\Domain\Range|null          $range
+     * @param int                                                  $limit
+     * @param int                                                  $offset
+     * @param \Albion\OnlineDataProject\Domain\BattleSortType|null $sort
+     *
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
     public function getBattles(Range $range = null,
                                int $limit = 10,
                                int $offset = 0,
