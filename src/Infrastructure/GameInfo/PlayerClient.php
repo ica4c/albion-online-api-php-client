@@ -15,6 +15,8 @@ use GuzzleHttp\Psr7\Response;
 class PlayerClient extends AbstractClient
 {
     /**
+     * Get player info by his $playerId
+     *
      * @param string $playerID
      * @return \GuzzleHttp\Promise\PromiseInterface<array>
      */
@@ -26,7 +28,7 @@ class PlayerClient extends AbstractClient
                         throw new PlayerNotFoundException($playerID, $exception);
                     }
 
-                    throw new PlayerNotFoundException($playerID, $exception);
+                    throw new FailedToPerformRequestException($exception);
                 }
             )
             ->then(
@@ -37,6 +39,8 @@ class PlayerClient extends AbstractClient
     }
 
     /**
+     * Get player deaths by $playerId
+     *
      * @param string $playerID
      * @return \GuzzleHttp\Promise\PromiseInterface<array>
      */
@@ -48,7 +52,7 @@ class PlayerClient extends AbstractClient
                         throw new PlayerNotFoundException($playerID, $exception);
                     }
 
-                    throw new PlayerNotFoundException($playerID, $exception);
+                    throw new FailedToPerformRequestException($exception);
                 }
             )
             ->then(
@@ -59,6 +63,8 @@ class PlayerClient extends AbstractClient
     }
 
     /**
+     * Get total player statistics by his $playerId
+     *
      * @param \Albion\OnlineDataProject\Domain\Range|null             $range
      * @param int                                                     $limit
      * @param int                                                     $offset
@@ -98,7 +104,7 @@ class PlayerClient extends AbstractClient
         return $this->httpClient->getAsync('players/statistics', ['query' => $query])
             ->otherwise(
                 static function (ClientException $exception) {
-                    throw new PlayerNotFoundException($playerID, $exception);
+                    throw new FailedToPerformRequestException($exception);
                 }
             )
             ->then(
@@ -109,6 +115,8 @@ class PlayerClient extends AbstractClient
     }
 
     /**
+     * Find players by part or full name
+     *
      * @param string $query
      * @return \GuzzleHttp\Promise\PromiseInterface
      */

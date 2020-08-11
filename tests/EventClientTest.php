@@ -2,6 +2,8 @@
 
 namespace Tests;
 
+use Albion\OnlineDataProject\Domain\Range;
+use Albion\OnlineDataProject\Domain\WeaponClass;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
 use PHPUnit\Framework\TestCase;
@@ -23,10 +25,10 @@ class EventClientTest extends GuzzleTestCase
         $this->guildClient = new GuildClient;
     }
 
-    public function testLatestRandomGuildEvents(): void
+    public function testLatestGuildEvents(): void
     {
         $guilds = $this->awaitPromise(
-            $this->guildClient->searchGuild('W0rld Eaters')
+            $this->guildClient->searchGuild('Elevate')
         );
 
         $this->assertNotEmpty($guilds);
@@ -34,6 +36,49 @@ class EventClientTest extends GuzzleTestCase
         $firstOne = $guilds[0];
         $events = $this->awaitPromise(
             $this->eventClient->getEvents(10, 0, $firstOne['Id'])
+        );
+
+        $this->assertNotNull($events);
+        $this->assertNotEmpty($events);
+    }
+
+    public function testLatestTopByGuild(): void
+    {
+        $events = $this->awaitPromise(
+            $this->eventClient->getTopEventsByGuildFame(Range::of(Range::DAY), 1)
+        );
+
+        $this->assertNotNull($events);
+        $this->assertNotEmpty($events);
+    }
+
+    public function testLatestTopByKillFame(): void
+    {
+        $events = $this->awaitPromise(
+            $this->eventClient->getTopEventsByKillFame(Range::of(Range::DAY), 1)
+        );
+
+        $this->assertNotNull($events);
+        $this->assertNotEmpty($events);
+    }
+
+    public function testLatestTopByPlayerFame(): void
+    {
+        $events = $this->awaitPromise(
+            $this->eventClient->getTopEventsByPlayerFame(Range::of(Range::DAY), 1)
+        );
+
+        $this->assertNotNull($events);
+        $this->assertNotEmpty($events);
+    }
+
+    public function testLatestTopByPlayerWeaponFame(): void
+    {
+        $events = $this->awaitPromise(
+            $this->eventClient->getTopEventsByPlayerWeaponFame(
+                Range::of(Range::DAY),
+                WeaponClass::of(WeaponClass::DAGGER)
+            )
         );
 
         $this->assertNotNull($events);
