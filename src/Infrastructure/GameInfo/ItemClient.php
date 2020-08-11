@@ -2,6 +2,7 @@
 
 namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
 
+use Albion\OnlineDataProject\Domain\ItemQuality;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\ItemNotFoundException;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\PlayerNotFoundException;
@@ -14,16 +15,16 @@ class ItemClient extends AbstractClient
     /**
      * Resolve item icon from render service
      *
-     * @param string $itemId
-     * @param int    $quality
-     * @param int    $enchantment
-     * @param int    $size
-     * @param string $locale
+     * @param string                                            $itemId
+     * @param \Albion\OnlineDataProject\Domain\ItemQuality|null $quality
+     * @param int                                               $enchantment
+     * @param int                                               $size
+     * @param string                                            $locale
      *
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function getItemIcon(string $itemId,
-                                int $quality = 1,
+                                ItemQuality $quality = null,
                                 int $enchantment = 0,
                                 int $size = 217,
                                 string $locale = 'en'): PromiseInterface
@@ -31,7 +32,7 @@ class ItemClient extends AbstractClient
         $enchantment = max(min($enchantment, 3), 0);
 
         $query = [
-            'quality' => max(0, min($quality, 5)),
+            'quality' => $quality ? $quality->toString() : ItemQuality::NORMAL,
             'size' => max(32, min($size, 217)),
             'locale' => $locale ?: 'en'
         ];

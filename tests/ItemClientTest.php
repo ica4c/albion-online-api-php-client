@@ -2,6 +2,7 @@
 
 namespace Tests;
 
+use Albion\OnlineDataProject\Domain\ItemQuality;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\ItemClient;
@@ -58,7 +59,7 @@ class ItemClientTest extends GuzzleTestCase
         $gear = $this->randomKillGear('Elevate');
 
         $image = $this->awaitPromise(
-            $this->itemClient->getItemIcon($gear['Type'], $gear['Quality'])
+            $this->itemClient->getItemIcon($gear['Type'], ItemQuality::of($gear['Quality']))
         );
 
         $fIH = new finfo(FILEINFO_MIME);
