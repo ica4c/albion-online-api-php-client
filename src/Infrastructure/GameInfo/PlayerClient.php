@@ -8,7 +8,7 @@ use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\PlayerNotFoundEx
 use Albion\OnlineDataProject\Domain\PlayerStatSubType;
 use Albion\OnlineDataProject\Domain\PlayerStatType;
 use Albion\OnlineDataProject\Domain\RegionType;
-use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
 
@@ -23,7 +23,7 @@ class PlayerClient extends AbstractClient
     public function getPlayerInfo(string $playerID): PromiseInterface {
         return $this->httpClient->getAsync("players/${playerID}")
             ->otherwise(
-                static function (ClientException $exception) use ($playerID) {
+                static function (RequestException $exception) use ($playerID) {
                     if($exception->getCode() === 404) {
                         throw new PlayerNotFoundException($playerID, $exception);
                     }
@@ -47,7 +47,7 @@ class PlayerClient extends AbstractClient
     public function getPlayerDeaths(string $playerID): PromiseInterface {
         return $this->httpClient->getAsync("players/${playerID}/deaths")
             ->otherwise(
-                static function (ClientException $exception) use ($playerID) {
+                static function (RequestException $exception) use ($playerID) {
                     if($exception->getCode() === 404) {
                         throw new PlayerNotFoundException($playerID, $exception);
                     }
@@ -103,7 +103,7 @@ class PlayerClient extends AbstractClient
 
         return $this->httpClient->getAsync('players/statistics', ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -123,7 +123,7 @@ class PlayerClient extends AbstractClient
     public function searchPlayer(string $query): PromiseInterface {
         return $this->httpClient->getAsync("search?q=${query}")
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )

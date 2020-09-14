@@ -5,7 +5,7 @@ namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
 use Albion\OnlineDataProject\Domain\Range;
 use Albion\OnlineDataProject\Domain\WeaponClass;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
-use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
 
@@ -23,7 +23,7 @@ class EventClient extends AbstractClient
     public function getEvents(int $limit = 10, int $offset = 0, string $guildId = null): PromiseInterface
     {
         $query = [
-            'limit' => max(0, min($limit, 10)),
+            'limit' => max(0, min($limit, 51)),
             'offset' => max(0, min($offset, 1000)),
         ];
 
@@ -33,7 +33,7 @@ class EventClient extends AbstractClient
 
         return $this->httpClient->getAsync('events', ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -63,7 +63,7 @@ class EventClient extends AbstractClient
 
         return $this->httpClient->getAsync('events/guildfame', ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -93,7 +93,7 @@ class EventClient extends AbstractClient
 
         return $this->httpClient->getAsync('events/playerfame', ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -128,7 +128,7 @@ class EventClient extends AbstractClient
 
         return $this->httpClient->getAsync('events/playerweaponfame', ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -148,7 +148,8 @@ class EventClient extends AbstractClient
      *
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getTopEventsByKillFame(Range $range = null, int $limit = 10, int $offset = 0) {
+    public function getTopEventsByKillFame(Range $range = null, int $limit = 10, int $offset = 0): PromiseInterface
+    {
         $query = [
             'range' => $range ? $range->toString() : Range::DAY,
             'limit' => max(0, min($limit, 51)),
@@ -157,7 +158,7 @@ class EventClient extends AbstractClient
 
         return $this->httpClient->getAsync('events/killfame', ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )

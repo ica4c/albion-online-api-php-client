@@ -3,9 +3,7 @@
 namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
 
 use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\AllianceNotFoundException;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\GuildNotFoundException;
-use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
 
@@ -20,7 +18,7 @@ class AllianceClient extends AbstractClient
     public function getAllianceInfo(string $allianceId): PromiseInterface {
         return $this->httpClient->getAsync("alliances/${allianceId}")
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new AllianceNotFoundException($exception);
                 }
             )
