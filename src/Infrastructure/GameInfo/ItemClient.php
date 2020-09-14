@@ -5,8 +5,7 @@ namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
 use Albion\OnlineDataProject\Domain\ItemQuality;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\ItemNotFoundException;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\PlayerNotFoundException;
-use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
 
@@ -45,7 +44,7 @@ class ItemClient extends AbstractClient
 
         return $this->httpClient->getAsync($url, ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) use ($itemId) {
+                static function (RequestException $exception) use ($itemId) {
                     if($exception->getCode() === 404) {
                         throw new ItemNotFoundException($itemId, $exception);
                     }
@@ -71,7 +70,7 @@ class ItemClient extends AbstractClient
     {
         return $this->httpClient->getAsync("items/${itemId}/data")
             ->otherwise(
-                static function (ClientException $exception) use ($itemId) {
+                static function (RequestException $exception) use ($itemId) {
                     if($exception->getCode() === 404) {
                         throw new ItemNotFoundException($itemId, $exception);
                     }
@@ -94,7 +93,7 @@ class ItemClient extends AbstractClient
     public function getItemCategories(): PromiseInterface {
         return $this->httpClient->getAsync('items/_itemCategoryTree')
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -113,7 +112,7 @@ class ItemClient extends AbstractClient
     public function getWeaponCategories(): PromiseInterface {
         return $this->httpClient->getAsync('items/_weaponCategories')
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )

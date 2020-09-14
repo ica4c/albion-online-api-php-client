@@ -5,7 +5,7 @@ namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
 use Albion\OnlineDataProject\Domain\BattleSortType;
 use Albion\OnlineDataProject\Domain\Range;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
-use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
 
@@ -34,7 +34,7 @@ class BattleClient extends AbstractClient
 
         return $this->httpClient->getAsync('battles', ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )

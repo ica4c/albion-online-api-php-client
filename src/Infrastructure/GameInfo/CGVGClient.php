@@ -3,7 +3,7 @@
 namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
 
 use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
-use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
 
@@ -25,7 +25,7 @@ class CGVGClient extends AbstractClient
 
         return $this->httpClient->getAsync('matches/crystal', ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -45,7 +45,7 @@ class CGVGClient extends AbstractClient
     public function getCGVGMatchById(string $id): PromiseInterface {
         return $this->httpClient->getAsync("matches/crystal/$id")
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -64,7 +64,7 @@ class CGVGClient extends AbstractClient
     public function getFeaturedGuildMatches(): PromiseInterface {
         return $this->httpClient->getAsync('guildmatches/top')
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -90,7 +90,7 @@ class CGVGClient extends AbstractClient
 
         return $this->httpClient->getAsync('guildmatches/next', ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -116,7 +116,7 @@ class CGVGClient extends AbstractClient
 
         return $this->httpClient->getAsync('guildmatches/past', ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -136,7 +136,7 @@ class CGVGClient extends AbstractClient
     public function getGuildMatchById(string $id): PromiseInterface {
         return $this->httpClient->getAsync("guildmatches/$id")
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )

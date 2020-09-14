@@ -1,15 +1,12 @@
 <?php
 
-
 namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
-
 
 use Albion\OnlineDataProject\Domain\Range;
 use Albion\OnlineDataProject\Domain\RegionType;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
 use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\GuildNotFoundException;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\PlayerNotFoundException;
-use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
 
@@ -24,7 +21,7 @@ class GuildClient extends AbstractClient
     public function getGuildInfo(string $guildId): PromiseInterface {
         return $this->httpClient->getAsync("guilds/$guildId")
             ->otherwise(
-                static function (ClientException $exception) use ($guildId) {
+                static function (RequestException $exception) use ($guildId) {
                     if($exception->getCode() === 404) {
                         throw new GuildNotFoundException($guildId);
                     }
@@ -48,9 +45,8 @@ class GuildClient extends AbstractClient
     public function getGuildData(string $guildId): PromiseInterface {
         return $this->httpClient->getAsync("guilds/$guildId/data")
             ->otherwise(
-                static function (ClientException $exception) use ($guildId) {
+                static function (RequestException $exception) use ($guildId) {
                     if($exception->getCode() === 404) {
-                        var_dump($guildId, $exception->getMessage());
                         throw new GuildNotFoundException($guildId);
                     }
 
@@ -89,7 +85,7 @@ class GuildClient extends AbstractClient
 
         return $this->httpClient->getAsync("guilds/$guildId/top", ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) use ($guildId) {
+                static function (RequestException $exception) use ($guildId) {
                     if($exception->getCode() === 404) {
                         throw new GuildNotFoundException($guildId);
                     }
@@ -113,7 +109,7 @@ class GuildClient extends AbstractClient
     public function getGuildMembers(string $guildId): PromiseInterface {
         return $this->httpClient->getAsync("guilds/$guildId/members")
             ->otherwise(
-                static function (ClientException $exception) use ($guildId) {
+                static function (RequestException $exception) use ($guildId) {
                     if($exception->getCode() === 404) {
                         throw new GuildNotFoundException($guildId);
                     }
@@ -137,7 +133,7 @@ class GuildClient extends AbstractClient
     public function searchGuild(string $query): PromiseInterface {
         return $this->httpClient->getAsync("search?q=${query}")
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -177,7 +173,7 @@ class GuildClient extends AbstractClient
 
         return $this->httpClient->getAsync('guilds/topguildsbyattacks', ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
@@ -208,7 +204,7 @@ class GuildClient extends AbstractClient
 
         return $this->httpClient->getAsync('guilds/topguildsbydefenses', ['query' => $query])
             ->otherwise(
-                static function (ClientException $exception) {
+                static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
