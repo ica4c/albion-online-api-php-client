@@ -31,7 +31,7 @@ abstract class Enumerable
                 ->getConstants();
         }
 
-        if(!in_array($value, $this->allowedValues, true)) {
+        if(!in_array($value, $this->allowedValues, false)) {
             throw new InvalidArgumentException(sprintf('%s is not a compatible %s', $value, static::class));
         }
 
