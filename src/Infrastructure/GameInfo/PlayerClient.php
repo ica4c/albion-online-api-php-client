@@ -63,6 +63,30 @@ class PlayerClient extends AbstractClient
     }
 
     /**
+     * Get player kills by $playerId
+     *
+     * @param string $playerID
+     * @return \GuzzleHttp\Promise\PromiseInterface<array>
+     */
+    public function getPlayerKills(string $playerID): PromiseInterface {
+        return $this->httpClient->getAsync("players/${playerID}/kills")
+            ->otherwise(
+                static function (RequestException $exception) use ($playerID) {
+                    if($exception->getCode() === 404) {
+                        throw new PlayerNotFoundException($playerID, $exception);
+                    }
+
+                    throw new FailedToPerformRequestException($exception);
+                }
+            )
+            ->then(
+                static function (Response $response) {
+                    return json_decode($response->getBody()->getContents(), true);
+                }
+            );
+    }
+
+    /**
      * Get total player statistics by his $playerId
      *
      * @param \Albion\OnlineDataProject\Domain\Range|null             $range
