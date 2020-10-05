@@ -2,13 +2,13 @@
 
 namespace Tests;
 
-use Albion\OnlineDataProject\Domain\Range;
-use Albion\OnlineDataProject\Domain\RegionType;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
+use Albion\API\Domain\Range;
+use Albion\API\Domain\RegionType;
+use Albion\API\Infrastructure\GameInfo\GuildClient;
 
 class GuildClientTest extends GuzzleTestCase
 {
-    /** @var \Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient */
+    /** @var \Albion\API\Infrastructure\GameInfo\GuildClient */
     protected $guildClient;
 
     /**

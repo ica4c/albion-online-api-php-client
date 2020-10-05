@@ -1,6 +1,6 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions;
+namespace Albion\API\Infrastructure\GameInfo\Exceptions;
 
 use Exception;
 

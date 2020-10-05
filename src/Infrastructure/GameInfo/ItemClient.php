@@ -1,10 +1,10 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
+namespace Albion\API\Infrastructure\GameInfo;
 
-use Albion\OnlineDataProject\Domain\ItemQuality;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\ItemNotFoundException;
+use Albion\API\Domain\ItemQuality;
+use Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
+use Albion\API\Infrastructure\GameInfo\Exceptions\ItemNotFoundException;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
@@ -15,7 +15,7 @@ class ItemClient extends AbstractClient
      * Resolve item icon from render service
      *
      * @param string                                            $itemId
-     * @param \Albion\OnlineDataProject\Domain\ItemQuality|null $quality
+     * @param \Albion\API\Domain\ItemQuality|null $quality
      * @param int                                               $enchantment
      * @param int                                               $size
      * @param string                                            $locale

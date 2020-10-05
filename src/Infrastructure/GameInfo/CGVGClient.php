@@ -1,8 +1,8 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
+namespace Albion\API\Infrastructure\GameInfo;
 
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
+use Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;

@@ -2,17 +2,17 @@
 
 namespace Tests;
 
-use Albion\OnlineDataProject\Domain\Range;
-use Albion\OnlineDataProject\Domain\WeaponClass;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
+use Albion\API\Domain\Range;
+use Albion\API\Domain\WeaponClass;
+use Albion\API\Infrastructure\GameInfo\EventClient;
+use Albion\API\Infrastructure\GameInfo\GuildClient;
 use PHPUnit\Framework\TestCase;
 
 class EventClientTest extends GuzzleTestCase
 {
-    /** @var \Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient */
+    /** @var \Albion\API\Infrastructure\GameInfo\EventClient */
     protected $eventClient;
-    /** @var \Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient */
+    /** @var \Albion\API\Infrastructure\GameInfo\GuildClient */
     protected $guildClient;
 
     /**

@@ -1,10 +1,10 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
+namespace Albion\API\Infrastructure\GameInfo;
 
-use Albion\OnlineDataProject\Domain\Range;
-use Albion\OnlineDataProject\Domain\WeaponClass;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
+use Albion\API\Domain\Range;
+use Albion\API\Domain\WeaponClass;
+use Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
@@ -47,7 +47,7 @@ class EventClient extends AbstractClient
     /**
      * Get top events by guild fame
      *
-     * @param \Albion\OnlineDataProject\Domain\Range|null $range
+     * @param \Albion\API\Domain\Range|null $range
      * @param int                                         $limit
      * @param int                                         $offset
      *
@@ -77,7 +77,7 @@ class EventClient extends AbstractClient
     /**
      * Get top events by player fame
      *
-     * @param \Albion\OnlineDataProject\Domain\Range|null $range
+     * @param \Albion\API\Domain\Range|null $range
      * @param int                                         $limit
      * @param int                                         $offset
      *
@@ -107,8 +107,8 @@ class EventClient extends AbstractClient
     /**
      * Get top events by player fame filtered by weapon type
      *
-     * @param \Albion\OnlineDataProject\Domain\Range|null       $range
-     * @param \Albion\OnlineDataProject\Domain\WeaponClass|null $weaponCategory
+     * @param \Albion\API\Domain\Range|null       $range
+     * @param \Albion\API\Domain\WeaponClass|null $weaponCategory
      * @param int                                               $limit
      * @param int                                               $offset
      *
@@ -142,7 +142,7 @@ class EventClient extends AbstractClient
     /**
      * Get top events by acquired PvP fame
      *
-     * @param \Albion\OnlineDataProject\Domain\Range|null $range
+     * @param \Albion\API\Domain\Range|null $range
      * @param int                                         $limit
      * @param int                                         $offset
      *

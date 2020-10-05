@@ -2,13 +2,13 @@
 
 namespace Tests;
 
-use Albion\OnlineDataProject\Domain\BattleSortType;
-use Albion\OnlineDataProject\Domain\Range;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\BattleClient;
+use Albion\API\Domain\BattleSortType;
+use Albion\API\Domain\Range;
+use Albion\API\Infrastructure\GameInfo\BattleClient;
 
 class BattleClientTest extends GuzzleTestCase
 {
-    /** @var \Albion\OnlineDataProject\Infrastructure\GameInfo\BattleClient */
+    /** @var \Albion\API\Infrastructure\GameInfo\BattleClient */
     private $battleClient;
 
     public function __construct()

@@ -1,6 +1,6 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\Binaries\Extractors;
+namespace Albion\API\Infrastructure\Binaries\Extractors;
 
 class LocalizationExtractor extends AbstractExtractor
 {

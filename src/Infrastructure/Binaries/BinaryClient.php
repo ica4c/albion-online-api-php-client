@@ -1,11 +1,11 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\Binaries;
+namespace Albion\API\Infrastructure\Binaries;
 
-use Albion\OnlineDataProject\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException;
-use Albion\OnlineDataProject\Infrastructure\Binaries\Extractors\CategoryExtractor;
-use Albion\OnlineDataProject\Infrastructure\Binaries\Extractors\ItemExtractor;
-use Albion\OnlineDataProject\Infrastructure\Binaries\Extractors\LocalizationExtractor;
+use Albion\API\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException;
+use Albion\API\Infrastructure\Binaries\Extractors\CategoryExtractor;
+use Albion\API\Infrastructure\Binaries\Extractors\ItemExtractor;
+use Albion\API\Infrastructure\Binaries\Extractors\LocalizationExtractor;
 use DOMDocument;
 use DOMText;
 use DOMXPath;
@@ -33,7 +33,7 @@ class BinaryClient
      * @param string $url
      *
      * @return string
-     * @throws \Albion\OnlineDataProject\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException
+     * @throws \Albion\API\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException
      */
     protected function fetchData(string $url): string {
         try {
@@ -49,7 +49,7 @@ class BinaryClient
      * @param string $resource
      *
      * @return \SimpleXMLElement
-     * @throws \Albion\OnlineDataProject\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException
+     * @throws \Albion\API\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException
      */
     protected function fetchXML(string $resource): DOMDocument {
         if(strpos('.xml', $resource) === false) {
@@ -65,7 +65,7 @@ class BinaryClient
     /**
      * @inheritDoc
      * @return string[][]
-     * @throws \Albion\OnlineDataProject\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException
+     * @throws \Albion\API\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException
      */
     public function fetchLocalization(): array {
         $xml = $this->fetchXML('localization');
@@ -75,7 +75,7 @@ class BinaryClient
     /**
      * @inheritDoc
      * @return string[]
-     * @throws \Albion\OnlineDataProject\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException
+     * @throws \Albion\API\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException
      */
     public function fetchItems(): array {
         $xml = $this->fetchXML('items');

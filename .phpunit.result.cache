@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":268:{a:2:{s:7:"defects";a:1:{s:39:"Tests\AllianceClientTest::testCacheFill";i:4;}s:5:"times";a:3:{s:41:"Tests\AllianceClientTest::testGetAlliance";d:0.081;s:44:"Tests\EventClientTest::testLatestGuildEvents";d:14.939;s:39:"Tests\AllianceClientTest::testCacheFill";d:0.111;}}}

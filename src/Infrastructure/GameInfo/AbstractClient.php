@@ -1,6 +1,6 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
+namespace Albion\API\Infrastructure\GameInfo;
 
 use GuzzleHttp\Client;
 

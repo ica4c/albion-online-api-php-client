@@ -1,11 +1,11 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
+namespace Albion\API\Infrastructure\GameInfo;
 
-use Albion\OnlineDataProject\Domain\Range;
-use Albion\OnlineDataProject\Domain\RegionType;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\GuildNotFoundException;
+use Albion\API\Domain\Range;
+use Albion\API\Domain\RegionType;
+use Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
+use Albion\API\Infrastructure\GameInfo\Exceptions\GuildNotFoundException;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
@@ -64,10 +64,10 @@ class GuildClient extends AbstractClient
      * Get guild top member list
      *
      * @param string                                           $guildId
-     * @param \Albion\OnlineDataProject\Domain\Range|null      $range
+     * @param \Albion\API\Domain\Range|null      $range
      * @param int                                              $limit
      * @param int                                              $offset
-     * @param \Albion\OnlineDataProject\Domain\RegionType|null $region
+     * @param \Albion\API\Domain\RegionType|null $region
      *
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
@@ -156,7 +156,7 @@ class GuildClient extends AbstractClient
     /**
      * Get guild top by recent attacks
      *
-     * @param \Albion\OnlineDataProject\Domain\Range|null $range
+     * @param \Albion\API\Domain\Range|null $range
      * @param int                                         $limit
      * @param int                                         $offset
      *
@@ -187,7 +187,7 @@ class GuildClient extends AbstractClient
     /**
      * Get guild top by recent defences
      *
-     * @param \Albion\OnlineDataProject\Domain\Range|null $range
+     * @param \Albion\API\Domain\Range|null $range
      * @param int                                         $limit
      * @param int                                         $offset
      *
