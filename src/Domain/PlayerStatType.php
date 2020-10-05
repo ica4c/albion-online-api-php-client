@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Albion\OnlineDataProject\Domain;
+namespace Albion\API\Domain;
 
-use Albion\OnlineDataProject\Foundation\DataTypes\Enumerable;
+use Albion\API\Foundation\DataTypes\Enumerable;
 
 class PlayerStatType extends Enumerable
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\Binaries\Exceptions;
+namespace Albion\API\Infrastructure\Binaries\Exceptions;
 
 use Exception;
 use Throwable;

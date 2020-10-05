@@ -2,11 +2,11 @@
 
 namespace Tests;
 
-use Albion\OnlineDataProject\Infrastructure\GameInfo\CGVGClient;
+use Albion\API\Infrastructure\GameInfo\CGVGClient;
 
 class CGVGClientTest extends GuzzleTestCase
 {
-    /** @var \Albion\OnlineDataProject\Infrastructure\GameInfo\CGVGClient */
+    /** @var \Albion\API\Infrastructure\GameInfo\CGVGClient */
     private $matchesClient;
 
     public function __construct()

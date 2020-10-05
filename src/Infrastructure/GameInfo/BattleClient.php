@@ -1,10 +1,10 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
+namespace Albion\API\Infrastructure\GameInfo;
 
-use Albion\OnlineDataProject\Domain\BattleSortType;
-use Albion\OnlineDataProject\Domain\Range;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
+use Albion\API\Domain\BattleSortType;
+use Albion\API\Domain\Range;
+use Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
@@ -14,10 +14,10 @@ class BattleClient extends AbstractClient
     /**
      * Get recent battles
      *
-     * @param \Albion\OnlineDataProject\Domain\Range|null          $range
+     * @param \Albion\API\Domain\Range|null          $range
      * @param int                                                  $limit
      * @param int                                                  $offset
-     * @param \Albion\OnlineDataProject\Domain\BattleSortType|null $sort
+     * @param \Albion\API\Domain\BattleSortType|null $sort
      *
      * @return \GuzzleHttp\Promise\PromiseInterface
      */

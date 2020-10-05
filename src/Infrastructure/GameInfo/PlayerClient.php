@@ -1,13 +1,13 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
+namespace Albion\API\Infrastructure\GameInfo;
 
-use Albion\OnlineDataProject\Domain\Range;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\PlayerNotFoundException;
-use Albion\OnlineDataProject\Domain\PlayerStatSubType;
-use Albion\OnlineDataProject\Domain\PlayerStatType;
-use Albion\OnlineDataProject\Domain\RegionType;
+use Albion\API\Domain\Range;
+use Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
+use Albion\API\Infrastructure\GameInfo\Exceptions\PlayerNotFoundException;
+use Albion\API\Domain\PlayerStatSubType;
+use Albion\API\Domain\PlayerStatType;
+use Albion\API\Domain\RegionType;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
@@ -89,12 +89,12 @@ class PlayerClient extends AbstractClient
     /**
      * Get total player statistics by his $playerId
      *
-     * @param \Albion\OnlineDataProject\Domain\Range|null             $range
+     * @param \Albion\API\Domain\Range|null             $range
      * @param int                                                     $limit
      * @param int                                                     $offset
-     * @param \Albion\OnlineDataProject\Domain\PlayerStatType|null    $type
-     * @param \Albion\OnlineDataProject\Domain\PlayerStatSubType|null $subType
-     * @param \Albion\OnlineDataProject\Domain\RegionType|null        $region
+     * @param \Albion\API\Domain\PlayerStatType|null    $type
+     * @param \Albion\API\Domain\PlayerStatSubType|null $subType
+     * @param \Albion\API\Domain\RegionType|null        $region
      * @param string|null                                             $guildId
      * @param string|null                                             $allianceId
      *

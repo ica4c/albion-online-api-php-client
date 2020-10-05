@@ -1,8 +1,8 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\Binaries\Extractors;
+namespace Albion\API\Infrastructure\Binaries\Extractors;
 
-use Albion\OnlineDataProject\Models\Location;
+use Albion\API\Models\Location;
 use DOMNode;
 
 class ItemExtractor extends AbstractExtractor

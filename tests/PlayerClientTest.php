@@ -2,15 +2,15 @@
 
 namespace Tests;
 
-use Albion\OnlineDataProject\Domain\Range;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\PlayerClient;
-use Albion\OnlineDataProject\Domain\PlayerStatType;
-use Albion\OnlineDataProject\Domain\RegionType;
+use Albion\API\Domain\Range;
+use Albion\API\Infrastructure\GameInfo\PlayerClient;
+use Albion\API\Domain\PlayerStatType;
+use Albion\API\Domain\RegionType;
 use Mockery\Mock;
 
 class PlayerClientTest extends GuzzleTestCase
 {
-    /** @var \Albion\OnlineDataProject\Infrastructure\GameInfo\PlayerClient */
+    /** @var \Albion\API\Infrastructure\GameInfo\PlayerClient */
     protected $playerClient;
 
     /**

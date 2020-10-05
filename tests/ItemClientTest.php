@@ -2,19 +2,19 @@
 
 namespace Tests;
 
-use Albion\OnlineDataProject\Domain\ItemQuality;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\ItemClient;
+use Albion\API\Domain\ItemQuality;
+use Albion\API\Infrastructure\GameInfo\EventClient;
+use Albion\API\Infrastructure\GameInfo\GuildClient;
+use Albion\API\Infrastructure\GameInfo\ItemClient;
 use finfo;
 
 class ItemClientTest extends GuzzleTestCase
 {
-    /** @var \Albion\OnlineDataProject\Infrastructure\GameInfo\ItemClient */
+    /** @var \Albion\API\Infrastructure\GameInfo\ItemClient */
     protected $itemClient;
-    /** @var \Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient */
+    /** @var \Albion\API\Infrastructure\GameInfo\EventClient */
     protected $eventClient;
-    /** @var \Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient */
+    /** @var \Albion\API\Infrastructure\GameInfo\GuildClient */
     protected $guildClient;
 
     public function __construct()
@@ -59,7 +59,7 @@ class ItemClientTest extends GuzzleTestCase
         $gear = $this->randomKillGear('Elevate');
 
         $image = $this->awaitPromise(
-            $this->itemClient->getItemIcon($gear['Type'], ItemQuality::of($gear['Quality']))
+            $this->itemClient->getItemIcon($gear['Type'], ItemQuality::of($gear['Quality'] ?: 1))
         );
 
         $fIH = new finfo(FILEINFO_MIME);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Albion\OnlineDataProject\Foundation\DataTypes;
+namespace Albion\API\Foundation\DataTypes;
 
 use InvalidArgumentException;
 use ReflectionClass;

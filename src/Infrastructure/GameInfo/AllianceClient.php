@@ -1,8 +1,8 @@
 <?php
 
-namespace Albion\OnlineDataProject\Infrastructure\GameInfo;
+namespace Albion\API\Infrastructure\GameInfo;
 
-use Albion\OnlineDataProject\Infrastructure\GameInfo\Exceptions\AllianceNotFoundException;
+use Albion\API\Infrastructure\GameInfo\Exceptions\AllianceNotFoundException;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;

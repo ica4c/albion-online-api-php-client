@@ -2,14 +2,14 @@
 
 namespace Tests;
 
-use Albion\OnlineDataProject\Infrastructure\GameInfo\AllianceClient;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\PlayerClient;
+use Albion\API\Infrastructure\GameInfo\AllianceClient;
+use Albion\API\Infrastructure\GameInfo\PlayerClient;
 
 class AllianceClientTest extends GuzzleTestCase
 {
-    /** @var \Albion\OnlineDataProject\Infrastructure\GameInfo\AllianceClient */
+    /** @var \Albion\API\Infrastructure\GameInfo\AllianceClient */
     protected $allianceClient;
-    /** @var \Albion\OnlineDataProject\Infrastructure\GameInfo\PlayerClient */
+    /** @var \Albion\API\Infrastructure\GameInfo\PlayerClient */
     protected $playerClient;
 
     /**
