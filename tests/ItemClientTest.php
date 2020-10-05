@@ -59,7 +59,7 @@ class ItemClientTest extends GuzzleTestCase
         $gear = $this->randomKillGear('Elevate');
 
         $image = $this->awaitPromise(
-            $this->itemClient->getItemIcon($gear['Type'], ItemQuality::of($gear['Quality']))
+            $this->itemClient->getItemIcon($gear['Type'], ItemQuality::of($gear['Quality'] ?: 1))
         );
 
         $fIH = new finfo(FILEINFO_MIME);
