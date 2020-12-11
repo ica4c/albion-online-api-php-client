@@ -125,6 +125,29 @@ class GuildClient extends AbstractClient
     }
 
     /**
+     * Returns recent guild vs guild kill events
+     *
+     * @param string $id
+     * @param string $otherGuildId
+     *
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function getGuildFeud(string $id, string $otherGuildId): PromiseInterface
+    {
+        return $this->httpClient->getAsync("guilds/$id/feud/$otherGuildId")
+            ->otherwise(
+                static function (RequestException $exception) {
+                    throw new FailedToPerformRequestException($exception);
+                }
+            )
+            ->then(
+                static function (Response $response) {
+                    return json_decode($response->getBody()->getContents(), true);
+                }
+            );
+    }
+
+    /**
      * Find guilds by it's name
      *
      * @param string $query
