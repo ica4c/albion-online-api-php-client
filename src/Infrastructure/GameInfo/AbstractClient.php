@@ -16,8 +16,12 @@ abstract class AbstractClient
      */
     public function __construct()
     {
-        $this->httpClient = new Client([
-            'base_uri' => 'https://gameinfo.albiononline.com/api/gameinfo/'
-        ]);
+        $this->httpClient = new Client(
+            [
+                'base_uri' => 'https://gameinfo.albiononline.com/api/gameinfo/',
+                'connect_timeout' => 5,
+                'timeout' => 90
+            ]
+        );
     }
 }
