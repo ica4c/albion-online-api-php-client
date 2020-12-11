@@ -45,6 +45,51 @@ class EventClient extends AbstractClient
     }
 
     /**
+     * Get event by its id
+     *
+     * @param string $id
+     *
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function getEvent(string $id): PromiseInterface
+    {
+        return $this->httpClient->getAsync("events/$id")
+            ->otherwise(
+                static function (RequestException $exception) {
+                    throw new FailedToPerformRequestException($exception);
+                }
+            )
+            ->then(
+                static function (Response $response) {
+                    return json_decode($response->getBody()->getContents(), true);
+                }
+            );
+    }
+
+    /**
+     * Get player events feud
+     *
+     * @param string $id
+     * @param string $victimId
+     *
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function getEventFeud(string $id, string $victimId): PromiseInterface
+    {
+        return $this->httpClient->getAsync("events/$id/history/$victimId")
+            ->otherwise(
+                static function (RequestException $exception) {
+                    throw new FailedToPerformRequestException($exception);
+                }
+            )
+            ->then(
+                static function (Response $response) {
+                    return json_decode($response->getBody()->getContents(), true);
+                }
+            );
+    }
+
+    /**
      * Get top events by guild fame
      *
      * @param \Albion\API\Domain\Range|null $range
