@@ -127,11 +127,12 @@ $client->getUpcomingGuildMatches()
 Нуждается в уточнении 
 
 ###### Метод
-`getPastGuildMatches(int $limit = 10, int $offset = 0)`
+`getPastGuildMatches([int $limit = 10, int $offset = 0, string $guildId = null])`
 
 ###### Параметры
 * _int_ `$limit` - ограничить число результатов [default = 10],
 * _int_ `$offset` - пропустить n результатов [default = 0],  
+* _string_ `$guildId` - выбрать только для данной гильдии [default = null]
 
 ###### Ошибки
  * _FailedToPerformRequestException_ - если что-то пошло не так
