@@ -123,18 +123,23 @@ class EventClient extends AbstractClient
      * Get top events by player fame
      *
      * @param \Albion\API\Domain\Range|null $range
-     * @param int                                         $limit
-     * @param int                                         $offset
+     * @param int                           $limit
+     * @param int                           $offset
+     * @param string|null                   $guildId
      *
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getTopEventsByPlayerFame(Range $range = null, int $limit = 10, int $offset = 0): PromiseInterface
+    public function getTopEventsByPlayerFame(Range $range = null, int $limit = 10, int $offset = 0, string $guildId = null): PromiseInterface
     {
         $query = [
             'range' => $range ? $range->toString() : Range::DAY,
             'limit' => max(0, min($limit, 51)),
             'offset' => max(0, min($offset, 1000)),
         ];
+
+        if($guildId !== null) {
+            $query['guildId'] = $guildId;
+        }
 
         return $this->httpClient->getAsync('events/playerfame', ['query' => $query])
             ->otherwise(

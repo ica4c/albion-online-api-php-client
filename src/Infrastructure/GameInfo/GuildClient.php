@@ -237,4 +237,37 @@ class GuildClient extends AbstractClient
                 }
             );
     }
+
+    /**
+     * Get guild top events in selected range
+     *
+     * @param string                        $guildId
+     * @param \Albion\API\Domain\Range|null $range
+     * @param int                           $limit
+     * @param int                           $offset
+     *
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function getGuildTopEvents(string $guildId,
+                                      Range $range = null,
+                                      int $limit = 10,
+                                      int $offset = 0): PromiseInterface {
+        $query = [
+            'range' => $range ? $range->toString() : Range::WEEK,
+            'limit' => $limit,
+            'offset' => $offset
+        ];
+
+        return $this->httpClient->getAsync("guilds/$guildId/top", ['query' => $query])
+            ->otherwise(
+                static function (RequestException $exception) {
+                    throw new FailedToPerformRequestException($exception);
+                }
+            )
+            ->then(
+                static function (Response $response) {
+                    return json_decode($response->getBody()->getContents(), true);
+                }
+            );
+    }
 }

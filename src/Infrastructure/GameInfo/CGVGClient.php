@@ -103,16 +103,22 @@ class CGVGClient extends AbstractClient
 
     /**
      * Get all past guild matches
-     * @param int $limit
-     * @param int $offset
+     *
+     * @param int         $limit
+     * @param int         $offset
+     * @param string|null $guildId
      *
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getPastGuildMatches(int $limit = 10, int $offset = 0): PromiseInterface {
+    public function getPastGuildMatches(int $limit = 10, int $offset = 0, string $guildId = null): PromiseInterface {
         $query = [
             'limit' => max(1, min($limit, 50)),
             'offset' => max(1, min($offset, 9999)),
         ];
+
+        if($guildId !== null) {
+            $query['guildId'] = $guildId;
+        }
 
         return $this->httpClient->getAsync('guildmatches/past', ['query' => $query])
             ->otherwise(
