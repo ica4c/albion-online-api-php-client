@@ -65,12 +65,13 @@ $client->getTopEventsByGuildFame()
 ### Top events by player fame 
 
 ###### Method
-`getTopEventsByPlayerFame(Range $range = null, int $limit = 10, int $offset = 0)` 
+`getTopEventsByPlayerFame([Range $range = null, int $limit = 10, int $offset = 0, string $guildId = null])` 
 
 ###### Params
  * [Range](range.md) `$range` - one of the [Range](range.md) values [default=Range::DAY].
  * _int_ `$limit` - limit response results [default = 10],
  * _int_ `$offset` - skip n first values [default = 0],
+ * _string_ `$guildId` - look for this guild only [default = null],
 
 ###### Throws
  * _FailedToPerformRequestException_ - in case if something went wrong

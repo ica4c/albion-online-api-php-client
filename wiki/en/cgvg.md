@@ -127,11 +127,12 @@ $client->getUpcomingGuildMatches()
 Not sure what it does. Might be legacy endpoint. 
 
 ###### Method
-`getPastGuildMatches(int $limit = 10, int $offset = 0)`
+`getPastGuildMatches([int $limit = 10, int $offset = 0, string $guildId = null])`
 
 ###### Params
  * _int_ `$limit` - limit response amount [default = 10],
  * _int_ `$offset` - skip first n values [default = 0],  
+ * _string_ `$guildId` - look for this guild only [default = null]
 
 ###### Throws
  * _FailedToPerformRequestException_ - in case if something went wrong

@@ -6,7 +6,7 @@
 ### Последние убийства и смерти
 
 ###### Метод
-`getEvents(int $limit = 10, int $offset = 0, string $guildId = null)`
+`getEvents([int $limit = 10, int $offset = 0, string $guildId = null, string $guildId = null])`
 
 ###### Параметры
  * _int_ `$limit` - ограничить число результатов [default = 10],

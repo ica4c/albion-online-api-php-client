@@ -198,3 +198,33 @@ $client->getGuildTopByDefences(Range::of(Range::WEEK), 15, 0)
         }
     )
 ```
+
+---
+### Get guilds top events
+
+###### Method
+`getGuildTopEvents(string $guildId, [Range $range = null, int $limit = 10, int $offset = 0])`
+
+###### Params
+* _string_ `$guildId` - guild identifier
+* [Range](range.md) `$range` - one of the [Range](range.md) values [default=Range::DAY].
+* _int_ `$limit` - limit response amount [default = 10],
+* _int_ `$offset` - skip first n values [default = 0],
+
+###### Throws
+* _FailedToPerformRequestException_ - in case if something went wrong
+
+###### Example
+
+```
+use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
+ 
+$client = new GuildClient('identifier');
+
+$client->getGuildTopEvents(Range::of(Range::WEEK), 15, 0)
+    ->then(
+        static function($guilds) {
+            // Do something with guilds information
+        }
+    )
+```
