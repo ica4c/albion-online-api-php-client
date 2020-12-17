@@ -113,9 +113,12 @@ class PlayerClient extends AbstractClient
             'limit' => min($limit, 10000),
             'offset' => max(0, $offset),
             'type' => $type ? $type->toString() : PlayerStatType::GATHERING,
-            'subtype' => $subType ? $subType->toString() : PlayerStatSubType::ALL,
             'region' => $region ? $region->toString() : RegionType::TOTAl,
         ];
+
+        if($type->is(PlayerStatType::GATHERING) ) {
+            $query['subtype'] = $subType ? $subType->toString() : PlayerStatSubType::ALL;
+        }
 
         if($guildId) {
             $query['guildId'] = $guildId;
