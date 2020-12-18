@@ -10,4 +10,5 @@ class PlayerStatType extends Enumerable
     const PVE = 'PvE';
     const PVP = 'PvP';
     const GATHERING = 'Gathering';
+    const CRAFTING = 'Crafting';
 }

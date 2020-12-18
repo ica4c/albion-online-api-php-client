@@ -6,6 +6,7 @@
 * PVE - PvE
 * PVP - PvP
 * GATHERING - сбор ресурсов
+* CRAFTING - крафтинг
  
 # Player statistics subtype
  

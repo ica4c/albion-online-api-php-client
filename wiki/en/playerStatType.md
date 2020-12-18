@@ -6,6 +6,7 @@ Available options:
 * PVE - PvE
 * PVP - PvP
 * GATHERING - Gathering
+* CRAFTING - Crafting
  
 # Player statistics subtype
  
