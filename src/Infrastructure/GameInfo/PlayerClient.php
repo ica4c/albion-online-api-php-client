@@ -116,7 +116,7 @@ class PlayerClient extends AbstractClient
             'region' => $region ? $region->toString() : RegionType::TOTAl,
         ];
 
-        if($type->is(PlayerStatType::GATHERING) ) {
+        if($type !== null && $type->is(PlayerStatType::GATHERING) ) {
             $query['subtype'] = $subType ? $subType->toString() : PlayerStatSubType::ALL;
         }
 
