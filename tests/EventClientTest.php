@@ -31,15 +31,15 @@ class EventClientTest extends GuzzleTestCase
             $this->guildClient->searchGuild('Elevate')
         );
 
-        $this->assertNotEmpty($guilds);
+        static::assertNotEmpty($guilds);
 
         $firstOne = $guilds[0];
         $events = $this->awaitPromise(
             $this->eventClient->getEvents(10, 0, $firstOne['Id'])
         );
 
-        $this->assertNotNull($events);
-        $this->assertNotEmpty($events);
+        static::assertNotNull($events);
+        static::assertNotEmpty($events);
     }
 
     public function testLatestTopByGuild(): void
@@ -48,8 +48,8 @@ class EventClientTest extends GuzzleTestCase
             $this->eventClient->getTopEventsByGuildFame(Range::of(Range::DAY), 1)
         );
 
-        $this->assertNotNull($events);
-        $this->assertNotEmpty($events);
+        static::assertNotNull($events);
+        static::assertNotEmpty($events);
     }
 
     public function testLatestTopByKillFame(): void
@@ -58,8 +58,8 @@ class EventClientTest extends GuzzleTestCase
             $this->eventClient->getTopEventsByKillFame(Range::of(Range::DAY), 1)
         );
 
-        $this->assertNotNull($events);
-        $this->assertNotEmpty($events);
+        static::assertNotNull($events);
+        static::assertNotEmpty($events);
     }
 
     public function testLatestTopByPlayerFame(): void
@@ -68,8 +68,8 @@ class EventClientTest extends GuzzleTestCase
             $this->eventClient->getTopEventsByPlayerFame(Range::of(Range::DAY), 1)
         );
 
-        $this->assertNotNull($events);
-        $this->assertNotEmpty($events);
+        static::assertNotNull($events);
+        static::assertNotEmpty($events);
     }
 
     public function testLatestTopByPlayerWeaponFame(): void
@@ -81,7 +81,7 @@ class EventClientTest extends GuzzleTestCase
             )
         );
 
-        $this->assertNotNull($events);
-        $this->assertNotEmpty($events);
+        static::assertNotNull($events);
+        static::assertNotEmpty($events);
     }
 }

@@ -33,18 +33,18 @@ class AllianceClientTest extends GuzzleTestCase
             $this->playerClient->searchPlayer($q)
         );
 
-        $this->assertNotEmpty($players);
+        static::assertNotEmpty($players);
         return $players[0];
     }
 
     public function testGetAlliance(): void
     {
         $firstOne = $this->getFirstPlayer('Mamono');
-        $this->assertNotEmpty($firstOne['AllianceId']);
+        static::assertNotEmpty($firstOne['AllianceId']);
 
         $alliance = $this->awaitPromise($this->allianceClient->getAllianceInfo($firstOne['AllianceId']));
 
-        $this->assertNotNull($alliance);
-        $this->assertNotEmpty($alliance);
+        static::assertNotNull($alliance);
+        static::assertNotEmpty($alliance);
     }
 }

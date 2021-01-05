@@ -33,7 +33,7 @@ class PlayerClientTest extends GuzzleTestCase
             $this->playerClient->searchPlayer($q)
         );
 
-        $this->assertNotEmpty($players);
+        static::assertNotEmpty($players);
 
         return $players[0];
     }
@@ -50,7 +50,7 @@ class PlayerClientTest extends GuzzleTestCase
             $this->playerClient->getPlayerInfo($firstOne['Id'])
         );
 
-        $this->assertNotEmpty($player);
+        static::assertNotEmpty($player);
     }
 
     public function testGetPlayerDeaths(): void {
@@ -58,7 +58,7 @@ class PlayerClientTest extends GuzzleTestCase
         $deaths = $this->awaitPromise(
             $this->playerClient->getPlayerDeaths($firstOne['Id'])
         );
-        $this->assertNotNull($deaths);
+        static::assertNotNull($deaths);
     }
 
     public function testGetPlayerStats(): void {
@@ -70,7 +70,7 @@ class PlayerClientTest extends GuzzleTestCase
             )
         );
 
-        $this->assertNotNull($stats);
-        $this->assertNotEmpty($stats);
+        static::assertNotNull($stats);
+        static::assertNotEmpty($stats);
     }
 }

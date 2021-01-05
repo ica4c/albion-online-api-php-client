@@ -30,7 +30,7 @@ class ItemClientTest extends GuzzleTestCase
             $this->guildClient->searchGuild($q)
         );
 
-        $this->assertNotEmpty($guilds);
+        static::assertNotEmpty($guilds);
         return $guilds[0];
     }
 
@@ -63,7 +63,7 @@ class ItemClientTest extends GuzzleTestCase
         );
 
         $fIH = new finfo(FILEINFO_MIME);
-        $this->assertSame($fIH->buffer($image), 'image/png; charset=binary');
+        static::assertSame($fIH->buffer($image), 'image/png; charset=binary');
     }
 
     public function testRandomEventKillItemData(): void {
@@ -73,8 +73,8 @@ class ItemClientTest extends GuzzleTestCase
             $this->itemClient->getItemData($gear['Type'])
         );
 
-        $this->assertNotNull($data);
-        $this->assertNotEmpty($data);
+        static::assertNotNull($data);
+        static::assertNotEmpty($data);
     }
 
     public function testWeaponCategories(): void {
@@ -82,8 +82,8 @@ class ItemClientTest extends GuzzleTestCase
             $this->itemClient->getWeaponCategories()
         );
 
-        $this->assertNotNull($data);
-        $this->assertNotEmpty($data);
+        static::assertNotNull($data);
+        static::assertNotEmpty($data);
     }
 
     public function testItemCategories(): void {
@@ -91,7 +91,7 @@ class ItemClientTest extends GuzzleTestCase
             $this->itemClient->getItemCategories()
         );
 
-        $this->assertNotNull($data);
-        $this->assertNotEmpty($data);
+        static::assertNotNull($data);
+        static::assertNotEmpty($data);
     }
 }
