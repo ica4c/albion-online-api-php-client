@@ -112,7 +112,7 @@ class PlayerClient extends AbstractClient
             'range' => $range ? $range->toString() : Range::WEEK,
             'limit' => min($limit, 10000),
             'offset' => max(0, $offset),
-            'type' => $type ? $type->toString() : PlayerStatType::GATHERING,
+            'type' => $type ? $type->toString() : PlayerStatType::PVE,
             'region' => $region ? $region->toString() : RegionType::TOTAl,
         ];
 
