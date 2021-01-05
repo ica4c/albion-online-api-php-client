@@ -2,9 +2,9 @@
 
 namespace Albion\API\Domain;
 
-use Albion\API\Foundation\DataTypes\Enumerable;
+use Solid\Foundation\Enum;
 
-class WeaponClass extends Enumerable
+class WeaponClass extends Enum
 {
     const ALL = 'all';
     const ARCANE_STAFF = 'arcabestaff';

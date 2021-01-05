@@ -2,9 +2,9 @@
 
 namespace Albion\API\Domain;
 
-use Albion\API\Foundation\DataTypes\Enumerable;
+use Solid\Foundation\Enum;
 
-class PlayerStatSubType extends Enumerable
+class PlayerStatSubType extends Enum
 {
     const ALL = 'All';
     const FIBER = 'Fiber';
