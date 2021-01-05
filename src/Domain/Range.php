@@ -2,9 +2,9 @@
 
 namespace Albion\API\Domain;
 
-use Albion\API\Foundation\DataTypes\Enumerable;
+use Solid\Foundation\Enum;
 
-class Range extends Enumerable
+class Range extends Enum
 {
     const DAY = 'day';
     const WEEK = 'week';

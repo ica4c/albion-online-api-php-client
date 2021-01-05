@@ -20,8 +20,8 @@ class CGVGClientTest extends GuzzleTestCase
             $this->matchesClient->getCGVGMatches()
         );
 
-        $this->assertNotNull($matches);
-        $this->assertNotEmpty($matches);
+        static::assertNotNull($matches);
+        static::assertNotEmpty($matches);
 
         return !empty($matches) ? $matches[array_rand($matches)] : null;
     }
@@ -31,7 +31,7 @@ class CGVGClientTest extends GuzzleTestCase
             $this->matchesClient->getFeaturedGuildMatches()
         );
 
-        $this->assertNotNull($matches);
+        static::assertNotNull($matches);
 
         return !empty($matches) ? $matches[array_rand($matches)] : null;
     }
@@ -48,9 +48,9 @@ class CGVGClientTest extends GuzzleTestCase
                 $this->matchesClient->getCGVGMatchById($match['MatchId'])
             );
 
-            $this->assertNotNull($test);
-            $this->assertNotEmpty($test);
-            $this->assertSame($test['MatchId'], $match['MatchId']);
+            static::assertNotNull($test);
+            static::assertNotEmpty($test);
+            static::assertSame($test['MatchId'], $match['MatchId']);
         }
     }
 
@@ -61,7 +61,7 @@ class CGVGClientTest extends GuzzleTestCase
             $this->matchesClient->getFeaturedGuildMatches()
         );
 
-        $this->assertNotNull($matches);
+        static::assertNotNull($matches);
     }
 
     public function testNextGuildMatches(): void
@@ -70,7 +70,7 @@ class CGVGClientTest extends GuzzleTestCase
             $this->matchesClient->getUpcomingGuildMatches(1, 0)
         );
 
-        $this->assertNotNull($matches);
+        static::assertNotNull($matches);
     }
 
     public function testPastGuildMatches(): void
@@ -79,7 +79,7 @@ class CGVGClientTest extends GuzzleTestCase
             $this->matchesClient->getPastGuildMatches(1, 0)
         );
 
-        $this->assertNotNull($matches);
+        static::assertNotNull($matches);
     }
 
     public function testGetGuildMatchById(): void
@@ -91,9 +91,9 @@ class CGVGClientTest extends GuzzleTestCase
                 $this->matchesClient->getGuildMatchById($rnd['MatchId'])
             );
 
-            $this->assertNotNull($match);
-            $this->assertNotEmpty($match);
-            $this->assertSame($rnd['MatchId'], $match['MatchId']);
+            static::assertNotNull($match);
+            static::assertNotEmpty($match);
+            static::assertSame($rnd['MatchId'], $match['MatchId']);
         }
     }
 }

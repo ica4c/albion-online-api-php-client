@@ -25,7 +25,7 @@ class BattleClientTest extends GuzzleTestCase
             BattleSortType::of(BattleSortType::TOTAL_FAME)
         );
 
-        $this->assertNotNull($battles);
-        $this->assertNotEmpty($battles);
+        static::assertNotNull($battles);
+        static::assertNotEmpty($battles);
     }
 }

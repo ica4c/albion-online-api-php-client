@@ -22,6 +22,7 @@ class GuildClientTest extends GuzzleTestCase
 
     /**
      * Return first guild search result
+     *
      * @param string $q
      * @return array
      */
@@ -31,7 +32,7 @@ class GuildClientTest extends GuzzleTestCase
             $this->guildClient->searchGuild($q)
         );
 
-        $this->assertNotEmpty($guilds);
+        static::assertNotEmpty($guilds);
         return $guilds[0];
     }
 
@@ -48,9 +49,9 @@ class GuildClientTest extends GuzzleTestCase
             $this->guildClient->getGuildInfo($firstOne['Id'])
         );
 
-        $this->assertNotNull($guild);
-        $this->assertNotEmpty($guild);
-        $this->assertSame($guild['Id'], $firstOne['Id']);
+        static::assertNotNull($guild);
+        static::assertNotEmpty($guild);
+        static::assertSame($guild['Id'], $firstOne['Id']);
     }
 
     public function testGetGuildMembers(): void
@@ -61,8 +62,8 @@ class GuildClientTest extends GuzzleTestCase
             $this->guildClient->getGuildMembers($firstOne['Id'])
         );
 
-        $this->assertNotNull($members);
-        $this->assertNotEmpty($members);
+        static::assertNotNull($members);
+        static::assertNotEmpty($members);
     }
 
     public function testGetGuildData(): void
@@ -73,9 +74,9 @@ class GuildClientTest extends GuzzleTestCase
             $this->guildClient->getGuildData($firstOne['Id'])
         );
 
-        $this->assertNotNull($data);
-        $this->assertNotEmpty($data);
-        $this->assertSame($data['guild']['Id'], $firstOne['Id']);
+        static::assertNotNull($data);
+        static::assertNotEmpty($data);
+        static::assertSame($data['guild']['Id'], $firstOne['Id']);
     }
 
     public function testGetGuildTopMembers(): void
@@ -92,8 +93,8 @@ class GuildClientTest extends GuzzleTestCase
             )
         );
 
-        $this->assertNotEmpty($kills);
-        $this->assertNotNull($kills);
+        static::assertNotEmpty($kills);
+        static::assertNotNull($kills);
     }
 
     public function testGetGuildTopByAttacks(): void
@@ -106,8 +107,8 @@ class GuildClientTest extends GuzzleTestCase
             )
         );
 
-        $this->assertNotNull($guilds);
-        $this->assertNotEmpty($guilds);
+        static::assertNotNull($guilds);
+        static::assertNotEmpty($guilds);
     }
 
     public function testGetGuildTopByDefences(): void
@@ -120,7 +121,7 @@ class GuildClientTest extends GuzzleTestCase
             )
         );
 
-        $this->assertNotNull($guilds);
-        $this->assertNotEmpty($guilds);
+        static::assertNotNull($guilds);
+        static::assertNotEmpty($guilds);
     }
 }

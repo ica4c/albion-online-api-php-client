@@ -2,9 +2,9 @@
 
 namespace Albion\API\Domain;
 
-use Albion\API\Foundation\DataTypes\Enumerable;
+use Solid\Foundation\Enum;
 
-class RegionType extends Enumerable
+class RegionType extends Enum
 {
     const TOTAl = 'Total';
     const ROYAL = 'Royal';

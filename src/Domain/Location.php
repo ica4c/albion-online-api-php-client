@@ -2,10 +2,9 @@
 
 namespace Albion\API\Domain;
 
-use Albion\API\Foundation\DataTypes\Enumerable;
-use InvalidArgumentException;
+use Solid\Foundation\Enum;
 
-class Location extends Enumerable
+class Location extends Enum
 {
     const BRIDGEWATHCH = 'bridgewatch';
     const LYMHURST = 'lymhurst';

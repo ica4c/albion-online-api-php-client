@@ -3,9 +3,9 @@
 
 namespace Albion\API\Domain;
 
-use Albion\API\Foundation\DataTypes\Enumerable;
+use Solid\Foundation\Enum;
 
-class PlayerStatType extends Enumerable
+class PlayerStatType extends Enum
 {
     const PVE = 'PvE';
     const PVP = 'PvP';

@@ -2,9 +2,9 @@
 
 namespace Albion\API\Domain;
 
-use Albion\API\Foundation\DataTypes\Enumerable;
+use Solid\Foundation\Enum;
 
-class BattleSortType extends Enumerable
+class BattleSortType extends Enum
 {
     const TOTAL_FAME = 'totalFame';
     const TOTAL_KILLS = 'totalKills';
