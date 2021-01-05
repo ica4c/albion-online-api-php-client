@@ -108,7 +108,6 @@ class GuildClientTest extends GuzzleTestCase
         );
 
         static::assertNotNull($guilds);
-        static::assertNotEmpty($guilds);
     }
 
     public function testGetGuildTopByDefences(): void
@@ -122,6 +121,5 @@ class GuildClientTest extends GuzzleTestCase
         );
 
         static::assertNotNull($guilds);
-        static::assertNotEmpty($guilds);
     }
 }
