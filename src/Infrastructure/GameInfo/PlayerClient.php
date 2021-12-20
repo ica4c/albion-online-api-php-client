@@ -148,6 +148,8 @@ class PlayerClient extends AbstractClient
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function searchPlayer(string $query): PromiseInterface {
+        $query = urlencode($query);
+
         return $this->httpClient->getAsync("search?q=${query}")
             ->otherwise(
                 static function (RequestException $exception) {
