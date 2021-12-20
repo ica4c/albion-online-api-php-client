@@ -154,6 +154,8 @@ class GuildClient extends AbstractClient
      * @return \GuzzleHttp\Promise\PromiseInterface<array>
      */
     public function searchGuild(string $query): PromiseInterface {
+        $query = urlencode($query);
+
         return $this->httpClient->getAsync("search?q=${query}")
             ->otherwise(
                 static function (RequestException $exception) {
