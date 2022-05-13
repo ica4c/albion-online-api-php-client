@@ -11,5 +11,5 @@ class Location extends Enum
     const FORT_STERLING = 'fort_sterling';
     const THETFORD = 'thetford';
     const MARTLOCK = 'martlock';
-    const KAERLEON = 'kaerleon';
+    const CAERLEON = 'caerleon';
 }
