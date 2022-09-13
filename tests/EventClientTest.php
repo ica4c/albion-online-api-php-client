@@ -15,15 +15,14 @@ class EventClientTest extends GuzzleTestCase
     /** @var \Albion\API\Infrastructure\GameInfo\GuildClient */
     protected $guildClient;
 
-    /**
-     * EventClientTest constructor.
-     */
-    public function __construct()
+    protected function setUp(): void
     {
-        parent::__construct('Event list');
+        parent::setUp();
+
         $this->eventClient = new EventClient;
         $this->guildClient = new GuildClient;
     }
+
 
     public function testLatestGuildEvents(): void
     {

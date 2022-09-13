@@ -9,11 +9,12 @@ class BinaryClientTest extends GuzzleTestCase
     /** @var BinaryClient */
     protected $binaryClient;
 
-    public function __construct(?string $name = null, array $data = [], $dataName = '')
+    protected function setUp(): void
     {
-        parent::__construct($name, $data, $dataName);
+        parent::setUp();
         $this->binaryClient = new BinaryClient;
     }
+
 
     public function testItems()
     {

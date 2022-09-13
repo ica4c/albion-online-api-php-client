@@ -13,14 +13,12 @@ class PlayerClientTest extends GuzzleTestCase
     /** @var \Albion\API\Infrastructure\GameInfo\PlayerClient */
     protected $playerClient;
 
-    /**
-     * PlayerClientTest constructor.
-     */
-    public function __construct()
+    protected function setUp(): void
     {
-        parent::__construct('Player client');
+        parent::setUp();
         $this->playerClient = new PlayerClient();
     }
+
 
     /**
      * Return first player search result

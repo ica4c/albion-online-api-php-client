@@ -9,11 +9,13 @@ class CGVGClientTest extends GuzzleTestCase
     /** @var \Albion\API\Infrastructure\GameInfo\CGVGClient */
     private $matchesClient;
 
-    public function __construct()
+    protected function setUp(): void
     {
-        parent::__construct('Guild matches client');
+        parent::setUp();
+
         $this->matchesClient = new CGVGClient();
     }
+
 
     protected function getRandomCGVGMatch() {
         $matches = $this->awaitPromise(
