@@ -11,11 +11,13 @@ class BattleClientTest extends GuzzleTestCase
     /** @var \Albion\API\Infrastructure\GameInfo\BattleClient */
     private $battleClient;
 
-    public function __construct()
+    protected function setUp(): void
     {
-        parent::__construct('Battle client');
+        parent::setUp();
+
         $this->battleClient = new BattleClient();
     }
+
 
     public function testMostFameAcquiredBattles(): void {
         $battles = $this->battleClient->getBattles(

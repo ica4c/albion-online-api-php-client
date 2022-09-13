@@ -12,12 +12,11 @@ class AllianceClientTest extends GuzzleTestCase
     /** @var \Albion\API\Infrastructure\GameInfo\PlayerClient */
     protected $playerClient;
 
-    /**
-     * AllianceClientTest constructor.
-     */
-    public function __construct()
+
+    protected function setUp(): void
     {
-        parent::__construct('Alliance client');
+        parent::setUp();
+
         $this->playerClient = new PlayerClient();
         $this->allianceClient = new AllianceClient();
     }

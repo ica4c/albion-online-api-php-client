@@ -11,14 +11,12 @@ class GuildClientTest extends GuzzleTestCase
     /** @var \Albion\API\Infrastructure\GameInfo\GuildClient */
     protected $guildClient;
 
-    /**
-     * PlayerClientTest constructor.
-     */
-    public function __construct()
+    protected function setUp(): void
     {
-        parent::__construct('Guild client');
+        parent::setUp();
         $this->guildClient = new GuildClient();
     }
+
 
     /**
      * Return first guild search result
