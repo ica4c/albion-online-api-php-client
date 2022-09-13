@@ -8,76 +8,40 @@ use Albion\API\Infrastructure\GameInfo\EventClient;
 use Albion\API\Infrastructure\GameInfo\GuildClient;
 use PHPUnit\Framework\TestCase;
 
-class EventClientTest extends GuzzleTestCase
+class EventClientTest extends EventFeedBasedTestCase
 {
-    /** @var \Albion\API\Infrastructure\GameInfo\EventClient */
-    protected $eventClient;
     /** @var \Albion\API\Infrastructure\GameInfo\GuildClient */
     protected $guildClient;
 
     protected function setUp(): void
     {
         parent::setUp();
-
-        $this->eventClient = new EventClient;
         $this->guildClient = new GuildClient;
     }
 
-
     public function testLatestGuildEvents(): void
     {
-        $guilds = $this->awaitPromise(
-            $this->guildClient->searchGuild('Elevate')
-        );
+        $events = $this->fetchLatestEvents();
 
-        static::assertNotEmpty($guilds);
+        foreach ($events as $event) {
+            if (empty($event['Killer']['GuildId'])) {
+                $this->markTestSkipped('Not a guild member');
+            }
 
-        $firstOne = $guilds[0];
-        $events = $this->awaitPromise(
-            $this->eventClient->getEvents(10, 0, $firstOne['Id'])
-        );
+            $events = $this->awaitPromise(
+                $this->client->getEvents(10, 0, $event['Killer']['GuildId'])
+            );
 
-        static::assertNotNull($events);
-        static::assertNotEmpty($events);
-    }
-
-    public function testLatestTopByGuild(): void
-    {
-        $events = $this->awaitPromise(
-            $this->eventClient->getTopEventsByGuildFame(Range::of(Range::DAY), 1)
-        );
-
-        static::assertNotNull($events);
-        static::assertNotEmpty($events);
+            static::assertNotNull($events);
+            static::assertNotEmpty($events);
+            static::assertCount(10, $events);
+        }
     }
 
     public function testLatestTopByKillFame(): void
     {
         $events = $this->awaitPromise(
-            $this->eventClient->getTopEventsByKillFame(Range::of(Range::DAY), 1)
-        );
-
-        static::assertNotNull($events);
-        static::assertNotEmpty($events);
-    }
-
-    public function testLatestTopByPlayerFame(): void
-    {
-        $events = $this->awaitPromise(
-            $this->eventClient->getTopEventsByPlayerFame(Range::of(Range::DAY), 1)
-        );
-
-        static::assertNotNull($events);
-        static::assertNotEmpty($events);
-    }
-
-    public function testLatestTopByPlayerWeaponFame(): void
-    {
-        $events = $this->awaitPromise(
-            $this->eventClient->getTopEventsByPlayerWeaponFame(
-                Range::of(Range::DAY),
-                WeaponClass::of(WeaponClass::DAGGER)
-            )
+            $this->client->getTopEventsByKillFame(Range::of(Range::DAY), 1)
         );
 
         static::assertNotNull($events);

@@ -6,7 +6,7 @@ use Albion\API\Domain\BattleSortType;
 use Albion\API\Domain\Range;
 use Albion\API\Infrastructure\GameInfo\BattleClient;
 
-class BattleClientTest extends GuzzleTestCase
+class BattleClientTest extends EventFeedBasedTestCase
 {
     /** @var \Albion\API\Infrastructure\GameInfo\BattleClient */
     private $battleClient;
