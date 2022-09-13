@@ -4,7 +4,7 @@ namespace Tests;
 
 use Albion\API\Infrastructure\GameInfo\CGVGClient;
 
-class CGVGClientTest extends GuzzleTestCase
+class CGVGClientTest extends EventFeedBasedTestCase
 {
     /** @var \Albion\API\Infrastructure\GameInfo\CGVGClient */
     private $matchesClient;

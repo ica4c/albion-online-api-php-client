@@ -4,7 +4,7 @@ namespace Tests;
 
 use Albion\API\Infrastructure\Binaries\BinaryClient;
 
-class BinaryClientTest extends GuzzleTestCase
+class BinaryClientTest extends EventFeedBasedTestCase
 {
     /** @var BinaryClient */
     protected $binaryClient;
