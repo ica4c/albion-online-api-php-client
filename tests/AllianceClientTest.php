@@ -5,7 +5,7 @@ namespace Tests;
 use Albion\API\Infrastructure\GameInfo\AllianceClient;
 use Albion\API\Infrastructure\GameInfo\PlayerClient;
 
-class AllianceClientTest extends GuzzleTestCase
+class AllianceClientTest extends EventFeedBasedTestCase
 {
     /** @var \Albion\API\Infrastructure\GameInfo\AllianceClient */
     protected $allianceClient;

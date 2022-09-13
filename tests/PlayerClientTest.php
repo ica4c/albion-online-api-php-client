@@ -8,7 +8,7 @@ use Albion\API\Domain\PlayerStatType;
 use Albion\API\Domain\RegionType;
 use Mockery\Mock;
 
-class PlayerClientTest extends GuzzleTestCase
+class PlayerClientTest extends EventFeedBasedTestCase
 {
     /** @var \Albion\API\Infrastructure\GameInfo\PlayerClient */
     protected $playerClient;
@@ -19,52 +19,53 @@ class PlayerClientTest extends GuzzleTestCase
         $this->playerClient = new PlayerClient();
     }
 
-
-    /**
-     * Return first player search result
-     * @param string $q
-     *
-     * @return array
-     */
-    protected function getFirstPlayer(string $q): array {
+    public function testPlayerSearch(): void {
+        $event = $this->fetchRandomLatestEvent();
         $players = $this->awaitPromise(
-            $this->playerClient->searchPlayer($q)
+            $this->playerClient->searchPlayer($event['Killer']['Name'])
         );
 
-        static::assertNotEmpty($players);
+        $this->assertNotEmpty($players);
 
-        return $players[0];
-    }
-
-    public function testPlayerSearch(): void {
-        // Already has all assertions
-        $this->getFirstPlayer('man');
+        $player = $players[0];
+        $this->assertEquals($player['Id'], $event['Killer']['Id']);
     }
 
     public function testGetPlayerInfo(): void {
-        $firstOne = $this->getFirstPlayer('man');
+        $event = $this->fetchRandomLatestEvent();
 
-        $player = $this->awaitPromise(
-            $this->playerClient->getPlayerInfo($firstOne['Id'])
+        $info = $this->awaitPromise(
+            $this->playerClient->getPlayerInfo($event['Killer']['Id'])
         );
 
-        static::assertNotEmpty($player);
+        static::assertNotEmpty($info);
+    }
+
+    public function testGetPlayerKills(): void {
+        $event = $this->fetchRandomLatestEvent();
+
+        $deaths = $this->awaitPromise(
+            $this->playerClient->getPlayerKills($event['Killer']['Id'])
+        );
+
+        static::assertNotNull($deaths);
     }
 
     public function testGetPlayerDeaths(): void {
-        $firstOne = $this->getFirstPlayer('man');
+        $event = $this->fetchRandomLatestEvent();
+
         $deaths = $this->awaitPromise(
-            $this->playerClient->getPlayerDeaths($firstOne['Id'])
+            $this->playerClient->getPlayerDeaths($event['Victim']['Id'])
         );
+
         static::assertNotNull($deaths);
     }
 
     public function testGetPlayerStats(): void {
         $stats = $this->awaitPromise(
             $this->playerClient->getPlayerStatistics(
-                Range::of(Range::WEEK),
-                1,
-                0
+                Range::of(Range::LAST_WEEK),
+                1
             )
         );
 
