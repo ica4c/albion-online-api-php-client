@@ -4,6 +4,7 @@ namespace Tests;
 
 use Albion\API\Domain\Range;
 use Albion\API\Domain\RegionType;
+use Albion\API\Infrastructure\GameInfo\Enums\RealmHost;
 use Albion\API\Infrastructure\GameInfo\GuildClient;
 
 class GuildClientTest extends EventFeedBasedTestCase
@@ -14,7 +15,7 @@ class GuildClientTest extends EventFeedBasedTestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $this->guildClient = new GuildClient();
+        $this->guildClient = new GuildClient(RealmHost::of(RealmHost::WEST));
     }
 
 

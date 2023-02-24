@@ -2,6 +2,7 @@
 
 namespace Tests;
 
+use Albion\API\Infrastructure\GameInfo\Enums\RealmHost;
 use Albion\API\Infrastructure\GameInfo\EventClient;
 use Closure;
 use GuzzleHttp\Promise\PromiseInterface;
@@ -18,11 +19,12 @@ abstract class EventFeedBasedTestCase extends TestCase
 
     /**
      * @return void
+     * @throws \Solid\Foundation\Exceptions\InvalidEnumValueException
      */
     protected function setUp(): void
     {
         parent::setUp();
-        $this->client = new EventClient;
+        $this->client = new EventClient(RealmHost::of(RealmHost::WEST));
     }
 
 

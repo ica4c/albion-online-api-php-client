@@ -3,6 +3,7 @@
 namespace Tests;
 
 use Albion\API\Domain\Range;
+use Albion\API\Infrastructure\GameInfo\Enums\RealmHost;
 use Albion\API\Infrastructure\GameInfo\PlayerClient;
 use Albion\API\Domain\PlayerStatType;
 use Albion\API\Domain\RegionType;
@@ -16,7 +17,7 @@ class PlayerClientTest extends EventFeedBasedTestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $this->playerClient = new PlayerClient();
+        $this->playerClient = new PlayerClient(RealmHost::of(RealmHost::WEST));
     }
 
     public function testPlayerSearch(): void {

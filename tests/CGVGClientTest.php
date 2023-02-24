@@ -2,18 +2,21 @@
 
 namespace Tests;
 
+use Albion\API\Domain\Realm;
+use Albion\API\Infrastructure\GameInfo\Builders\ClientBuilder;
 use Albion\API\Infrastructure\GameInfo\CGVGClient;
+use Albion\API\Infrastructure\GameInfo\Enums\RealmHost;
 
 class CGVGClientTest extends EventFeedBasedTestCase
 {
-    /** @var \Albion\API\Infrastructure\GameInfo\CGVGClient */
-    private $matchesClient;
+    /** @var ClientBuilder */
+    protected $client;
 
     protected function setUp(): void
     {
         parent::setUp();
 
-        $this->matchesClient = new CGVGClient();
+        $this->matchesClient = new CGVGClient(RealmHost::of(RealmHost::WEST));
     }
 
 
