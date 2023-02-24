@@ -4,6 +4,7 @@ namespace Tests;
 
 use Albion\API\Domain\Range;
 use Albion\API\Domain\WeaponClass;
+use Albion\API\Infrastructure\GameInfo\Enums\RealmHost;
 use Albion\API\Infrastructure\GameInfo\EventClient;
 use Albion\API\Infrastructure\GameInfo\GuildClient;
 use PHPUnit\Framework\TestCase;
@@ -16,7 +17,7 @@ class EventClientTest extends EventFeedBasedTestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $this->guildClient = new GuildClient;
+        $this->guildClient = new GuildClient(RealmHost::of(RealmHost::WEST));
     }
 
     public function testLatestGuildEvents(): void

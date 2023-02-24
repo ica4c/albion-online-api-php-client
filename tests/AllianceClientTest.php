@@ -3,6 +3,7 @@
 namespace Tests;
 
 use Albion\API\Infrastructure\GameInfo\AllianceClient;
+use Albion\API\Infrastructure\GameInfo\Enums\RealmHost;
 use Albion\API\Infrastructure\GameInfo\PlayerClient;
 
 class AllianceClientTest extends EventFeedBasedTestCase
@@ -17,8 +18,8 @@ class AllianceClientTest extends EventFeedBasedTestCase
     {
         parent::setUp();
 
-        $this->playerClient = new PlayerClient();
-        $this->allianceClient = new AllianceClient();
+        $this->playerClient = new PlayerClient(RealmHost::of(RealmHost::WEST));
+        $this->allianceClient = new AllianceClient(RealmHost::of(RealmHost::WEST));
     }
 
     /**
