@@ -14,16 +14,17 @@ abstract class AbstractClient
     protected $httpClient;
 
     /**
-     * AbstractGamestatsClient constructor.
+     * AbstractClient constructor.
      */
-    public function __construct()
+    public function __construct(string $host)
     {
         $stack = HandlerStack::create();
+
         $stack->push(GuzzleRetryMiddleware::factory());
 
         $this->httpClient = new Client(
             [
-                'base_uri' => 'https://gameinfo.albiononline.com/api/gameinfo/',
+                'base_uri' => "$host/api/gameinfo/",
                 'handler' => $stack,
                 'retry_on_timeout' => true,
                 'max_retry_attempts' => 3,
