@@ -9,7 +9,7 @@ use Albion\API\Infrastructure\GameInfo\CGVGClient;
 use Albion\API\Infrastructure\GameInfo\EventClient;
 use Albion\API\Infrastructure\GameInfo\Exceptions\UnknownRealmProvidedException;
 use Albion\API\Infrastructure\GameInfo\GuildClient;
-use Albion\API\Infrastructure\GameInfo\ItemClient;
+use Albion\API\Infrastructure\GameInfo\ItemDataClient;
 use Albion\API\Infrastructure\GameInfo\PlayerClient;
 use Albion\API\Infrastructure\GameInfo\Resolvers\RealmHostResolver;
 
@@ -24,7 +24,7 @@ class ClientBuilder
     private PlayerClient $playerClient;
     private EventClient $eventClient;
     private GuildClient $guildClient;
-    private ItemClient $itemClient;
+    private ItemDataClient $itemClient;
 
     /**
      * @param Realm $realm
@@ -106,14 +106,14 @@ class ClientBuilder
     }
 
     /**
-     * @return ItemClient
+     * @return ItemDataClient
      * @throws UnknownRealmProvidedException
      * @throws \Solid\Foundation\Exceptions\InvalidEnumValueException
      */
-    public function items(): ItemClient
+    public function items(): ItemDataClient
     {
         if (empty($this->itemClient)) {
-            $this->itemClient = new ItemClient($this->resolver->resolveByRealm($this->realm));
+            $this->itemClient = new ItemDataClient($this->resolver->resolveByRealm($this->realm));
         }
 
         return $this->itemClient;
