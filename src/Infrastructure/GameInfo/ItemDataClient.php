@@ -9,56 +9,8 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
 
-class ItemClient extends AbstractClient
+class ItemDataClient extends AbstractClient
 {
-    /**
-     * Resolve item icon from render service
-     *
-     * @param string                                            $itemId
-     * @param \Albion\API\Domain\ItemQuality|null $quality
-     * @param int                                               $enchantment
-     * @param int                                               $size
-     * @param string                                            $locale
-     *
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getItemIcon(string $itemId,
-                                ItemQuality $quality = null,
-                                int $enchantment = 0,
-                                int $size = 217,
-                                string $locale = 'en'): PromiseInterface
-    {
-        $enchantment = max(min($enchantment, 3), 0);
-
-        $query = [
-            'quality' => $quality ? $quality->toString() : ItemQuality::NORMAL,
-            'size' => max(32, min($size, 217)),
-            'locale' => $locale ?: 'en'
-        ];
-
-        if(strpos($itemId, '@') !== false) {
-            $url = "https://render.albiononline.com/v1/item/${itemId}.png";
-        } else {
-            $url = "https://render.albiononline.com/v1/item/${itemId}@${enchantment}.png";
-        }
-
-        return $this->httpClient->getAsync($url, ['query' => $query])
-            ->otherwise(
-                static function (RequestException $exception) use ($itemId) {
-                    if($exception->getCode() === 404) {
-                        throw new ItemNotFoundException($itemId, $exception);
-                    }
-
-                    throw new FailedToPerformRequestException($exception);
-                }
-            )
-            ->then(
-                static function (Response $response) {
-                    return $response->getBody()->getContents();
-                }
-            );
-    }
-
     /**
      * Get item description from its $itemId
      *
