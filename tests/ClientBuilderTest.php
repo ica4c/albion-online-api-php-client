@@ -9,7 +9,7 @@ use Albion\API\Infrastructure\GameInfo\Builders\ClientBuilder;
 use Albion\API\Infrastructure\GameInfo\CGVGClient;
 use Albion\API\Infrastructure\GameInfo\EventClient;
 use Albion\API\Infrastructure\GameInfo\GuildClient;
-use Albion\API\Infrastructure\GameInfo\ItemClient;
+use Albion\API\Infrastructure\GameInfo\ItemDataClient;
 use Albion\API\Infrastructure\GameInfo\PlayerClient;
 use PHPUnit\Framework\TestCase;
 
@@ -29,7 +29,7 @@ class ClientBuilderTest extends TestCase
         static::assertInstanceOf(CGVGClient::class, $builder->cgvg());
         static::assertInstanceOf(EventClient::class, $builder->events());
         static::assertInstanceOf(GuildClient::class, $builder->guilds());
-        static::assertInstanceOf(ItemClient::class, $builder->items());
+        static::assertInstanceOf(ItemDataClient::class, $builder->items());
         static::assertInstanceOf(PlayerClient::class, $builder->players());
     }
 }
