@@ -39,8 +39,7 @@ class RendererClient
                 "%s/%s?%s",
                 static::BASE,
                 str_contains($itemId, '@') ? "${itemId}.png" : "${itemId}@${enchantment}.png",
-                implode(
-                    "&",
+                http_build_query(
                     [
                         'quality' => $quality ? $quality->toString() : ItemQuality::NORMAL,
                         'size' => max(32, min($size, 217)),
