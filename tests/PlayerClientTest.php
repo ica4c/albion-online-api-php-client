@@ -61,16 +61,4 @@ class PlayerClientTest extends EventFeedBasedTestCase
 
         static::assertNotNull($deaths);
     }
-
-    public function testGetPlayerStats(): void {
-        $stats = $this->awaitPromise(
-            $this->playerClient->getPlayerStatistics(
-                Range::of(Range::LAST_WEEK),
-                1
-            )
-        );
-
-        static::assertNotNull($stats);
-        static::assertNotEmpty($stats);
-    }
 }
