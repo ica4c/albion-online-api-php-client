@@ -28,7 +28,8 @@ class BattleClientTest extends EventFeedBasedTestCase
             1,
             0,
             BattleSortType::of(BattleSortType::TOTAL_FAME)
-        );
+        )
+            ->wait();
 
         static::assertNotNull($battles);
         static::assertNotEmpty($battles);

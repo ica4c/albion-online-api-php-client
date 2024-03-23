@@ -33,7 +33,7 @@ class AllianceClientTest extends EventFeedBasedTestCase
     protected function getFirstPlayer(): array
     {
         $events = array_filter(
-            $this->awaitPromise($this->eventClient->getEvents(50)),
+            $this->eventClient->getEvents(50)->wait(),
             static function(array $event) {
                 return !empty($event['Killer']['AllianceId']);
             }
@@ -55,7 +55,8 @@ class AllianceClientTest extends EventFeedBasedTestCase
 
         static::assertNotEmpty($firstOne['AllianceId']);
 
-        $alliance = $this->awaitPromise($this->allianceClient->getAllianceInfo($firstOne['AllianceId']));
+        $alliance = $this->allianceClient->getAllianceInfo($firstOne['AllianceId'])
+            ->wait();
 
         static::assertNotNull($alliance);
         static::assertNotEmpty($alliance);
