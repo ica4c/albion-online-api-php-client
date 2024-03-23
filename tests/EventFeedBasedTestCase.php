@@ -4,13 +4,7 @@ namespace Tests;
 
 use Albion\API\Infrastructure\GameInfo\Enums\RealmHost;
 use Albion\API\Infrastructure\GameInfo\EventClient;
-use Closure;
-use GuzzleHttp\Promise\PromiseInterface;
-use InvalidArgumentException;
-use Mockery;
-use PHPUnit\Framework\Constraint\Callback;
 use PHPUnit\Framework\TestCase;
-use function GuzzleHttp\Promise\queue;
 
 abstract class EventFeedBasedTestCase extends TestCase
 {
@@ -27,24 +21,12 @@ abstract class EventFeedBasedTestCase extends TestCase
         $this->client = new EventClient(RealmHost::of(RealmHost::WEST));
     }
 
-
-    /**
-     * @param PromiseInterface $promise
-     * @return mixed
-     */
-    protected function awaitPromise(PromiseInterface $promise) {
-        $value = $promise->wait();
-        queue();
-
-        return $value;
-    }
-
     /**
      * @return array
      */
     protected function fetchLatestEvents(): array
     {
-        $events = $this->awaitPromise($this->client->getEvents());
+        $events = $this->client->getEvents()->wait();
         $this->assertNotEmpty($events);
 
         return $events;

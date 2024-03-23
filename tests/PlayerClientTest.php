@@ -22,9 +22,8 @@ class PlayerClientTest extends EventFeedBasedTestCase
 
     public function testPlayerSearch(): void {
         $event = $this->fetchRandomLatestEvent();
-        $players = $this->awaitPromise(
-            $this->playerClient->searchPlayer($event['Killer']['Name'])
-        );
+        $players = $this->playerClient->searchPlayer($event['Killer']['Name'])
+            ->wait();
 
         $this->assertNotEmpty($players);
 
@@ -35,9 +34,8 @@ class PlayerClientTest extends EventFeedBasedTestCase
     public function testGetPlayerInfo(): void {
         $event = $this->fetchRandomLatestEvent();
 
-        $info = $this->awaitPromise(
-            $this->playerClient->getPlayerInfo($event['Killer']['Id'])
-        );
+        $info = $this->playerClient->getPlayerInfo($event['Killer']['Id'])
+            ->wait();
 
         static::assertNotEmpty($info);
     }
@@ -45,9 +43,8 @@ class PlayerClientTest extends EventFeedBasedTestCase
     public function testGetPlayerKills(): void {
         $event = $this->fetchRandomLatestEvent();
 
-        $deaths = $this->awaitPromise(
-            $this->playerClient->getPlayerKills($event['Killer']['Id'])
-        );
+        $deaths = $this->playerClient->getPlayerKills($event['Killer']['Id'])
+            ->wait();
 
         static::assertNotNull($deaths);
     }
@@ -55,9 +52,8 @@ class PlayerClientTest extends EventFeedBasedTestCase
     public function testGetPlayerDeaths(): void {
         $event = $this->fetchRandomLatestEvent();
 
-        $deaths = $this->awaitPromise(
-            $this->playerClient->getPlayerDeaths($event['Victim']['Id'])
-        );
+        $deaths = $this->playerClient->getPlayerDeaths($event['Victim']['Id'])
+            ->wait();
 
         static::assertNotNull($deaths);
     }

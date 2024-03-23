@@ -21,9 +21,8 @@ class CGVGClientTest extends EventFeedBasedTestCase
 
 
     protected function getRandomCGVGMatch() {
-        $matches = $this->awaitPromise(
-            $this->matchesClient->getCGVGMatches()
-        );
+        $matches = $this->matchesClient->getCGVGMatches()
+            ->wait();
 
         static::assertNotNull($matches);
         static::assertNotEmpty($matches);
@@ -32,9 +31,8 @@ class CGVGClientTest extends EventFeedBasedTestCase
     }
 
     protected function getRandomGuildMatch() {
-        $matches = $this->awaitPromise(
-            $this->matchesClient->getFeaturedGuildMatches()
-        );
+        $matches = $this->matchesClient->getFeaturedGuildMatches()
+            ->wait();
 
         static::assertNotNull($matches);
 
@@ -49,9 +47,8 @@ class CGVGClientTest extends EventFeedBasedTestCase
         $match = $this->getRandomCGVGMatch();
 
         if($match) {
-            $test = $this->awaitPromise(
-                $this->matchesClient->getCGVGMatchById($match['MatchId'])
-            );
+            $test = $this->matchesClient->getCGVGMatchById($match['MatchId'])
+                ->wait();
 
             static::assertNotNull($test);
             static::assertNotEmpty($test);
@@ -62,27 +59,24 @@ class CGVGClientTest extends EventFeedBasedTestCase
 
     public function testFeaturedGuildMatches(): void
     {
-        $matches = $this->awaitPromise(
-            $this->matchesClient->getFeaturedGuildMatches()
-        );
+        $matches = $this->matchesClient->getFeaturedGuildMatches()
+            ->wait();
 
         static::assertNotNull($matches);
     }
 
     public function testNextGuildMatches(): void
     {
-        $matches = $this->awaitPromise(
-            $this->matchesClient->getUpcomingGuildMatches(1, 0)
-        );
+        $matches = $this->matchesClient->getUpcomingGuildMatches(1, 0)
+            ->wait();
 
         static::assertNotNull($matches);
     }
 
     public function testPastGuildMatches(): void
     {
-        $matches = $this->awaitPromise(
-            $this->matchesClient->getPastGuildMatches(1, 0)
-        );
+        $matches = $this->matchesClient->getPastGuildMatches(1, 0)
+            ->wait();
 
         static::assertNotNull($matches);
     }
@@ -92,9 +86,8 @@ class CGVGClientTest extends EventFeedBasedTestCase
         $rnd = $this->getRandomGuildMatch();
 
         if($rnd) {
-            $match = $this->awaitPromise(
-                $this->matchesClient->getGuildMatchById($rnd['MatchId'])
-            );
+            $match = $this->matchesClient->getGuildMatchById($rnd['MatchId'])
+                ->wait();
 
             static::assertNotNull($match);
             static::assertNotEmpty($match);

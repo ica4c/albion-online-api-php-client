@@ -29,9 +29,8 @@ class EventClientTest extends EventFeedBasedTestCase
                 $this->markTestSkipped('Not a guild member');
             }
 
-            $events = $this->awaitPromise(
-                $this->client->getEvents(10, 0, $event['Killer']['GuildId'])
-            );
+            $events = $this->client->getEvents(10, 0, $event['Killer']['GuildId'])
+                ->wait();
 
             static::assertNotNull($events);
             static::assertNotEmpty($events);
@@ -41,9 +40,8 @@ class EventClientTest extends EventFeedBasedTestCase
 
     public function testLatestTopByKillFame(): void
     {
-        $events = $this->awaitPromise(
-            $this->client->getTopEventsByKillFame(Range::of(Range::DAY), 1)
-        );
+        $events = $this->client->getTopEventsByKillFame(Range::of(Range::DAY), 1)
+            ->wait();
 
         static::assertNotNull($events);
         static::assertNotEmpty($events);
