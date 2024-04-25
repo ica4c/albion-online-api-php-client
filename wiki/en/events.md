@@ -6,9 +6,10 @@
 ### Get kill and death events
 
 ###### Method
-`getEvents(int $limit = 10, int $offset = 0, string $guildId = null)`
+`getEvents()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _int_ `$limit` - limit response results [default = 10],
  * _int_ `$offset` - skip n first values [default = 0],
  * _string_ `$guildId` - display results for single guild [default = null], 
@@ -16,12 +17,9 @@
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
-  
 $client = new EventClient();
 
-$client->getEvents(10, 0, 'test1234')
+$client->getEvents(Realm::AMERICA, 10, 0, 'test1234')
     ->then(
         static function($events) {
             // Do something with event information
@@ -35,6 +33,7 @@ $client->getEvents(10, 0, 'test1234')
 `getTopEventsByGuildFame(Range $range = null, int $limit = 10, int $offset = 0)`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * [Range](range.md) `$range` - one of the [Range](range.md) values [default=Range::DAY].
  * _int_ `$limit` - limit response results [default = 10],
  * _int_ `$offset` - skip n first values [default = 0],
@@ -45,11 +44,9 @@ $client->getEvents(10, 0, 'test1234')
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
- 
 $client = new EventClient();
 
-$client->getTopEventsByGuildFame()
+$client->getTopEventsByGuildFame(Realm::AMERICA)
     ->then(
         static function($events) {
             // Do something with event information
@@ -65,9 +62,10 @@ $client->getTopEventsByGuildFame()
 ### Top events by player fame 
 
 ###### Method
-`getTopEventsByPlayerFame([Range $range = null, int $limit = 10, int $offset = 0, string $guildId = null])` 
+`getTopEventsByPlayerFame()` 
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * [Range](range.md) `$range` - one of the [Range](range.md) values [default=Range::DAY].
  * _int_ `$limit` - limit response results [default = 10],
  * _int_ `$offset` - skip n first values [default = 0],
@@ -79,11 +77,9 @@ $client->getTopEventsByGuildFame()
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
- 
 $client = new EventClient();
 
-$client->getTopEventsByPlayerFame()
+$client->getTopEventsByPlayerFame(Realm::AMERICA)
     ->then(
         static function($matches) {
             // Do something with battles information
@@ -101,9 +97,10 @@ $client->getTopEventsByPlayerFame()
 Not sure what it does.  
 
 ###### Method
-`getTopEventsByPlayerWeaponFame(Range $range = null, WeaponClass $weaponCategory = null, int $limit = 10, int $offset = 0)`
+`getTopEventsByPlayerWeaponFame()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * [Range](range.md) `$range` - one of the [Range](range.md) values [default=Range::DAY].
  * [WeaponClass](weaponClass.md) `$weaponCategory` - one of the [WeaponClass](weaponClass.md) values [default=WeaponClass::ALL].
   * _int_ `$limit` - limit response results [default = 10],
@@ -115,11 +112,9 @@ Not sure what it does.
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
- 
 $client = new EventClient();
 
-$client->getTopEventsByPlayerWeaponFame(Range::of(Range::WEEK), WeaponClass::of(WeaponClass::AXE))
+$client->getTopEventsByPlayerWeaponFame(Realm::AMERICA, Range::WEEK, WeaponClass::AXE)
     ->then(
         static function($events) {
             // Do something with event information
@@ -135,9 +130,10 @@ $client->getTopEventsByPlayerWeaponFame(Range::of(Range::WEEK), WeaponClass::of(
 ### Top events by dropped fame 
 
 ###### Method
-`getTopEventsByKillFame(Range $range = null, int $limit = 10, int $offset = 0)`
+`getTopEventsByKillFame()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
 * [Range](range.md) `$range` - one of the [Range](range.md) values [default=Range::DAY].
  * _int_ `$limit` - limit response amount [default = 10],
  * _int_ `$offset` - skip first n values [default = 0],  
@@ -148,11 +144,9 @@ $client->getTopEventsByPlayerWeaponFame(Range::of(Range::WEEK), WeaponClass::of(
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
- 
 $client = new EventClient();
 
-$client->getTopEventsByKillFame()
+$client->getTopEventsByKillFame(Realm::AMERICA)
     ->then(
         static function($events) {
             // Do something with events information

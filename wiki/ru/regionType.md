@@ -1,9 +1,7 @@
-# Region types
-
-Пример ```RegionType::of(RegionType::TOTAL)```
+# Фильтр статистики по регионам
 
 Доступные сценарии:
- * TOTAl - всего
+ * TOTAL - всего
  * ROYAL - Королевские земли
  * OUTLANDS - Черные зоны
  * HELLGATE - Хелл-гейты

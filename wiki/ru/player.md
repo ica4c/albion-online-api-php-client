@@ -5,10 +5,11 @@
 ### Поиск
 
 ###### Метод
-`searchPlayer(string $query)`
+`searchPlayer()`
 
 ###### Параметры
- * _string_ `$query` - запрос,
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
+* _string_ `$query` - запрос,
  
 ###### Ошибки
  * _FailedToPerformRequestException_ - если что-то пошло не так
@@ -17,11 +18,9 @@
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\PlayerClient;
- 
 $client = new PlayerClient();
 
-$client->searchPlayer('Agress0r')
+$client->searchPlayer(Realm::AMERICA, 'my_name')
     ->then(
         static function($players) {
             // Do something with player information
@@ -32,10 +31,11 @@ $client->searchPlayer('Agress0r')
 ### Информация о пользователе по его id
 
 ###### Метод
-`getPlayerInfo(string $playerId)`
+`getPlayerInfo()`
 
 ###### Параметры
- * _string_ `$playerId` - идентификатор
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
+* _string_ `$playerId` - идентификатор
  
 ###### Ошибки
  * _FailedToPerformRequestException_ - если что-то пошло не так
@@ -44,11 +44,9 @@ $client->searchPlayer('Agress0r')
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
- 
 $client = new PlayerClient();
 
-$client->getPlayerInfo('guild-uuid')
+$client->getPlayerInfo(Realm::AMERICA, 'guild-uuid')
     ->then(
         static function($player) {
             // Do something with player information
@@ -62,7 +60,8 @@ $client->getPlayerInfo('guild-uuid')
 `getPlayerDeaths(string $playerID)`
 
 ###### Параметры
- * _string_ `$playerID` - идентификатор игрока
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
+* _string_ `$playerID` - идентификатор игрока
  
 ###### Ошибки
  * _FailedToPerformRequestException_ - если что-то пошло не так
@@ -71,12 +70,10 @@ $client->getPlayerInfo('guild-uuid')
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\PlayerClient;
- 
 $client = new PlayerClient();
 
 // Find player if needed
-$client->searchPlayer('Agress0r')
+$client->searchPlayer(Realm::AMERICA, 'my_name')
     ->then(
         static function($players) use ($client) {
             // Get his deaths
@@ -95,17 +92,18 @@ $client->searchPlayer('Agress0r')
 Использовать для построение топов по собирательству. Нуждается в уточнении!
 
 ###### Метод
-`getPlayerStatistics(Range $range = null, int $limit = 10, int $offset = 0, PlayerStatType $type = null, PlayerStatSubType $subType = null, RegionType $region = null, string $guildId = null, string $allianceId = null)`
+`getPlayerStatistics()`
 
 ###### Параметры
- * [Range](range.md) `$range` - одно из [Range](range.md) [default=Range::DAY].
- * _int_ `$limit` - ограничить число результатов [default = 10],
- * _int_ `$offset` - пропустить n результатов [default = 0],
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
+* [Range](range.md) `$range` - одно из [Range](range.md) [default=Range::DAY].
+* _int_ `$limit` - ограничить число результатов [default = 10],
+* _int_ `$offset` - пропустить n результатов [default = 0],
 * [PlayerStatType](playerStatType.md) `$type` - тип статистики [default = PlayerStatType::PVE],
 * [PlayerStatSubType](playerStatType.md#Player statistics subtype) `$subType` - подкласс статистики [default = PlayerStatSubType::ALL],
 * [RegionType](regionType.md) `$regionType` - регион [default = RegionType::TOTAl], 
- * _string_ `$guildId` - идентификатор гильдии [default = null]
- * _string_ `$allianceId` - идентификатор альянса [default = null]
+* _string_ `$guildId` - идентификатор гильдии [default = null]
+* _string_ `$allianceId` - идентификатор альянса [default = null]
  
 ###### Ошибки
  * _FailedToPerformRequestException_ - если что-то пошло не так 
@@ -113,13 +111,9 @@ $client->searchPlayer('Agress0r')
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\PlayerClient;
-use Albion\OnlineDataProject\Domain\RegionType;
-use Albion\OnlineDataProject\Domain\Range;
- 
 $client = new PlayerClient();
 
-$client->getPlayerStatistics(Range::of(Range::DAY), 5, 0, PlayerStatType::of(PlayerStatType::GATHERING). PlayerStatSubType::of(PlayerStatSubType::ORE))
+$client->getPlayerStatistics(Realm::AMERICA, Range::DAY, 5, 0, PlayerStatType::GATHERING, PlayerStatSubType::ORE)
     ->then(
         static function($players) {
             // Do something with player information

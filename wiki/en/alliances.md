@@ -7,22 +7,21 @@ Unfortunately API only allows to get information. Search is unavailable at the m
 ### Get alliance information
 
 ###### Method
-`getAllianceInfo(string $allianceId)`
+`getAllianceInfo()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
 * _string_ `$allianceId` - alliance identifier 
 
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\AllianceClient;
-
-// Can be retrieved from i.e user or guild info 
 $allianceId = 'AllianceId';
+$realm = Realm::AMERICA;
 
 $client = new AllianceClient();
 
-$client->getAllianceInfo($allianceId)
+$client->getAllianceInfo($realm, $allianceId)
     ->then(
         static function($data) {
             // Do something with data

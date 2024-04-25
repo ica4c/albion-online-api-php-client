@@ -1,6 +1,4 @@
-# Player statistics type
-
-Пример: ```PlayerStatType::of(PlayerStatType::PVP)```
+# Фильтр статистики игрока
 
 Доступные сценарии:
 * PVE - PvE
@@ -8,9 +6,7 @@
 * GATHERING - сбор ресурсов
 * CRAFTING - крафтинг
  
-# Player statistics subtype
- 
-Пример: ```PlayerStatSubType::of(PlayerStatSubType::ORE)```
+# Подтип статистики игрока
 
 Доступные сценарии:
 * ALL - все

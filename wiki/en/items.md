@@ -7,7 +7,7 @@
 Get item square icon
 
 ###### Method
-`getItemIcon(string $itemId, ItemQuality $quality = null, int $enchantment = 0, int $size = 217, string $locale = 'en')`
+`getItemIcon()`
 
 ###### Params
  * _string_ `$itemId` - item identifier.
@@ -21,13 +21,11 @@ Get item square icon
 Get outstanding quality shield icon  
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\BattleClient;
- 
 $client = new ItemClient();
 
 $client->getItemIcon(
     'ITEM_SHIELD',
-    ItemQuality::of(ItemQuality::OUTSTANDING),
+    ItemQuality::OUTSTANDING,
     (int) rand(0, 3),
 )
     ->then(
@@ -40,7 +38,7 @@ $client->getItemIcon(
 ### Get item data
 
 ###### Method
-`getItemData(string $itemId)`
+`getItemData()`
 
 ###### Params
  * _string_ `$itemId` - item identifier. 
@@ -48,8 +46,6 @@ $client->getItemIcon(
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\BattleClient;
- 
 $client = new ItemClient();
 
 $client->getItemData('ITEM_SHIELD')

@@ -7,7 +7,7 @@
 Получить бинарные данные квадратной иконки
 
 ###### Метод
-`getItemIcon(string $itemId, ItemQuality $quality = null, int $enchantment = 0, int $size = 217, string $locale = 'en')`
+`getItemIcon()`
 
 ###### Параметры
  * _string_ `$itemId` - идентификатор предмета.
@@ -19,13 +19,11 @@
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\BattleClient;
- 
 $client = new ItemClient();
 
 $client->getItemIcon(
     'ITEM_SHIELD',
-    ItemQuality::of(ItemQuality::OUTSTANDING),
+    ItemQuality::OUTSTANDING,
     (int) rand(0, 3),
 )
     ->then(
@@ -38,7 +36,7 @@ $client->getItemIcon(
 ### Информация о предмете
 
 ###### Метод
-`getItemData(string $itemId)`
+`getItemData()`
 
 ###### Параметры
  * _string_ `$itemId` - идентификатор. 
@@ -46,8 +44,6 @@ $client->getItemIcon(
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\BattleClient;
- 
 $client = new ItemClient();
 
 $client->getItemData('ITEM_SHIELD')

@@ -1,7 +1,5 @@
 # Player statistics type
 
-Usage ```PlayerStatType::of(PlayerStatType::PVP)```
-
 Available options:
 * PVE - PvE
 * PVP - PvP
@@ -10,8 +8,6 @@ Available options:
  
 # Player statistics subtype
  
-Usage ```PlayerStatSubType::of(PlayerStatSubType::ORE)```
-
 Available options:
 * ALL - All types
 * FIBER - Fiber

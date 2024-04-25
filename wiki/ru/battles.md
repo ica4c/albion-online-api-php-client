@@ -5,9 +5,10 @@
 ### Все последние
 
 ###### Метод
-`getBattles(Range $range, [int $limit, int $offset, BattleSortType $sort, string $guildId = null])`
+`getBattles()`
 
 ###### Параметры
+ * [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
  * [Range](range.md) `$range` - одно из [Range](range.md).
  * _int_ `$limit` - ограничить количество возвращаемых записей [default = 10],
  * _int_ `$offset` - пропустить первые n элементов [default = 0],
@@ -17,15 +18,14 @@
 ###### Пример  
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\BattleClient;
- 
 $client = new BattleClient();
 
 $client->getBattles(
-    Range::of(Range::DAY),
+    Realm::AMERICA,
+    Range::DAY,
     1,
     0,
-    BattleSortType::of(BattleSortType::TOTAL_FAME)
+    BattleSortType::TOTAL_FAME
 )
     ->then(
         static function($battles) {

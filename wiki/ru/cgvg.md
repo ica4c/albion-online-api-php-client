@@ -6,20 +6,19 @@
 ### Предстоящие матчи Кристальной лиги
 
 ###### Метод
-`getCGVGMatches(int $limit = 10, int $offset = 0)`
+`getCGVGMatches()`
 
 ###### Параметры
- * _int_ `$limit` - ограничить число результатов [default = 10],
- * _int_ `$offset` - пропустить n результатов [default = 0], 
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
+* _int_ `$limit` - ограничить число результатов [default = 10],
+* _int_ `$offset` - пропустить n результатов [default = 0], 
 
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\CGVGClient;
- 
 $client = new CGVGClient();
 
-$client->getCGVGMatches()
+$client->getCGVGMatches(Realm::AMERICA)
     ->then(
         static function($matches) {
             // Do something with battles information
@@ -30,10 +29,11 @@ $client->getCGVGMatches()
 ### Получить информацию о CGVG матче по его id
 
 ###### Метод
-`getCGVGMatchById(string $id)`
+`getCGVGMatchById()`
 
 ###### Параметры
- * _string_ `$id` - идентификатор, 
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
+* _string_ `$id` - идентификатор, 
 
 ###### Ошибки
  * _FailedToPerformRequestException_ - если что-то пошло не так
@@ -41,11 +41,9 @@ $client->getCGVGMatches()
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\CGVGClient;
- 
 $client = new CGVGClient();
 
-$client->getCGVGMatchById('test1234')
+$client->getCGVGMatchById(Realm::AMERICA, 'test1234')
     ->then(
         static function($match) {
             // Do something with battles information
@@ -63,7 +61,10 @@ $client->getCGVGMatchById('test1234')
 Нуждается в уточнении
 
 ###### Метод
-`getFeaturedGuildMatches()` 
+`getFeaturedGuildMatches()`
+
+###### Параметры
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
 
 ###### Ошибки
  * _FailedToPerformRequestException_ - если что-то пошло не так
@@ -71,11 +72,9 @@ $client->getCGVGMatchById('test1234')
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\CGVGClient;
- 
 $client = new CGVGClient();
 
-$client->getFeaturedGuildMatches()
+$client->getFeaturedGuildMatches(Realm::AMERICA)
     ->then(
         static function($matches) {
             // Do something with battles information
@@ -96,6 +95,7 @@ $client->getFeaturedGuildMatches()
 `getUpcomingGuildMatches(int $limit = 10, int $offset = 0)`
 
 ###### Параметры
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
 * _int_ `$limit` - ограничить число результатов [default = 10],
 * _int_ `$offset` - пропустить n результатов [default = 0],  
 
@@ -109,7 +109,7 @@ use Albion\OnlineDataProject\Infrastructure\GameInfo\CGVGClient;
  
 $client = new CGVGClient();
 
-$client->getUpcomingGuildMatches()
+$client->getUpcomingGuildMatches(Realm::AMERICA)
     ->then(
         static function($matches) {
             // Do something with battles information
@@ -127,9 +127,10 @@ $client->getUpcomingGuildMatches()
 Нуждается в уточнении 
 
 ###### Метод
-`getPastGuildMatches([int $limit = 10, int $offset = 0, string $guildId = null])`
+`getPastGuildMatches()`
 
 ###### Параметры
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
 * _int_ `$limit` - ограничить число результатов [default = 10],
 * _int_ `$offset` - пропустить n результатов [default = 0],  
 * _string_ `$guildId` - выбрать только для данной гильдии [default = null]
@@ -140,11 +141,9 @@ $client->getUpcomingGuildMatches()
 ###### Примеры
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\CGVGClient;
- 
 $client = new CGVGClient();
 
-$client->getPastGuildMatches()
+$client->getPastGuildMatches(Realm::AMERICA)
     ->then(
         static function($matches) {
             // Do something with battles information
@@ -160,10 +159,11 @@ $client->getPastGuildMatches()
 ### Получить информацию по идентификатору 
 
 ###### Метод
-`getGuildMatchById(string $id)`
+`getGuildMatchById()`
 
 ###### Параметры
- * _string_ `$id` - идентификатор матча  
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
+* _string_ `$id` - идентификатор матча  
 
 ###### Ошибки
  * _FailedToPerformRequestException_ - если что-то пошло не так
@@ -175,7 +175,7 @@ use Albion\OnlineDataProject\Infrastructure\GameInfo\CGVGClient;
  
 $client = new CGVGClient();
 
-$client->getGuildMatchById('test1234')
+$client->getGuildMatchById(Realm::AMERICA, 'test1234')
     ->then(
         static function($matches) {
             // Do something with battles information

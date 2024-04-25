@@ -1,7 +1,5 @@
 # Weapon classes
 
-Usage ```WeaponClass::of(WeaponClass::ARCANE_STAFF)```
-
 Available options:
  * ALL - all
  * ARCANE_STAFF - arcane staffs
