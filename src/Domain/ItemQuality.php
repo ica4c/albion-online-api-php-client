@@ -1,14 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Domain;
 
-use Solid\Foundation\Enum;
-
-class ItemQuality extends Enum
+enum ItemQuality: int
 {
-    const NORMAL = 1;
-    const GOOD = 2;
-    const OUTSTANDING = 3;
-    const EXCELLENT = 4;
-    const MASTERPIECE = 5;
+    case NORMAL = 1;
+    case GOOD = 2;
+    case OUTSTANDING = 3;
+    case EXCELLENT = 4;
+    case MASTERPIECE = 5;
 }

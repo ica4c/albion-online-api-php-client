@@ -1,12 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Domain;
 
-use Solid\Foundation\Enum;
-
-class BattleSortType extends Enum
+enum BattleSortType: string
 {
-    const TOTAL_FAME = 'totalFame';
-    const TOTAL_KILLS = 'totalKills';
-    const RECENT = 'recent';
+    case TOTAL_FAME = 'totalFame';
+    case TOTAL_KILLS = 'totalKills';
+    case RECENT = 'recent';
 }

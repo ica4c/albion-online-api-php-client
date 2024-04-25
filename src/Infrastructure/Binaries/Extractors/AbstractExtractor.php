@@ -1,35 +1,33 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Infrastructure\Binaries\Extractors;
 
 use DOMDocument;
 use DOMElement;
-use DOMNode;
 use DOMXPath;
 
 abstract class AbstractExtractor
 {
-    /** @var \DOMDocument */
-    protected $dom;
-    /** @var \DOMXPath */
-    protected $xpath;
+    protected DOMXPath $xpath;
 
-    /**
-     * AbstractExtractor constructor.
-     *
-     * @param DOMDocument $dom
-     */
-    public function __construct(DOMDocument $dom)
+    protected function __construct(protected DOMDocument $dom)
     {
-        $this->dom = $dom;
         $this->xpath = new DOMXPath($dom);
     }
 
+    public static function make(DOMDocument $dom): static
+    {
+        /** @phpstan-ignore-next-line */
+        return new static($dom);
+    }
+
     /**
-     * @param DOMElement $element
-     * @return array
+     * @return array<array-key, mixed>
      */
-    protected function extractNodeAttributes(DOMElement $element) {
+    protected function extractNodeAttributes(DOMElement $element): array
+    {
         $attributes = [];
 
         /** @var \DOMAttr $attribute */
@@ -51,10 +49,10 @@ abstract class AbstractExtractor
     }
 
     /**
-     * @param DOMElement $element
-     * @return array
+     * @return array<array-key, mixed>
      */
-    protected function extractSubTree(DOMElement $element) {
+    protected function extractSubTree(DOMElement $element): array
+    {
         $attributes = $this->extractNodeAttributes($element);
 
         /** @var DOMElement $childNode */
@@ -77,9 +75,5 @@ abstract class AbstractExtractor
         return $attributes;
     }
 
-    /**
-     * Extracts information from document
-     * @return array
-     */
-    abstract function extract(): array;
+    abstract public function extract(): array;
 }

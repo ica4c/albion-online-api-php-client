@@ -30,8 +30,11 @@ jobs:
       if: steps.composer-cache.outputs.cache-hit != 'true'
       run: composer install --prefer-dist --no-progress --no-suggest
 
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
-
-    - name: Run test suite
+    - name: Run test check
       run: composer run-script test
+
+    - name: Run phpstanc checks
+      run: composer run-script phpstan
+
+    - name: Run code style checks
+      run: composer run-script code_style

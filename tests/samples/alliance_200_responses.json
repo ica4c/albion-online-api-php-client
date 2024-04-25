@@ -1,0 +1,17 @@
+[
+  {
+    "AllianceId": "123",
+    "AllianceName": "test",
+    "AllianceTag": "TT",
+    "FounderId": "123",
+    "FounderName": "test",
+    "Founded": "1990-01-01 00:00:00.000000Z",
+    "Guilds": [
+      {
+        "Id": "1",
+        "Name": "Test 1"
+      }
+    ],
+    "NumPlayers": 15
+  }
+]

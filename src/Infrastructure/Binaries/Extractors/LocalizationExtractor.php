@@ -1,11 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Infrastructure\Binaries\Extractors;
 
 class LocalizationExtractor extends AbstractExtractor
 {
     /**
-     * @inheritDoc
      * @return string[][]
      */
     public function extract(): array

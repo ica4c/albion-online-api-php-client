@@ -1,26 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Infrastructure\GameInfo\Exceptions;
 
+use Albion\API\Domain\Realm;
 use Exception;
 
 class UnknownRealmProvidedException extends Exception
 {
-    protected string $realm;
-
-    /**
-     * @param string $realm
-     */
-    public function __construct(string $realm)
+    public function __construct(protected Realm $realm)
     {
-        parent::__construct("Realm: {$realm} does not exist");
-        $this->realm = $realm;
+        parent::__construct("Unknown realm. See Realm::class for available options.");
     }
 
-    /**
-     * @return string
-     */
-    public function getRealm(): string
+    public function getRealm(): Realm
     {
         return $this->realm;
     }

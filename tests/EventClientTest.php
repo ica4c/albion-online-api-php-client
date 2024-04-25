@@ -1,46 +1,30 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests;
 
-use Albion\API\Domain\Range;
-use Albion\API\Domain\WeaponClass;
-use Albion\API\Infrastructure\GameInfo\Enums\RealmHost;
+use Albion\API\Domain\Realm;
 use Albion\API\Infrastructure\GameInfo\EventClient;
-use Albion\API\Infrastructure\GameInfo\GuildClient;
-use PHPUnit\Framework\TestCase;
+use Albion\API\Infrastructure\GameInfo\Resolvers\RealmEndpointResolver;
 
-class EventClientTest extends EventFeedBasedTestCase
+class EventClientTest extends MockedClientTestCase
 {
-    /** @var \Albion\API\Infrastructure\GameInfo\GuildClient */
-    protected $guildClient;
+    protected EventClient $eventClient;
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->guildClient = new GuildClient(RealmHost::of(RealmHost::WEST));
+
+        $this->eventClient = new EventClient(
+            $this->mockClient($this->loadResponseSamplesFromSamplesJson('events_200_responses.json')),
+            new RealmEndpointResolver()
+        );
     }
 
-    public function testLatestGuildEvents(): void
+    public function testEvents(): void
     {
-        $events = $this->fetchLatestEvents();
-
-        foreach ($events as $event) {
-            if (empty($event['Killer']['GuildId'])) {
-                $this->markTestSkipped('Not a guild member');
-            }
-
-            $events = $this->client->getEvents(10, 0, $event['Killer']['GuildId'])
-                ->wait();
-
-            static::assertNotNull($events);
-            static::assertNotEmpty($events);
-            static::assertCount(10, $events);
-        }
-    }
-
-    public function testLatestTopByKillFame(): void
-    {
-        $events = $this->client->getTopEventsByKillFame(Range::of(Range::DAY), 1)
+        $events = $this->eventClient->getEvents(Realm::AMERICA)
             ->wait();
 
         static::assertNotNull($events);

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Infrastructure\GameInfo\Builders;
 
 use Albion\API\Domain\Realm;
@@ -11,13 +13,11 @@ use Albion\API\Infrastructure\GameInfo\Exceptions\UnknownRealmProvidedException;
 use Albion\API\Infrastructure\GameInfo\GuildClient;
 use Albion\API\Infrastructure\GameInfo\ItemDataClient;
 use Albion\API\Infrastructure\GameInfo\PlayerClient;
-use Albion\API\Infrastructure\GameInfo\Resolvers\RealmHostResolver;
+use Albion\API\Infrastructure\GameInfo\Resolvers\RealmEndpointResolver;
+use GuzzleHttp\Client;
 
 class ClientBuilder
 {
-    protected Realm $realm;
-    protected RealmHostResolver $resolver;
-
     private AllianceClient $allianceClient;
     private BattleClient $battleClient;
     private CGVGClient $cgvgClient;
@@ -26,108 +26,70 @@ class ClientBuilder
     private GuildClient $guildClient;
     private ItemDataClient $itemClient;
 
-    /**
-     * @param Realm $realm
-     */
-    public function __construct(Realm $realm)
-    {
-        $this->realm = $realm;
-        $this->resolver = new RealmHostResolver;
+    public function __construct(
+        protected Client $http,
+        protected RealmEndpointResolver $resolver
+    ) {
     }
 
-    /**
-     * @return AllianceClient
-     * @throws UnknownRealmProvidedException
-     * @throws \Solid\Foundation\Exceptions\InvalidEnumValueException
-     */
     public function alliances(): AllianceClient
     {
         if (empty($this->allianceClient)) {
-            $this->allianceClient = new AllianceClient($this->resolver->resolveByRealm($this->realm));
+            $this->allianceClient = new AllianceClient($this->http, $this->resolver);
         }
 
         return $this->allianceClient;
     }
 
-    /**
-     * @return BattleClient
-     * @throws UnknownRealmProvidedException
-     * @throws \Solid\Foundation\Exceptions\InvalidEnumValueException
-     */
     public function battles(): BattleClient
     {
         if (empty($this->battleClient)) {
-            $this->battleClient = new BattleClient($this->resolver->resolveByRealm($this->realm));
+            $this->battleClient = new BattleClient($this->http, $this->resolver);
         }
 
         return $this->battleClient;
     }
 
-    /**
-     * @return CGVGClient
-     * @throws UnknownRealmProvidedException
-     * @throws \Solid\Foundation\Exceptions\InvalidEnumValueException
-     */
     public function cgvg(): CGVGClient
     {
         if (empty($this->cgvgClient)) {
-            $this->cgvgClient = new CGVGClient($this->resolver->resolveByRealm($this->realm));
+            $this->cgvgClient = new CGVGClient($this->http, $this->resolver);
         }
 
         return $this->cgvgClient;
     }
 
-    /**
-     * @return EventClient
-     * @throws UnknownRealmProvidedException
-     * @throws \Solid\Foundation\Exceptions\InvalidEnumValueException
-     */
     public function events(): EventClient
     {
         if (empty($this->eventClient)) {
-            $this->eventClient = new EventClient($this->resolver->resolveByRealm($this->realm));
+            $this->eventClient = new EventClient($this->http, $this->resolver);
         }
 
         return $this->eventClient;
     }
 
-    /**
-     * @return GuildClient
-     * @throws UnknownRealmProvidedException
-     * @throws \Solid\Foundation\Exceptions\InvalidEnumValueException
-     */
     public function guilds(): GuildClient
     {
         if (empty($this->guildClient)) {
-            $this->guildClient = new GuildClient($this->resolver->resolveByRealm($this->realm));
+            $this->guildClient = new GuildClient($this->http, $this->resolver);
         }
 
         return $this->guildClient;
     }
 
-    /**
-     * @return ItemDataClient
-     * @throws UnknownRealmProvidedException
-     * @throws \Solid\Foundation\Exceptions\InvalidEnumValueException
-     */
     public function items(): ItemDataClient
     {
         if (empty($this->itemClient)) {
-            $this->itemClient = new ItemDataClient($this->resolver->resolveByRealm($this->realm));
+            $this->itemClient = new ItemDataClient($this->http, $this->resolver);
         }
 
         return $this->itemClient;
     }
 
-    /**
-     * @return PlayerClient
-     * @throws \Solid\Foundation\Exceptions\InvalidEnumValueException
-     * @throws UnknownRealmProvidedException
-     */
     public function players(): PlayerClient
     {
         if (empty($this->playerClient)) {
-            $this->playerClient = new PlayerClient($this->resolver->resolveByRealm($this->realm));
+            $this->playerClient = new PlayerClient($this->http, $this->resolver);
         }
 
         return $this->playerClient;

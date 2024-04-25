@@ -1,58 +1,50 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests;
 
-use Albion\API\Domain\Range;
-use Albion\API\Infrastructure\GameInfo\Enums\RealmHost;
+use Albion\API\Domain\Realm;
 use Albion\API\Infrastructure\GameInfo\PlayerClient;
-use Albion\API\Domain\PlayerStatType;
-use Albion\API\Domain\RegionType;
-use Mockery\Mock;
+use Albion\API\Infrastructure\GameInfo\Resolvers\RealmEndpointResolver;
 
-class PlayerClientTest extends EventFeedBasedTestCase
+class PlayerClientTest extends MockedClientTestCase
 {
-    /** @var \Albion\API\Infrastructure\GameInfo\PlayerClient */
-    protected $playerClient;
+    protected PlayerClient $playerClient;
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->playerClient = new PlayerClient(RealmHost::of(RealmHost::WEST));
+
+        $this->playerClient = new PlayerClient(
+            $this->mockClient($this->loadResponseSamplesFromSamplesJson('players_200_responses.json')),
+            new RealmEndpointResolver()
+        );
     }
 
     public function testPlayerSearch(): void {
-        $event = $this->fetchRandomLatestEvent();
-        $players = $this->playerClient->searchPlayer($event['Killer']['Name'])
+        $players = $this->playerClient->searchPlayer(Realm::AMERICA, 'test')
             ->wait();
 
         $this->assertNotEmpty($players);
-
-        $player = $players[0];
-        $this->assertEquals($player['Id'], $event['Killer']['Id']);
     }
 
     public function testGetPlayerInfo(): void {
-        $event = $this->fetchRandomLatestEvent();
-
-        $info = $this->playerClient->getPlayerInfo($event['Killer']['Id'])
+        $info = $this->playerClient->getPlayerInfo(Realm::AMERICA, '123')
             ->wait();
 
         static::assertNotEmpty($info);
     }
 
     public function testGetPlayerKills(): void {
-        $event = $this->fetchRandomLatestEvent();
-
-        $deaths = $this->playerClient->getPlayerKills($event['Killer']['Id'])
+        $kills = $this->playerClient->getPlayerKills(Realm::AMERICA, '123')
             ->wait();
 
-        static::assertNotNull($deaths);
+        static::assertNotNull($kills);
     }
 
     public function testGetPlayerDeaths(): void {
-        $event = $this->fetchRandomLatestEvent();
-
-        $deaths = $this->playerClient->getPlayerDeaths($event['Victim']['Id'])
+        $deaths = $this->playerClient->getPlayerDeaths(Realm::AMERICA, '123')
             ->wait();
 
         static::assertNotNull($deaths);

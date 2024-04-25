@@ -1,28 +1,41 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Infrastructure\GameInfo;
 
 use Albion\API\Domain\Range;
+use Albion\API\Domain\Realm;
 use Albion\API\Domain\RegionType;
 use Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
 use Albion\API\Infrastructure\GameInfo\Exceptions\GuildNotFoundException;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
+use Throwable;
 
 class GuildClient extends AbstractClient
 {
     /**
      * Get basic guild information
      *
+     * @param \Albion\API\Domain\Realm $realm
      * @param string $guildId
+     *
      * @return \GuzzleHttp\Promise\PromiseInterface<array>
+     *
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\GuildNotFoundException
+     * @throws \JsonException
      */
-    public function getGuildInfo(string $guildId): PromiseInterface {
-        return $this->httpClient->getAsync("guilds/$guildId")
+    public function getGuildInfo(Realm $realm, string $guildId): PromiseInterface
+    {
+        $url = $this->resolver->gameinfoApiEndpoint($realm, "guilds/$guildId");
+
+        return $this->http->getAsync($url)
             ->otherwise(
-                static function (RequestException $exception) use ($guildId) {
-                    if($exception->getCode() === 404) {
+                static function (Throwable $exception) use ($guildId) {
+                    if($exception instanceof RequestException && $exception->getCode() === 404) {
                         throw new GuildNotFoundException($guildId);
                     }
 
@@ -31,7 +44,12 @@ class GuildClient extends AbstractClient
             )
             ->then(
                 static function (Response $response) {
-                    return json_decode($response->getBody()->getContents(), true);
+                    return json_decode(
+                        $response->getBody()->getContents(),
+                        true,
+                        512,
+                        JSON_THROW_ON_ERROR
+                    );
                 }
             );
     }
@@ -39,14 +57,23 @@ class GuildClient extends AbstractClient
     /**
      * Get detailed guild information
      *
+     * @param Realm $realm
      * @param string $guildId
+     *
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\GuildNotFoundException
+     * @throws \JsonException
      */
-    public function getGuildData(string $guildId): PromiseInterface {
-        return $this->httpClient->getAsync("guilds/$guildId/data")
+    public function getGuildData(Realm $realm, string $guildId): PromiseInterface
+    {
+        $url = $this->resolver->gameinfoApiEndpoint($realm, "guilds/$guildId/data");
+
+        return $this->http->getAsync($url)
             ->otherwise(
-                static function (RequestException $exception) use ($guildId) {
-                    if($exception->getCode() === 404) {
+                static function (Throwable $exception) use ($guildId) {
+                    if($exception instanceof RequestException && $exception->getCode() === 404) {
                         throw new GuildNotFoundException($guildId);
                     }
 
@@ -55,7 +82,12 @@ class GuildClient extends AbstractClient
             )
             ->then(
                 static function (Response $response) {
-                    return json_decode($response->getBody()->getContents(), true);
+                    return json_decode(
+                        $response->getBody()->getContents(),
+                        true,
+                        512,
+                        JSON_THROW_ON_ERROR
+                    );
                 }
             );
     }
@@ -63,30 +95,40 @@ class GuildClient extends AbstractClient
     /**
      * Get guild top member list
      *
-     * @param string                                           $guildId
-     * @param \Albion\API\Domain\Range|null      $range
-     * @param int                                              $limit
-     * @param int                                              $offset
+     * @param Realm $realm
+     * @param string $guildId
+     * @param \Albion\API\Domain\Range|null $range
+     * @param int $limit
+     * @param int $offset
      * @param \Albion\API\Domain\RegionType|null $region
      *
-     * @return \GuzzleHttp\Promise\PromiseInterface
+     * @return \GuzzleHttp\Promise\PromiseInterface<array>
+     *
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\GuildNotFoundException
+     * @throws \JsonException
      */
-    public function getGuildTopMembers(string $guildId,
-                                       Range $range = null,
-                                       int $limit = 10,
-                                       int $offset = 0,
-                                       RegionType $region = null): PromiseInterface {
+    public function getGuildTopMembers(
+        Realm $realm,
+        string $guildId,
+        ?Range $range = null,
+        int $limit = 10,
+        int $offset = 0,
+        ?RegionType $region = null
+    ): PromiseInterface {
+        $url = $this->resolver->gameinfoApiEndpoint($realm, "guilds/$guildId/top");
+
         $query = [
-            'range' => $range ? $range->toString() : Range::DAY,
+            'range' => $range?->value ?: Range::DAY->value,
+            'region' => $region?->value ?: RegionType::TOTAL->value,
             'limit' => $limit,
             'offset' => $offset,
-            'region' => $region ? $region->toString() : RegionType::TOTAl
         ];
 
-        return $this->httpClient->getAsync("guilds/$guildId/top", ['query' => $query])
+        return $this->http->getAsync($url, ['query' => $query])
             ->otherwise(
-                static function (RequestException $exception) use ($guildId) {
-                    if($exception->getCode() === 404) {
+                static function (Throwable $exception) use ($guildId) {
+                    if($exception instanceof RequestException && $exception->getCode() === 404) {
                         throw new GuildNotFoundException($guildId);
                     }
 
@@ -95,7 +137,12 @@ class GuildClient extends AbstractClient
             )
             ->then(
                 static function (Response $response) {
-                    return json_decode($response->getBody()->getContents(), true);
+                    return json_decode(
+                        $response->getBody()->getContents(),
+                        true,
+                        512,
+                        JSON_THROW_ON_ERROR
+                    );
                 }
             );
     }
@@ -103,11 +150,20 @@ class GuildClient extends AbstractClient
     /**
      * Get guild member list
      *
+     * @param \Albion\API\Domain\Realm $realm
      * @param string $guildId
+     *
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\GuildNotFoundException
+     * @throws \JsonException
      */
-    public function getGuildMembers(string $guildId): PromiseInterface {
-        return $this->httpClient->getAsync("guilds/$guildId/members")
+    public function getGuildMembers(Realm $realm, string $guildId): PromiseInterface
+    {
+        $url = $this->resolver->gameinfoApiEndpoint($realm, "guilds/$guildId/members");
+
+        return $this->http->getAsync($url)
             ->otherwise(
                 static function (RequestException $exception) use ($guildId) {
                     if($exception->getCode() === 404) {
@@ -127,22 +183,33 @@ class GuildClient extends AbstractClient
     /**
      * Returns recent guild vs guild kill events
      *
+     * @param \Albion\API\Domain\Realm $realm
      * @param string $id
      * @param string $otherGuildId
      *
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException
+     * @throws \JsonException
      */
-    public function getGuildFeud(string $id, string $otherGuildId): PromiseInterface
+    public function getGuildFeud(Realm $realm, string $id, string $otherGuildId): PromiseInterface
     {
-        return $this->httpClient->getAsync("guilds/$id/feud/$otherGuildId")
+        $url = $this->resolver->gameinfoApiEndpoint($realm, "guilds/$id/feud/$otherGuildId");
+
+        return $this->http->getAsync($url)
             ->otherwise(
-                static function (RequestException $exception) {
+                static function (Throwable $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
             ->then(
                 static function (Response $response) {
-                    return json_decode($response->getBody()->getContents(), true);
+                    return json_decode(
+                        $response->getBody()->getContents(),
+                        true,
+                        512,
+                        JSON_THROW_ON_ERROR
+                    );
                 }
             );
     }
@@ -150,21 +217,33 @@ class GuildClient extends AbstractClient
     /**
      * Find guilds by it's name
      *
+     * @param \Albion\API\Domain\Realm $realm
      * @param string $query
+     *
      * @return \GuzzleHttp\Promise\PromiseInterface<array>
+     *
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException
+     * @throws \JsonException
      */
-    public function searchGuild(string $query): PromiseInterface {
+    public function searchGuild(Realm $realm, string $query): PromiseInterface
+    {
+        $url = $this->resolver->gameinfoApiEndpoint($realm, "search");
         $query = urlencode($query);
 
-        return $this->httpClient->getAsync("search?q=${query}")
+        return $this->http->getAsync($url, ['query' => ['q' => $query]])
             ->otherwise(
-                static function (RequestException $exception) {
+                static function (Throwable $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
             ->then(
                 static function (Response $response) {
-                    return json_decode($response->getBody()->getContents(), true);
+                    return json_decode(
+                        $response->getBody()->getContents(),
+                        true,
+                        512,
+                        JSON_THROW_ON_ERROR
+                    );
                 }
             )
             ->then(
@@ -185,26 +264,39 @@ class GuildClient extends AbstractClient
      * @param int                                         $limit
      * @param int                                         $offset
      *
-     * @return \GuzzleHttp\Promise\PromiseInterface
+     * @return \GuzzleHttp\Promise\PromiseInterface<array>
+     *
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException
+     * @throws \JsonException
      */
-    public function getGuildTopByAttacks(Range $range = null,
-                                         int $limit = 10,
-                                         int $offset = 0): PromiseInterface {
+    public function getGuildTopByAttacks(
+        Realm $realm,
+        ?Range $range = null,
+        int $limit = 10,
+        int $offset = 0
+    ): PromiseInterface {
+        $url = $this->resolver->gameinfoApiEndpoint($realm, 'guilds/topguildsbyattacks');
+
         $query = [
-            'range' => $range ? $range->toString() : Range::DAY,
+            'range' => $range?->value ?: Range::DAY->value,
             'limit' => $limit,
             'offset' => $offset
         ];
 
-        return $this->httpClient->getAsync('guilds/topguildsbyattacks', ['query' => $query])
+        return $this->http->getAsync($url, ['query' => $query])
             ->otherwise(
-                static function (RequestException $exception) {
+                static function (Throwable $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
             ->then(
                 static function (Response $response) {
-                    return json_decode($response->getBody()->getContents(), true);
+                    return json_decode(
+                        $response->getBody()->getContents(),
+                        true,
+                        512,
+                        JSON_THROW_ON_ERROR
+                    );
                 }
             );
     }
@@ -213,29 +305,42 @@ class GuildClient extends AbstractClient
      * Get guild top by recent defences
      *
      * @param \Albion\API\Domain\Range|null $range
-     * @param int                                         $limit
-     * @param int                                         $offset
+     * @param int $limit
+     * @param int $offset
      *
      * @return \GuzzleHttp\Promise\PromiseInterface
+     *
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException
+     * @throws \JsonException
      */
-    public function getGuildTopByDefences(Range $range = null,
-                                          int $limit = 10,
-                                          int $offset = 0): PromiseInterface {
+    public function getGuildTopByDefences(
+        Realm $realm,
+        ?Range $range = null,
+        int $limit = 10,
+        int $offset = 0
+    ): PromiseInterface {
+        $url = $this->resolver->gameinfoApiEndpoint($realm, 'guilds/topguildsbydefenses');
+
         $query = [
-            'range' => $range ? $range->toString() : Range::DAY,
+            'range' => $range?->value ?: Range::DAY->value,
             'limit' => $limit,
             'offset' => $offset
         ];
 
-        return $this->httpClient->getAsync('guilds/topguildsbydefenses', ['query' => $query])
+        return $this->http->getAsync($url, ['query' => $query])
             ->otherwise(
-                static function (RequestException $exception) {
+                static function (Throwable $exception) {
                     throw new FailedToPerformRequestException($exception);
                 }
             )
             ->then(
                 static function (Response $response) {
-                    return json_decode($response->getBody()->getContents(), true);
+                    return json_decode(
+                        $response->getBody()->getContents(),
+                        true,
+                        512,
+                        JSON_THROW_ON_ERROR
+                    );
                 }
             );
     }
@@ -243,24 +348,33 @@ class GuildClient extends AbstractClient
     /**
      * Get guild top events in selected range
      *
-     * @param string                        $guildId
+     * @param Realm $realm
+     * @param string $guildId
      * @param \Albion\API\Domain\Range|null $range
-     * @param int                           $limit
-     * @param int                           $offset
+     * @param int $limit
+     * @param int $offset
      *
-     * @return \GuzzleHttp\Promise\PromiseInterface
+     * @return \GuzzleHttp\Promise\PromiseInterface<array>
+     *
+     * @throws \Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException
+     * @throws \JsonException
      */
-    public function getGuildTopEvents(string $guildId,
-                                      Range $range = null,
-                                      int $limit = 10,
-                                      int $offset = 0): PromiseInterface {
+    public function getGuildTopEvents(
+        Realm $realm,
+        string $guildId,
+        Range $range = null,
+        int $limit = 10,
+        int $offset = 0
+    ): PromiseInterface {
+        $url = $this->resolver->gameinfoApiEndpoint($realm, "guilds/{$guildId}/top");
+
         $query = [
-            'range' => $range ? $range->toString() : Range::WEEK,
+            'range' => $range?->value ?: Range::WEEK->value,
             'limit' => $limit,
             'offset' => $offset
         ];
 
-        return $this->httpClient->getAsync("guilds/$guildId/top", ['query' => $query])
+        return $this->http->getAsync($url, ['query' => $query])
             ->otherwise(
                 static function (RequestException $exception) {
                     throw new FailedToPerformRequestException($exception);
@@ -268,7 +382,12 @@ class GuildClient extends AbstractClient
             )
             ->then(
                 static function (Response $response) {
-                    return json_decode($response->getBody()->getContents(), true);
+                    return json_decode(
+                        $response->getBody()->getContents(),
+                        true,
+                        512,
+                        JSON_THROW_ON_ERROR
+                    );
                 }
             );
     }

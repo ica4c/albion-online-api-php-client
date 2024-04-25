@@ -1,14 +1,14 @@
 <?php
 
+declare(strict_types=1);
 
 namespace Albion\API\Domain;
 
-use Solid\Foundation\Enum;
-
-class PlayerStatType extends Enum
+enum PlayerStatType: string
 {
-    const PVE = 'PvE';
-    const PVP = 'PvP';
-    const GATHERING = 'Gathering';
-    const CRAFTING = 'Crafting';
+    case ALL = 'All';
+    case PVE = 'PvE';
+    case PVP = 'PvP';
+    case GATHERING = 'Gathering';
+    case CRAFTING = 'Crafting';
 }
