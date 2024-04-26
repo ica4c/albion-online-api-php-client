@@ -33,7 +33,7 @@ jobs:
     - name: Run test check
       run: composer run-script test
 
-    - name: Run phpstanc checks
+    - name: Run phpstan checks
       run: composer run-script phpstan
 
     - name: Run code style checks
