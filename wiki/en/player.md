@@ -5,9 +5,10 @@
 ### Find player
 
 ###### Method
-`searchPlayer(string $query)`
+`searchPlayer()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _string_ `$query` - search query,
  
 ###### Throws
@@ -17,11 +18,9 @@
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\PlayerClient;
- 
 $client = new PlayerClient();
 
-$client->searchPlayer('Agress0r')
+$client->searchPlayer(Realm::AMERICA, 'my-nickname')
     ->then(
         static function($players) {
             // Do something with player information
@@ -32,9 +31,10 @@ $client->searchPlayer('Agress0r')
 ### Get player info by his id
 
 ###### Method
-`getPlayerInfo(string $playerId)`
+`getPlayerInfo()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _string_ `$playerId` - player uuid
  
 ###### Throws
@@ -44,11 +44,9 @@ $client->searchPlayer('Agress0r')
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
- 
 $client = new PlayerClient();
 
-$client->getPlayerInfo('guild-uuid')
+$client->getPlayerInfo(Realm::AMERICA, 'guild-uuid')
     ->then(
         static function($player) {
             // Do something with player information
@@ -59,9 +57,10 @@ $client->getPlayerInfo('guild-uuid')
 ### Get recent player deaths
 
 ###### Method
-`getPlayerDeaths(string $playerID)`
+`getPlayerDeaths()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _string_ `$playerID` - player id
  
 ###### Throws
@@ -71,12 +70,10 @@ $client->getPlayerInfo('guild-uuid')
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\PlayerClient;
- 
 $client = new PlayerClient();
 
 // Find player if needed
-$client->searchPlayer('Agress0r')
+$client->searchPlayer(Realm::AMERICA, 'my_nickname')
     ->then(
         static function($players) use ($client) {
             // Get his deaths
@@ -95,9 +92,10 @@ $client->searchPlayer('Agress0r')
 Used for building gathering tops, I guess
 
 ###### Method
-`getPlayerStatistics(Range $range = null, int $limit = 10, int $offset = 0, PlayerStatType $type = null, PlayerStatSubType $subType = null, RegionType $region = null, string $guildId = null, string $allianceId = null)`
+`getPlayerStatistics()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * [Range](range.md) `$range` - one of the [Range](range.md) values [default=Range::DAY].
  * _int_ `$limit` - limit response amount [default = 10],
   * _int_ `$offset` - skip first n values [default = 0],
@@ -113,13 +111,9 @@ Used for building gathering tops, I guess
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\PlayerClient;
-use Albion\OnlineDataProject\Domain\RegionType;
-use Albion\OnlineDataProject\Domain\Range;
- 
 $client = new PlayerClient();
 
-$client->getPlayerStatistics(Range::of(Range::DAY), 5, 0, PlayerStatType::of(PlayerStatType::GATHERING). PlayerStatSubType::of(PlayerStatSubType::ORE))
+$client->getPlayerStatistics(Realm::AMERICA, Range::DAY, 5, 0, PlayerStatType::GATHERING, PlayerStatSubType::ORE)
     ->then(
         static function($players) {
             // Do something with player information

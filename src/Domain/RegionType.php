@@ -1,13 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Domain;
 
-use Solid\Foundation\Enum;
-
-class RegionType extends Enum
+enum RegionType: string
 {
-    const TOTAl = 'Total';
-    const ROYAL = 'Royal';
-    const OUTLANDS = 'Outlands';
-    const HELLGATE = 'Hellgate';
+    case TOTAL = 'Total';
+    case ROYAL = 'Royal';
+    case OUTLANDS = 'Outlands';
+    case HELLGATE = 'Hellgate';
 }

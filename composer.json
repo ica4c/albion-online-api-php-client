@@ -23,17 +23,20 @@
     }
   },
   "require": {
-    "php": ">=7.1.3",
+    "php": ">=8.1",
     "ext-json": "*",
-    "guzzlehttp/guzzle": "^7.8.0",
-    "solid/foundation": "^0.4",
-    "caseyamcl/guzzle_retry_middleware": "^2.6"
+    "ext-dom": "*",
+    "guzzlehttp/guzzle": "^7.8.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^9",
-    "ext-fileinfo": "*"
+    "ext-fileinfo": "*",
+    "phpstan/phpstan": "^1.10",
+    "friendsofphp/php-cs-fixer": "^3.54"
   },
   "scripts": {
-    "test": "php vendor/bin/phpunit --bootstrap vendor/autoload.php --configuration phpunit.xml tests"
+    "test": "php vendor/bin/phpunit --bootstrap vendor/autoload.php --configuration phpunit.xml tests",
+    "phpstan": "vendor/bin/phpstan analyse src tests",
+    "code_style": "vendor/bin/php-cs-fixer fix --verbose --rules=@PSR12 --dry-run src"
   }
 }

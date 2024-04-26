@@ -6,11 +6,12 @@
 ### Upcoming crystal league events
 
 ###### Method
-`getCGVGMatches(int $limit = 10, int $offset = 0)`
+`getCGVGMatches()`
 
 ###### Params
- * _int_ `$limit` - limit response results [default = 10],
- * _int_ `$offset` - skip n first values [default = 0], 
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
+* _int_ `$limit` - limit response results [default = 10],
+* _int_ `$offset` - skip n first values [default = 0], 
 
 ###### Example
 
@@ -33,6 +34,7 @@ $client->getCGVGMatches()
 `getCGVGMatchById(string $id)`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _string_ `$id` - event id, 
 
 ###### Throws
@@ -65,6 +67,9 @@ Not sure what it does. Might be legacy endpoint.
 ###### Method
 `getFeaturedGuildMatches()` 
 
+###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
+
 ###### Throws
  * _FailedToPerformRequestException_ - in case if something went wrong
 
@@ -96,6 +101,7 @@ Not sure what it does. Might be legacy endpoint.
 `getUpcomingGuildMatches(int $limit = 10, int $offset = 0)`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _int_ `$limit` - limit response amount [default = 10],
  * _int_ `$offset` - skip first n values [default = 0],  
 
@@ -130,6 +136,7 @@ Not sure what it does. Might be legacy endpoint.
 `getPastGuildMatches([int $limit = 10, int $offset = 0, string $guildId = null])`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _int_ `$limit` - limit response amount [default = 10],
  * _int_ `$offset` - skip first n values [default = 0],  
  * _string_ `$guildId` - look for this guild only [default = null]
@@ -165,6 +172,7 @@ Not sure what it does. Might be legacy endpoint.
 `getGuildMatchById(string $id)`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _string_ `$id` - match uuid  
 
 ###### Throws
@@ -173,11 +181,9 @@ Not sure what it does. Might be legacy endpoint.
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\CGVGClient;
- 
 $client = new CGVGClient();
 
-$client->getGuildMatchById('test1234')
+$client->getPastGuildMatches(Realm::AMERICA)
     ->then(
         static function($matches) {
             // Do something with battles information

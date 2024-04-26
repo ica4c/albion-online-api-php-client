@@ -1,0 +1,1404 @@
+[
+  [
+    {
+      "id": 53498,
+      "startTime": "2024-04-24T21:05:43.094547600Z",
+      "endTime": "2024-04-24T21:07:33.604268Z",
+      "timeout": "2024-04-24T21:10:33.604268Z",
+      "totalFame": 873996,
+      "totalKills": 12,
+      "clusterName": null,
+      "players": {
+        "x40Ou3H3RXGwXpQ5D_-n9Q": {
+          "name": "4nuk1s",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 5851,
+          "guildName": "APE",
+          "guildId": "bM3TPc_LRkqQ9nH_CeTy0g",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "x40Ou3H3RXGwXpQ5D_-n9Q"
+        },
+        "GdD7EyoOT_CjHCpWYG73Ow": {
+          "name": "TheOA",
+          "kills": 0,
+          "deaths": 2,
+          "killFame": 5851,
+          "guildName": "APE",
+          "guildId": "bM3TPc_LRkqQ9nH_CeTy0g",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "GdD7EyoOT_CjHCpWYG73Ow"
+        },
+        "WJSeujCLRwaOzEEpbRYQ2A": {
+          "name": "WEFQD",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 5851,
+          "guildName": "APE",
+          "guildId": "bM3TPc_LRkqQ9nH_CeTy0g",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "WJSeujCLRwaOzEEpbRYQ2A"
+        },
+        "uja3u5_-SUCuFujhatikUw": {
+          "name": "ChampionOfRj",
+          "kills": 1,
+          "deaths": 1,
+          "killFame": 5851,
+          "guildName": "APE",
+          "guildId": "bM3TPc_LRkqQ9nH_CeTy0g",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "uja3u5_-SUCuFujhatikUw"
+        },
+        "hP-Ja5EvQDyJFLPewi1cTQ": {
+          "name": "Mog",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "hP-Ja5EvQDyJFLPewi1cTQ"
+        },
+        "vKdh3lK8Q2-aF1q8wDDc1w": {
+          "name": "CENTRALCEE",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 5851,
+          "guildName": "APE",
+          "guildId": "bM3TPc_LRkqQ9nH_CeTy0g",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "vKdh3lK8Q2-aF1q8wDDc1w"
+        },
+        "szMokE0RRdOdp6gfnd_rlg": {
+          "name": "Sajson",
+          "kills": 3,
+          "deaths": 0,
+          "killFame": 90606,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "szMokE0RRdOdp6gfnd_rlg"
+        },
+        "59WK6p05Q9GatH54_JWJ-g": {
+          "name": "ChopperArcane",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 90606,
+          "guildName": "APE",
+          "guildId": "bM3TPc_LRkqQ9nH_CeTy0g",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "59WK6p05Q9GatH54_JWJ-g"
+        },
+        "UjoPsmrUQSm3BIXW1iMldQ": {
+          "name": "Ichibyou",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 90606,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "UjoPsmrUQSm3BIXW1iMldQ"
+        },
+        "or40DD1YRKGWjQc1qEddiQ": {
+          "name": "NoBlink",
+          "kills": 4,
+          "deaths": 0,
+          "killFame": 90606,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "or40DD1YRKGWjQc1qEddiQ"
+        },
+        "WSnIl1s_TtKNUD2x0Ec4sA": {
+          "name": "Capii",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 90606,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "WSnIl1s_TtKNUD2x0Ec4sA"
+        },
+        "H0C4c11bTw23vogxGnW72g": {
+          "name": "Savvy",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 90606,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "H0C4c11bTw23vogxGnW72g"
+        },
+        "pxc2DGbMRvqNHrS3UYCeJA": {
+          "name": "ChampionOfBahia",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 5851,
+          "guildName": "APE",
+          "guildId": "bM3TPc_LRkqQ9nH_CeTy0g",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "pxc2DGbMRvqNHrS3UYCeJA"
+        },
+        "njWTSnK-RJK6tT3mK_7aMw": {
+          "name": "judi",
+          "kills": 2,
+          "deaths": 0,
+          "killFame": 90606,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "njWTSnK-RJK6tT3mK_7aMw"
+        },
+        "r4BPfrTMSY6mpEuAKkqyig": {
+          "name": "BalyTropical",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 5851,
+          "guildName": "APE",
+          "guildId": "bM3TPc_LRkqQ9nH_CeTy0g",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "r4BPfrTMSY6mpEuAKkqyig"
+        },
+        "fYqcZ4rBRJ-75r1ACMFZhQ": {
+          "name": "ChampionOfBrazil",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 5851,
+          "guildName": "APE",
+          "guildId": "bM3TPc_LRkqQ9nH_CeTy0g",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "fYqcZ4rBRJ-75r1ACMFZhQ"
+        },
+        "TEFdQhRvQDa5nXhivMY6mg": {
+          "name": "ayca22",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 90606,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "TEFdQhRvQDa5nXhivMY6mg"
+        },
+        "CLcVUjBFSNWuz6LFJpNDsQ": {
+          "name": "Macaco",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 5851,
+          "guildName": "APE",
+          "guildId": "bM3TPc_LRkqQ9nH_CeTy0g",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "CLcVUjBFSNWuz6LFJpNDsQ"
+        },
+        "UNPHEMOPQJiWJzq-b0JVvQ": {
+          "name": "Drake",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 5851,
+          "guildName": "APE",
+          "guildId": "bM3TPc_LRkqQ9nH_CeTy0g",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "UNPHEMOPQJiWJzq-b0JVvQ"
+        },
+        "cs7bPxwMRbeGiKgRWnqwiQ": {
+          "name": "unplayer",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 90606,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "cs7bPxwMRbeGiKgRWnqwiQ"
+        }
+      },
+      "guilds": {
+        "iQwwAuv6Shy1YU9hi88P3Q": {
+          "name": "Smurfing Monkeys",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 90606,
+          "alliance": "",
+          "allianceId": "",
+          "id": "iQwwAuv6Shy1YU9hi88P3Q"
+        },
+        "bM3TPc_LRkqQ9nH_CeTy0g": {
+          "name": "APE",
+          "kills": 1,
+          "deaths": 11,
+          "killFame": 149116,
+          "alliance": "",
+          "allianceId": "",
+          "id": "bM3TPc_LRkqQ9nH_CeTy0g"
+        }
+      },
+      "alliances": {},
+      "battle_TIMEOUT": 180
+    },
+    {
+      "id": 56194,
+      "startTime": "2024-04-24T21:29:17.894531800Z",
+      "endTime": "2024-04-24T21:31:15.499498800Z",
+      "timeout": "2024-04-24T21:34:15.499498800Z",
+      "totalFame": 607398,
+      "totalKills": 10,
+      "clusterName": null,
+      "players": {
+        "hP-Ja5EvQDyJFLPewi1cTQ": {
+          "name": "Mog",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "hP-Ja5EvQDyJFLPewi1cTQ"
+        },
+        "szMokE0RRdOdp6gfnd_rlg": {
+          "name": "Sajson",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "szMokE0RRdOdp6gfnd_rlg"
+        },
+        "EyWrIJpGS0qshnnWEpIADg": {
+          "name": "neRUSSKE",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 67486,
+          "guildName": "Oshmetki",
+          "guildId": "qrX_s43uTViAMJtEpmnqdA",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "EyWrIJpGS0qshnnWEpIADg"
+        },
+        "5PwqSLq9RMaWUXvZgvpeLw": {
+          "name": "1Tabyretka1",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 67486,
+          "guildName": "Oshmetki",
+          "guildId": "qrX_s43uTViAMJtEpmnqdA",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "5PwqSLq9RMaWUXvZgvpeLw"
+        },
+        "59WK6p05Q9GatH54_JWJ-g": {
+          "name": "ChopperArcane",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "APE",
+          "guildId": "bM3TPc_LRkqQ9nH_CeTy0g",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "59WK6p05Q9GatH54_JWJ-g"
+        },
+        "UjoPsmrUQSm3BIXW1iMldQ": {
+          "name": "Ichibyou",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "UjoPsmrUQSm3BIXW1iMldQ"
+        },
+        "8pH1P4BzStybdgB9MqhX4w": {
+          "name": "Kenpachi",
+          "kills": 4,
+          "deaths": 0,
+          "killFame": 67486,
+          "guildName": "Oshmetki",
+          "guildId": "qrX_s43uTViAMJtEpmnqdA",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "8pH1P4BzStybdgB9MqhX4w"
+        },
+        "or40DD1YRKGWjQc1qEddiQ": {
+          "name": "NoBlink",
+          "kills": 0,
+          "deaths": 2,
+          "killFame": 0,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "or40DD1YRKGWjQc1qEddiQ"
+        },
+        "uTdiZCiqSw64r-90V8JXGg": {
+          "name": "Shin",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 67486,
+          "guildName": "Oshmetki",
+          "guildId": "qrX_s43uTViAMJtEpmnqdA",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "uTdiZCiqSw64r-90V8JXGg"
+        },
+        "WSnIl1s_TtKNUD2x0Ec4sA": {
+          "name": "Capii",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "WSnIl1s_TtKNUD2x0Ec4sA"
+        },
+        "9x7yd_9FSLWVp9_CH8X0vA": {
+          "name": "GojoSatoru",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 67486,
+          "guildName": "Oshmetki",
+          "guildId": "qrX_s43uTViAMJtEpmnqdA",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "9x7yd_9FSLWVp9_CH8X0vA"
+        },
+        "hZjQEgf-TgiL6z-F_70giQ": {
+          "name": "Silentt",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 67486,
+          "guildName": "Oshmetki",
+          "guildId": "qrX_s43uTViAMJtEpmnqdA",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "hZjQEgf-TgiL6z-F_70giQ"
+        },
+        "F3qefi1nSk6NFgsJ-1xyfw": {
+          "name": "Error404",
+          "kills": 2,
+          "deaths": 0,
+          "killFame": 67486,
+          "guildName": "Oshmetki",
+          "guildId": "qrX_s43uTViAMJtEpmnqdA",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "F3qefi1nSk6NFgsJ-1xyfw"
+        },
+        "MxDP2SuRR-WWf6M3-3WXNw": {
+          "name": "Lycifist",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 67486,
+          "guildName": "Oshmetki",
+          "guildId": "qrX_s43uTViAMJtEpmnqdA",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "MxDP2SuRR-WWf6M3-3WXNw"
+        },
+        "njWTSnK-RJK6tT3mK_7aMw": {
+          "name": "judi",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "njWTSnK-RJK6tT3mK_7aMw"
+        },
+        "TEFdQhRvQDa5nXhivMY6mg": {
+          "name": "ayca22",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "TEFdQhRvQDa5nXhivMY6mg"
+        },
+        "cs7bPxwMRbeGiKgRWnqwiQ": {
+          "name": "unplayer",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "cs7bPxwMRbeGiKgRWnqwiQ"
+        },
+        "QLk-XJcdQB6zShZLfzBb0Q": {
+          "name": "Alexander",
+          "kills": 2,
+          "deaths": 0,
+          "killFame": 67486,
+          "guildName": "Oshmetki",
+          "guildId": "qrX_s43uTViAMJtEpmnqdA",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "QLk-XJcdQB6zShZLfzBb0Q"
+        }
+      },
+      "guilds": {
+        "iQwwAuv6Shy1YU9hi88P3Q": {
+          "name": "Smurfing Monkeys",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "alliance": "",
+          "allianceId": "",
+          "id": "iQwwAuv6Shy1YU9hi88P3Q"
+        },
+        "qrX_s43uTViAMJtEpmnqdA": {
+          "name": "Oshmetki",
+          "kills": 10,
+          "deaths": 0,
+          "killFame": 607374,
+          "alliance": "",
+          "allianceId": "",
+          "id": "qrX_s43uTViAMJtEpmnqdA"
+        },
+        "bM3TPc_LRkqQ9nH_CeTy0g": {
+          "name": "APE",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "alliance": "",
+          "allianceId": "",
+          "id": "bM3TPc_LRkqQ9nH_CeTy0g"
+        }
+      },
+      "alliances": {},
+      "battle_TIMEOUT": 180
+    },
+    {
+      "id": 60161,
+      "startTime": "2024-04-24T22:05:48.570382500Z",
+      "endTime": "2024-04-24T22:06:09.691554500Z",
+      "timeout": "2024-04-24T22:09:09.691554500Z",
+      "totalFame": 467658,
+      "totalKills": 6,
+      "clusterName": null,
+      "players": {
+        "1fBGqbB9TvuJTV40RpNeXg": {
+          "name": "Eveling",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Hard CHARGE",
+          "guildId": "plYWH4fwRay2h71c3XihNg",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "1fBGqbB9TvuJTV40RpNeXg"
+        },
+        "SLO7cejERjy22lggyOPL9A": {
+          "name": "NellNore",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 93528,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "SLO7cejERjy22lggyOPL9A"
+        },
+        "74OAAClVRVKSweKXOsoV9A": {
+          "name": "Tetsu",
+          "kills": 0,
+          "deaths": 2,
+          "killFame": 0,
+          "guildName": "Hard CHARGE",
+          "guildId": "plYWH4fwRay2h71c3XihNg",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "74OAAClVRVKSweKXOsoV9A"
+        },
+        "Py6MZYzcT6e8XjootzfviQ": {
+          "name": "Repabliques",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Hard CHARGE",
+          "guildId": "plYWH4fwRay2h71c3XihNg",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "Py6MZYzcT6e8XjootzfviQ"
+        },
+        "tQZsnZmITYyFEpUUpSBGyw": {
+          "name": "RedziKadzi",
+          "kills": 3,
+          "deaths": 0,
+          "killFame": 93528,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "tQZsnZmITYyFEpUUpSBGyw"
+        },
+        "6nfP5Tu_R5upUMfsC9-B5g": {
+          "name": "depressedSkuf",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 93528,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "6nfP5Tu_R5upUMfsC9-B5g"
+        },
+        "_aQm24W2Svuji3bLoOLEJg": {
+          "name": "MagistrGoyda",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 93528,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "_aQm24W2Svuji3bLoOLEJg"
+        },
+        "vTmv3XzQQqyn2QS0upoWmg": {
+          "name": "chyrkabes",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 93528,
+          "guildName": "",
+          "guildId": "",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "vTmv3XzQQqyn2QS0upoWmg"
+        },
+        "KeASoZKwR9iTtiqnNrcEJg": {
+          "name": "Godslayer",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Hard CHARGE",
+          "guildId": "plYWH4fwRay2h71c3XihNg",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "KeASoZKwR9iTtiqnNrcEJg"
+        },
+        "DMLl3r0wRDGHgtqxhFAtBg": {
+          "name": "TolyaTop1",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Hard CHARGE",
+          "guildId": "plYWH4fwRay2h71c3XihNg",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "DMLl3r0wRDGHgtqxhFAtBg"
+        }
+      },
+      "guilds": {
+        "plYWH4fwRay2h71c3XihNg": {
+          "name": "Hard CHARGE",
+          "kills": 0,
+          "deaths": 6,
+          "killFame": 0,
+          "alliance": "",
+          "allianceId": "",
+          "id": "plYWH4fwRay2h71c3XihNg"
+        }
+      },
+      "alliances": {},
+      "battle_TIMEOUT": 180
+    },
+    {
+      "id": 88924,
+      "startTime": "2024-04-25T06:38:07.500788400Z",
+      "endTime": "2024-04-25T06:40:47.298357300Z",
+      "timeout": "2024-04-25T06:43:47.298357300Z",
+      "totalFame": 467078,
+      "totalKills": 3,
+      "clusterName": null,
+      "players": {
+        "c6eMWUb4RDGz4Dv3oDJuBA": {
+          "name": "xkel",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Invincible",
+          "guildId": "iQrUBqF7Sv-3xVGISEM6hQ",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "c6eMWUb4RDGz4Dv3oDJuBA"
+        },
+        "Z6L1FnEASB-XW6gFLWJnuw": {
+          "name": "Khomeini",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 43762,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "Z6L1FnEASB-XW6gFLWJnuw"
+        },
+        "IzQIWHlzTyiZBMlfl6KVuA": {
+          "name": "Apexus",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 17344,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "IzQIWHlzTyiZBMlfl6KVuA"
+        },
+        "Q9T_HWgWT0m4SUDX6TYJiA": {
+          "name": "Xander",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 43762,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "Q9T_HWgWT0m4SUDX6TYJiA"
+        },
+        "i_830j-STQ6DhIR8eZ5y2Q": {
+          "name": "Hotjazz",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 17344,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "i_830j-STQ6DhIR8eZ5y2Q"
+        },
+        "dZ3kxvrWSyaX_JGkaI-PMg": {
+          "name": "iDada",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 43762,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "dZ3kxvrWSyaX_JGkaI-PMg"
+        },
+        "N99zcObsRUiwsidc672hAQ": {
+          "name": "milfhunter026",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 43762,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "N99zcObsRUiwsidc672hAQ"
+        },
+        "VzHzkX7sQRezt0meKy-7zQ": {
+          "name": "Fitzys",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 17344,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "VzHzkX7sQRezt0meKy-7zQ"
+        },
+        "F0A2cgUTQ-GqISDGkTdiBg": {
+          "name": "Zang",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 43762,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "F0A2cgUTQ-GqISDGkTdiBg"
+        },
+        "f4DemrR8QgqoTB5ozu4ZpQ": {
+          "name": "Doom",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 43762,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "f4DemrR8QgqoTB5ozu4ZpQ"
+        },
+        "oEPASuW_RcSbx6RJCvj1gw": {
+          "name": "Garsusmor",
+          "kills": 1,
+          "deaths": 1,
+          "killFame": 3840,
+          "guildName": "Invincible",
+          "guildId": "iQrUBqF7Sv-3xVGISEM6hQ",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "oEPASuW_RcSbx6RJCvj1gw"
+        },
+        "yIYGJuKaQKmD0TV6BQARLA": {
+          "name": "Gaxy",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 17344,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "yIYGJuKaQKmD0TV6BQARLA"
+        },
+        "EVN__pndRlejhSRLUSSTiQ": {
+          "name": "Kara",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 43762,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "EVN__pndRlejhSRLUSSTiQ"
+        },
+        "n1y51ORwSY6G3eRyXmhEXw": {
+          "name": "Energysenzor",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 17344,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "n1y51ORwSY6G3eRyXmhEXw"
+        },
+        "Pk1wgD7hQa-JSJKuK4zMWg": {
+          "name": "Moaddin",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 43762,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "Pk1wgD7hQa-JSJKuK4zMWg"
+        },
+        "Y77GB5GbQT-Jhq0Pcxey9A": {
+          "name": "Yaromar",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "BeerPaws",
+          "guildId": "GGgT5LFXTaa_0hPwax15rA",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "Y77GB5GbQT-Jhq0Pcxey9A"
+        },
+        "9XNxYrw0SlC2ji8ANtQ_3Q": {
+          "name": "fuzzface",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 26418,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "9XNxYrw0SlC2ji8ANtQ_3Q"
+        }
+      },
+      "guilds": {
+        "iQwwAuv6Shy1YU9hi88P3Q": {
+          "name": "Smurfing Monkeys",
+          "kills": 2,
+          "deaths": 0,
+          "killFame": 463234,
+          "alliance": "",
+          "allianceId": "",
+          "id": "iQwwAuv6Shy1YU9hi88P3Q"
+        },
+        "iQrUBqF7Sv-3xVGISEM6hQ": {
+          "name": "Invincible",
+          "kills": 1,
+          "deaths": 2,
+          "killFame": 3840,
+          "alliance": "",
+          "allianceId": "",
+          "id": "iQrUBqF7Sv-3xVGISEM6hQ"
+        },
+        "GGgT5LFXTaa_0hPwax15rA": {
+          "name": "BeerPaws",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "alliance": "",
+          "allianceId": "",
+          "id": "GGgT5LFXTaa_0hPwax15rA"
+        }
+      },
+      "alliances": {},
+      "battle_TIMEOUT": 180
+    },
+    {
+      "id": 83222,
+      "startTime": "2024-04-25T03:51:55.093172600Z",
+      "endTime": "2024-04-25T03:53:26.726558900Z",
+      "timeout": "2024-04-25T03:56:26.726558900Z",
+      "totalFame": 373644,
+      "totalKills": 3,
+      "clusterName": null,
+      "players": {
+        "u9-ZIX8sSpOsem8-BTnHIg": {
+          "name": "KnightOfDonbas",
+          "kills": 2,
+          "deaths": 0,
+          "killFame": 216264,
+          "guildName": "ZAVOD",
+          "guildId": "RnZdgJCBRjiH0HWVqUzOSw",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "u9-ZIX8sSpOsem8-BTnHIg"
+        },
+        "9s3jFnorRZqJb6_5RJnvJg": {
+          "name": "SugarMammy",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "ZAVOD",
+          "guildId": "RnZdgJCBRjiH0HWVqUzOSw",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "9s3jFnorRZqJb6_5RJnvJg"
+        },
+        "kfW1lazzTU-hHfX_Q74dOQ": {
+          "name": "Smeekl",
+          "kills": 1,
+          "deaths": 1,
+          "killFame": 28404,
+          "guildName": "GORILLAZ",
+          "guildId": "ib5mwBdkT_CgMhGY_c7cWg",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "kfW1lazzTU-hHfX_Q74dOQ"
+        },
+        "WhVTpPTHQGmb59diKvcoLA": {
+          "name": "DefenderOfDonbas",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 64488,
+          "guildName": "ZAVOD",
+          "guildId": "RnZdgJCBRjiH0HWVqUzOSw",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "WhVTpPTHQGmb59diKvcoLA"
+        },
+        "qLN2_C8uR4mSASaSAWF67A": {
+          "name": "Zensaris",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "GORILLAZ",
+          "guildId": "ib5mwBdkT_CgMhGY_c7cWg",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "qLN2_C8uR4mSASaSAWF67A"
+        },
+        "TmyC2lD2RjCEyIUX_R5GqQ": {
+          "name": "HEN3BECTHO",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 64488,
+          "guildName": "ZAVOD",
+          "guildId": "RnZdgJCBRjiH0HWVqUzOSw",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "TmyC2lD2RjCEyIUX_R5GqQ"
+        }
+      },
+      "guilds": {
+        "RnZdgJCBRjiH0HWVqUzOSw": {
+          "name": "ZAVOD",
+          "kills": 2,
+          "deaths": 1,
+          "killFame": 345240,
+          "alliance": "",
+          "allianceId": "",
+          "id": "RnZdgJCBRjiH0HWVqUzOSw"
+        },
+        "ib5mwBdkT_CgMhGY_c7cWg": {
+          "name": "GORILLAZ",
+          "kills": 1,
+          "deaths": 2,
+          "killFame": 28404,
+          "alliance": "",
+          "allianceId": "",
+          "id": "ib5mwBdkT_CgMhGY_c7cWg"
+        }
+      },
+      "alliances": {},
+      "battle_TIMEOUT": 180
+    },
+    {
+      "id": 88494,
+      "startTime": "2024-04-25T06:28:54.868361Z",
+      "endTime": "2024-04-25T06:32:30.588163800Z",
+      "timeout": "2024-04-25T06:35:30.588163800Z",
+      "totalFame": 324330,
+      "totalKills": 13,
+      "clusterName": null,
+      "players": {
+        "Z6L1FnEASB-XW6gFLWJnuw": {
+          "name": "Khomeini",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 14318,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "Z6L1FnEASB-XW6gFLWJnuw"
+        },
+        "IzQIWHlzTyiZBMlfl6KVuA": {
+          "name": "Apexus",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 9784,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "IzQIWHlzTyiZBMlfl6KVuA"
+        },
+        "inhaUew5SlusX8DwM8I9ag": {
+          "name": "VIVI",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Royalty",
+          "guildId": "Ny6MHwMPQASRf1NsrRGmbQ",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "inhaUew5SlusX8DwM8I9ag"
+        },
+        "Q9T_HWgWT0m4SUDX6TYJiA": {
+          "name": "Xander",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 14318,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "Q9T_HWgWT0m4SUDX6TYJiA"
+        },
+        "N99zcObsRUiwsidc672hAQ": {
+          "name": "milfhunter026",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 14318,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "N99zcObsRUiwsidc672hAQ"
+        },
+        "KqeaMJgtTWmTCsoAYPwNng": {
+          "name": "Ochiwin",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 9784,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "KqeaMJgtTWmTCsoAYPwNng"
+        },
+        "UjoPsmrUQSm3BIXW1iMldQ": {
+          "name": "Ichibyou",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 14318,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "UjoPsmrUQSm3BIXW1iMldQ"
+        },
+        "F0A2cgUTQ-GqISDGkTdiBg": {
+          "name": "Zang",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 14318,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "F0A2cgUTQ-GqISDGkTdiBg"
+        },
+        "CCxEEXd3TQGGnA3yMXhIQA": {
+          "name": "Voidklng",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 13584,
+          "guildName": "Skull and Bones",
+          "guildId": "lIngp0PIQmGdYMtbXp122A",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "CCxEEXd3TQGGnA3yMXhIQA"
+        },
+        "MVrBfjGMRgK63hczdZnvOg": {
+          "name": "Babajide",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 9784,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "MVrBfjGMRgK63hczdZnvOg"
+        },
+        "7nBxNNOLREmWW90fX8Ggtg": {
+          "name": "Kotori",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 1514,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "7nBxNNOLREmWW90fX8Ggtg"
+        },
+        "n1y51ORwSY6G3eRyXmhEXw": {
+          "name": "Energysenzor",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 14318,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "n1y51ORwSY6G3eRyXmhEXw"
+        },
+        "4C7-QTPcQHSgr_sr58bDQA": {
+          "name": "sexyjo",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 3552,
+          "guildName": "Gotham",
+          "guildId": "lOv7q8zCSLO6ZJoiew2k7A",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "4C7-QTPcQHSgr_sr58bDQA"
+        },
+        "Pk1wgD7hQa-JSJKuK4zMWg": {
+          "name": "Moaddin",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 14318,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "Pk1wgD7hQa-JSJKuK4zMWg"
+        },
+        "9XNxYrw0SlC2ji8ANtQ_3Q": {
+          "name": "fuzzface",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 14318,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "9XNxYrw0SlC2ji8ANtQ_3Q"
+        },
+        "KLVevdWaQG6CBoNqlaIgUw": {
+          "name": "Paper",
+          "kills": 2,
+          "deaths": 1,
+          "killFame": 22764,
+          "guildName": "Skull and Bones",
+          "guildId": "lIngp0PIQmGdYMtbXp122A",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "KLVevdWaQG6CBoNqlaIgUw"
+        },
+        "-V2GiMOoQs-OyKhBSvdwRA": {
+          "name": "Faren",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Royalty",
+          "guildId": "Ny6MHwMPQASRf1NsrRGmbQ",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "-V2GiMOoQs-OyKhBSvdwRA"
+        },
+        "dZ3kxvrWSyaX_JGkaI-PMg": {
+          "name": "iDada",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 14318,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "dZ3kxvrWSyaX_JGkaI-PMg"
+        },
+        "i_830j-STQ6DhIR8eZ5y2Q": {
+          "name": "Hotjazz",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 14318,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "i_830j-STQ6DhIR8eZ5y2Q"
+        },
+        "LYAJgiouS2Sp2Dy7l6Lk9w": {
+          "name": "kornerklaus",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "LYAJgiouS2Sp2Dy7l6Lk9w"
+        },
+        "E_BvZ1pLToyg1K9q7uNdHQ": {
+          "name": "Scissors",
+          "kills": 2,
+          "deaths": 0,
+          "killFame": 13584,
+          "guildName": "Skull and Bones",
+          "guildId": "lIngp0PIQmGdYMtbXp122A",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "E_BvZ1pLToyg1K9q7uNdHQ"
+        },
+        "VzHzkX7sQRezt0meKy-7zQ": {
+          "name": "Fitzys",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 14318,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "VzHzkX7sQRezt0meKy-7zQ"
+        },
+        "CtdkpBDEScWmdt0cvfrrWQ": {
+          "name": "Tigga",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 12528,
+          "guildName": "Skull and Bones",
+          "guildId": "lIngp0PIQmGdYMtbXp122A",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "CtdkpBDEScWmdt0cvfrrWQ"
+        },
+        "XX7Lf6nYScCfWsDvrf74zg": {
+          "name": "Frosty",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 1056,
+          "guildName": "Skull and Bones",
+          "guildId": "lIngp0PIQmGdYMtbXp122A",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "XX7Lf6nYScCfWsDvrf74zg"
+        },
+        "kSkrkpO4S861etnlQ33v1g": {
+          "name": "Alduin",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Royalty",
+          "guildId": "Ny6MHwMPQASRf1NsrRGmbQ",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "kSkrkpO4S861etnlQ33v1g"
+        },
+        "ezH3loHlQkWh7QIDTsU_8w": {
+          "name": "NotLockZ",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 11808,
+          "guildName": "Gotham",
+          "guildId": "lOv7q8zCSLO6ZJoiew2k7A",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "ezH3loHlQkWh7QIDTsU_8w"
+        },
+        "-f-jNtIiRpyjNNKZntOitg": {
+          "name": "BigRick",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Royalty",
+          "guildId": "Ny6MHwMPQASRf1NsrRGmbQ",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "-f-jNtIiRpyjNNKZntOitg"
+        },
+        "f4DemrR8QgqoTB5ozu4ZpQ": {
+          "name": "Doom",
+          "kills": 0,
+          "deaths": 0,
+          "killFame": 5786,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "f4DemrR8QgqoTB5ozu4ZpQ"
+        },
+        "yIYGJuKaQKmD0TV6BQARLA": {
+          "name": "Gaxy",
+          "kills": 2,
+          "deaths": 0,
+          "killFame": 9784,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "yIYGJuKaQKmD0TV6BQARLA"
+        },
+        "-ejmXI-lSLaK26uXwo_u5g": {
+          "name": "Liviano",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Royalty",
+          "guildId": "Ny6MHwMPQASRf1NsrRGmbQ",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "-ejmXI-lSLaK26uXwo_u5g"
+        },
+        "EVN__pndRlejhSRLUSSTiQ": {
+          "name": "Kara",
+          "kills": 1,
+          "deaths": 0,
+          "killFame": 14318,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "EVN__pndRlejhSRLUSSTiQ"
+        },
+        "F3qEeDQeQveyqhCdVeJNJA": {
+          "name": "Knemo",
+          "kills": 2,
+          "deaths": 1,
+          "killFame": 13584,
+          "guildName": "FINSTACK",
+          "guildId": "1lXPbgD5Tpmu9YHtBWq0VQ",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "F3qEeDQeQveyqhCdVeJNJA"
+        },
+        "Q7ok3wd4Q16yypFflOWDgQ": {
+          "name": "Error",
+          "kills": 1,
+          "deaths": 1,
+          "killFame": 13584,
+          "guildName": "FINSTACK",
+          "guildId": "1lXPbgD5Tpmu9YHtBWq0VQ",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "Q7ok3wd4Q16yypFflOWDgQ"
+        },
+        "leoyk4t0RkO6cCZ5amaaWA": {
+          "name": "Gamora",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Royalty",
+          "guildId": "Ny6MHwMPQASRf1NsrRGmbQ",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "leoyk4t0RkO6cCZ5amaaWA"
+        },
+        "1Cz4OXv5R-qpMjty3eZoLQ": {
+          "name": "Niboss",
+          "kills": 0,
+          "deaths": 1,
+          "killFame": 0,
+          "guildName": "Smurfing Monkeys",
+          "guildId": "iQwwAuv6Shy1YU9hi88P3Q",
+          "allianceName": "",
+          "allianceId": "",
+          "id": "1Cz4OXv5R-qpMjty3eZoLQ"
+        }
+      },
+      "guilds": {
+        "iQwwAuv6Shy1YU9hi88P3Q": {
+          "name": "Smurfing Monkeys",
+          "kills": 4,
+          "deaths": 3,
+          "killFame": 218252,
+          "alliance": "",
+          "allianceId": "",
+          "id": "iQwwAuv6Shy1YU9hi88P3Q"
+        },
+        "1lXPbgD5Tpmu9YHtBWq0VQ": {
+          "name": "FINSTACK",
+          "kills": 3,
+          "deaths": 2,
+          "killFame": 27168,
+          "alliance": "",
+          "allianceId": "",
+          "id": "1lXPbgD5Tpmu9YHtBWq0VQ"
+        },
+        "Ny6MHwMPQASRf1NsrRGmbQ": {
+          "name": "Royalty",
+          "kills": 0,
+          "deaths": 6,
+          "killFame": 0,
+          "alliance": "",
+          "allianceId": "",
+          "id": "Ny6MHwMPQASRf1NsrRGmbQ"
+        },
+        "lOv7q8zCSLO6ZJoiew2k7A": {
+          "name": "Gotham",
+          "kills": 2,
+          "deaths": 0,
+          "killFame": 15360,
+          "alliance": "",
+          "allianceId": "",
+          "id": "lOv7q8zCSLO6ZJoiew2k7A"
+        },
+        "lIngp0PIQmGdYMtbXp122A": {
+          "name": "Skull and Bones",
+          "kills": 4,
+          "deaths": 2,
+          "killFame": 63516,
+          "alliance": "",
+          "allianceId": "",
+          "id": "lIngp0PIQmGdYMtbXp122A"
+        }
+      },
+      "alliances": {},
+      "battle_TIMEOUT": 180
+    }
+  ]
+]

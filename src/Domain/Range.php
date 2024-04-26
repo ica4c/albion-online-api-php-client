@@ -1,14 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Domain;
 
-use Solid\Foundation\Enum;
-
-class Range extends Enum
+enum Range: string
 {
-    const DAY = 'day';
-    const WEEK = 'week';
-    const MONTH = 'month';
-    const LAST_WEEK = 'lastWeek';
-    const LAST_MONTH = 'lastMonth';
+    case DAY = 'day';
+    case WEEK = 'week';
+    case MONTH = 'month';
+    case LAST_WEEK = 'lastWeek';
+    case LAST_MONTH = 'lastMonth';
 }

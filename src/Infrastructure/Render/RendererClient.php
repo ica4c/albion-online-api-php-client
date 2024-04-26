@@ -1,13 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Infrastructure\Render;
 
 use Albion\API\Domain\ItemQuality;
-use Albion\API\Infrastructure\GameInfo\Exceptions\FailedToPerformRequestException;
 use Albion\API\Infrastructure\GameInfo\Exceptions\ItemNotFoundException;
-use GuzzleHttp\Exception\RequestException;
-use GuzzleHttp\Promise\PromiseInterface;
-use GuzzleHttp\Psr7\Response;
 
 class RendererClient
 {
@@ -23,11 +21,12 @@ class RendererClient
      * @param string $locale
      *
      * @return string
+     *
      * @throws ItemNotFoundException
      */
     public function getItemIcon(
         string $itemId,
-        ItemQuality $quality = null,
+        ?ItemQuality $quality = null,
         int $enchantment = 0,
         int $size = 217,
         string $locale = 'en'
@@ -41,7 +40,7 @@ class RendererClient
                 str_contains($itemId, '@') ? "${itemId}.png" : "${itemId}@${enchantment}.png",
                 http_build_query(
                     [
-                        'quality' => $quality ? $quality->toString() : ItemQuality::NORMAL,
+                        'quality' => $quality?->value ?: ItemQuality::NORMAL->value,
                         'size' => max(32, min($size, 217)),
                         'locale' => $locale ?: 'en'
                     ]

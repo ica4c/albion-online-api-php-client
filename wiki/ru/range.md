@@ -1,10 +1,8 @@
-# Ranges
-
-Пример ```Range::of(Range::week)```
+# Окна выборки
 
 Доступные сценарии:
- * `Range::week` - неделя
- * `Range::day` - день
- * `Range::month` - месяц
- * `Range::lastMonth` - только текущий месяц
- * `Range::lastWeek` - только текущая неделя
+ * `week` - неделя
+ * `day` - день
+ * `month` - месяц
+ * `lastMonth` - только текущий месяц
+ * `lastWeek` - только текущая неделя

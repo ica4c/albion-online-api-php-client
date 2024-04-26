@@ -1,15 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Domain;
 
-use Solid\Foundation\Enum;
-
-class PlayerStatSubType extends Enum
+enum PlayerStatSubType: string
 {
-    const ALL = 'All';
-    const FIBER = 'Fiber';
-    const HIDE = 'Hide';
-    const ORE = 'Ore';
-    const ROCK = 'Rock';
-    const WOOD = 'Wood';
+    case ALL = 'All';
+    case FIBER = 'Fiber';
+    case HIDE = 'Hide';
+    case ORE = 'Ore';
+    case ROCK = 'Rock';
+    case WOOD = 'Wood';
 }

@@ -8,6 +8,7 @@
 `searchGuild(string $query)`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _string_ `$query` - search query,
  
 ###### Throws
@@ -17,11 +18,9 @@
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
- 
 $client = new GuildClient();
 
-$client->searchGuild('W0rld Eaters')
+$client->searchGuild(Realm::AMERICA, 'my-guild-name')
     ->then(
         static function($guilds) {
             // Do something with guilds information
@@ -32,9 +31,10 @@ $client->searchGuild('W0rld Eaters')
 ### Get basic guild information by id
 
 ###### Method
-`getGuildInfo(string $guildId)`
+`getGuildInfo()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _string_ `$guildId` - guild id
  
 ###### Throws
@@ -44,11 +44,9 @@ $client->searchGuild('W0rld Eaters')
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
- 
 $client = new GuildClient();
 
-$client->getGuildInfo('guild-uuid')
+$client->getGuildInfo(Realm::AMERICA, 'guild-uuid')
     ->then(
         static function($guild) {
             // Do something with guild information
@@ -59,9 +57,10 @@ $client->getGuildInfo('guild-uuid')
 ### Get detailed guild information by id
 
 ###### Method
-`getGuildData(string $guildId)`
+`getGuildData()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _string_ `$guildId` - guild id
  
 ###### Throws
@@ -71,11 +70,9 @@ $client->getGuildInfo('guild-uuid')
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
- 
 $client = new GuildClient();
 
-$client->getGuildData('guild-uuid')
+$client->getGuildData(Realm::AMERICA, 'guild-uuid')
     ->then(
         static function($guild) {
             // Do something with guild information
@@ -86,9 +83,10 @@ $client->getGuildData('guild-uuid')
 ### Get guild players top
 
 ###### Method
-`getGuildTopMembers(string $guildId, Range $range = null, int $limit = 10, int $offset = 0, RegionType $region = null)`
+`getGuildTopMembers()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _string_ `$guildId` - guild id
  * [Range](range.md) `$range` - one of the [Range](range.md) values [default=Range::DAY].
  * _int_ `$limit` - limit response amount [default = 10],
@@ -102,13 +100,9 @@ $client->getGuildData('guild-uuid')
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
-use Albion\OnlineDataProject\Domain\RegionType;
-use Albion\OnlineDataProject\Domain\Range;
- 
 $client = new GuildClient();
 
-$client->getGuildTopMembers('guild-uuid', Range::of(Range::DAY), 10, 0, RegionType::of(RegionType::HELLGATES))
+$client->getGuildTopMembers(Realm::AMERICA, 'guild-uuid', Range::of(Range::DAY), 10, 0, RegionType::of(RegionType::HELLGATES))
     ->then(
         static function($players) {
             // Do something with player information
@@ -122,6 +116,7 @@ $client->getGuildTopMembers('guild-uuid', Range::of(Range::DAY), 10, 0, RegionTy
 `getGuildMembers(string $guildId)`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * _string_ `$guildId` - guild id
  
 ###### Throws
@@ -131,11 +126,9 @@ $client->getGuildTopMembers('guild-uuid', Range::of(Range::DAY), 10, 0, RegionTy
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
- 
 $client = new GuildClient();
 
-$client->getGuildMembers('guild-uuid')
+$client->getGuildMembers(Realm::AMERICA, 'guild-uuid')
     ->then(
         static function($players) {
             // Do something with player information
@@ -146,9 +139,10 @@ $client->getGuildMembers('guild-uuid')
 ### Get guilds top by attacks
 
 ###### Method
-`getGuildTopByAttacks(Range $range = null, int $limit = 10, int $offset = 0)`
+`getGuildTopByAttacks()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * [Range](range.md) `$range` - one of the [Range](range.md) values [default=Range::DAY].
   * _int_ `$limit` - limit response amount [default = 10],
   * _int_ `$offset` - skip first n values [default = 0],
@@ -159,11 +153,9 @@ $client->getGuildMembers('guild-uuid')
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
- 
 $client = new GuildClient();
 
-$client->getGuildTopByAttacks(Range::of(Range::WEEK), 15, 0)
+$client->getGuildTopByAttacks(Realm::AMERICA, Range::WEEK, 15, 0)
     ->then(
         static function($guilds) {
             // Do something with guilds information
@@ -174,9 +166,10 @@ $client->getGuildTopByAttacks(Range::of(Range::WEEK), 15, 0)
 ### Get guilds top by defence
 
 ###### Method
-`getGuildTopByDefences(Range $range = null, int $limit = 10, int $offset = 0)`
+`getGuildTopByDefences()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
  * [Range](range.md) `$range` - one of the [Range](range.md) values [default=Range::DAY].
   * _int_ `$limit` - limit response amount [default = 10],
   * _int_ `$offset` - skip first n values [default = 0],
@@ -187,11 +180,9 @@ $client->getGuildTopByAttacks(Range::of(Range::WEEK), 15, 0)
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
- 
 $client = new GuildClient();
 
-$client->getGuildTopByDefences(Range::of(Range::WEEK), 15, 0)
+$client->getGuildTopByDefences(Realm::AMERICA, Range::of(Range::WEEK), 15, 0)
     ->then(
         static function($guilds) {
             // Do something with guilds information
@@ -203,9 +194,10 @@ $client->getGuildTopByDefences(Range::of(Range::WEEK), 15, 0)
 ### Get guilds top events
 
 ###### Method
-`getGuildTopEvents(string $guildId, [Range $range = null, int $limit = 10, int $offset = 0])`
+`getGuildTopEvents()`
 
 ###### Params
+* [Realm](realm.md) `$realm` - one of [Realm](realm.md).
 * _string_ `$guildId` - guild identifier
 * [Range](range.md) `$range` - one of the [Range](range.md) values [default=Range::DAY].
 * _int_ `$limit` - limit response amount [default = 10],
@@ -217,11 +209,9 @@ $client->getGuildTopByDefences(Range::of(Range::WEEK), 15, 0)
 ###### Example
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
- 
-$client = new GuildClient('identifier');
+$client = new GuildClient();
 
-$client->getGuildTopEvents(Range::of(Range::WEEK), 15, 0)
+$client->getGuildTopEvents(Realm::AMERICA, 'identifier', Range::of(Range::WEEK), 15, 0)
     ->then(
         static function($guilds) {
             // Do something with guilds information

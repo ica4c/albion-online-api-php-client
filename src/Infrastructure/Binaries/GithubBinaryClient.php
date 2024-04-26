@@ -1,83 +1,57 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Infrastructure\Binaries;
 
 use Albion\API\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException;
-use Albion\API\Infrastructure\Binaries\Extractors\CategoryExtractor;
-use Albion\API\Infrastructure\Binaries\Extractors\ItemExtractor;
-use Albion\API\Infrastructure\Binaries\Extractors\LocalizationExtractor;
+use Albion\API\Infrastructure\Binaries\Exceptions\FailedToLoadXMLException;
 use DOMDocument;
-use DOMText;
-use DOMXPath;
 use GuzzleHttp\Client;
-use GuzzleHttp\Exception\RequestException;
-use SimpleXMLElement;
-use function foo\func;
+use Throwable;
 
 abstract class GithubBinaryClient
 {
-    /** @var Client */
-    protected $httpClient;
-
-    /**
-     * Client constructor.
-     */
-    public function __construct()
+    public function __construct(protected Client $http)
     {
-        $this->httpClient = new Client([
-            'base_uri' => 'https://raw.githubusercontent.com/broderickhyman/ao-bin-dumps/master/',
-            'timeout' => 30
-        ]);
     }
 
     /**
      * @param string $url
+     *
      * @return string
-     * @throws FailedToFetchResourceException
+     *
+     * @throws \Albion\API\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException
      */
-    protected function fetchData(string $url): string {
+    protected function fetchData(string $url): string
+    {
         try {
-            $urlParts = explode('/', $url);
-            $fileName = end($urlParts);
-
-            $cachePath = __DIR__ . "/.cache";
-
-            if(!file_exists($cachePath)) {
-                mkdir($cachePath, 0777);
-            }
-
-            $cachedFilePath = "$cachePath/$fileName";
-
-            if(file_exists($cachedFilePath)) {
-                $cacheModifiedAt = filemtime($cachedFilePath);
-
-                if($cacheModifiedAt > time() - 6 * 24 * 60 * 60) {
-                    return file_get_contents($cachedFilePath);
-                }
-            }
-
-            $response = $this->httpClient->get($url);
-            $content = $response->getBody()->getContents();
-
-            file_put_contents($cachedFilePath, $content);
-            return $content;
-        } catch (RequestException $exception) {
+            $response = $this->http->get($url);
+            return $response->getBody()->getContents();
+        } catch (Throwable $exception) {
             throw new FailedToFetchResourceException($url, $exception);
         }
     }
 
     /**
      * @param string $resource
+     *
      * @return DOMDocument
-     * @throws FailedToFetchResourceException
+     *
+     * @throws \Albion\API\Infrastructure\Binaries\Exceptions\FailedToFetchResourceException
+     * @throws \Albion\API\Infrastructure\Binaries\Exceptions\FailedToLoadXMLException
      */
-    protected function fetchXML(string $resource): DOMDocument {
-        if(strpos('.xml', $resource) === false) {
+    protected function fetchXML(string $resource): DOMDocument
+    {
+        if(!str_contains('.xml', $resource)) {
             $resource .= '.xml';
         }
 
         $dom = new DOMDocument();
-        $dom->loadXML($this->fetchData($resource));
+
+        if (!$dom->loadXML($this->fetchData($resource))) {
+            throw new FailedToLoadXMLException($resource);
+        }
 
         return $dom;
     }
@@ -86,13 +60,16 @@ abstract class GithubBinaryClient
      * @param string $resource
      *
      * @return array
+     *
      * @throws FailedToFetchResourceException
+     * @throws \JsonException
      */
-    protected function fetchJSON(string $resource): array {
-        if(strpos('.json', $resource) === false) {
+    protected function fetchJSON(string $resource): array
+    {
+        if(!str_contains('.json', $resource)) {
             $resource .= '.json';
         }
 
-        return json_decode($this->fetchData($resource), true);
+        return json_decode($this->fetchData($resource), true, 512, JSON_THROW_ON_ERROR);
     }
 }

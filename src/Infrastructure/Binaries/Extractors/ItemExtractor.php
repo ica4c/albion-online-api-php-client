@@ -1,20 +1,15 @@
 <?php
 
-namespace Albion\API\Infrastructure\Binaries\Extractors;
+declare(strict_types=1);
 
-use Albion\API\Models\Location;
-use DOMNode;
+namespace Albion\API\Infrastructure\Binaries\Extractors;
 
 class ItemExtractor extends AbstractExtractor
 {
-    /**
-     * @inheritDoc
-     * @return mixed[]
-     */
     public function extract(): array
     {
         $items = [];
-        $elements = $this->xpath->query('/items/*[not(name()=\'shopcategories\')]');;
+        $elements = $this->xpath->query('/items/*[not(name()=\'shopcategories\')]');
 
         /** @var \DOMElement $element */
         foreach ($elements as $element) {
@@ -29,5 +24,4 @@ class ItemExtractor extends AbstractExtractor
 
         return $items;
     }
-
 }

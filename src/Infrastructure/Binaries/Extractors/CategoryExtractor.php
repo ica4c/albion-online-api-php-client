@@ -1,18 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Infrastructure\Binaries\Extractors;
 
 use DOMElement;
 
 class CategoryExtractor extends AbstractExtractor
 {
-    /**
-     * @inheritDoc
-     * @param \DOMElement $node
-     *
-     * @return array
-     */
-    protected function extractFromElement(DOMElement $node): array {
+    protected function extractFromElement(DOMElement $node): array
+    {
         $id = $node->getAttribute('id');
         $value = $node->getAttribute('value');
 
@@ -29,10 +26,6 @@ class CategoryExtractor extends AbstractExtractor
         ];
     }
 
-    /**
-     * @inheritDoc
-     * @return array
-     */
     public function extract(): array
     {
         $categories = [];

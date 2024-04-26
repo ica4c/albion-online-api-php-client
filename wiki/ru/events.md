@@ -6,22 +6,20 @@
 ### Последние убийства и смерти
 
 ###### Метод
-`getEvents([int $limit = 10, int $offset = 0, string $guildId = null, string $guildId = null])`
+`getEvents()`
 
 ###### Параметры
- * _int_ `$limit` - ограничить число результатов [default = 10],
- * _int_ `$offset` - пропустить n результатов [default = 0],
- * _string_ `$guildId` - ограничить гильдией [default = null], 
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
+* _int_ `$limit` - ограничить число результатов [default = 10],
+* _int_ `$offset` - пропустить n результатов [default = 0],
+* _string_ `$guildId` - ограничить гильдией [default = null], 
 
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
-use Albion\OnlineDataProject\Infrastructure\GameInfo\GuildClient;
-  
 $client = new EventClient();
 
-$client->getEvents(10, 0, 'test1234')
+$client->getEvents(Realm::AMERICA, 10, 0, 'test1234')
     ->then(
         static function($events) {
             // Do something with event information
@@ -32,12 +30,13 @@ $client->getEvents(10, 0, 'test1234')
 ### Смерти и убийства по общему фейму гильдии
 
 ###### Метод
-`getTopEventsByGuildFame(Range $range = null, int $limit = 10, int $offset = 0)`
+`getTopEventsByGuildFame()`
 
 ###### Параметры
- * [Range](range.md) `$range` - одно из [Range](range.md) [default=Range::DAY].
- * _int_ `$limit` - ограничить число результатов [default = 10],
- * _int_ `$offset` - пропустить n результатов [default = 0],
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
+* [Range](range.md) `$range` - одно из [Range](range.md) [default=Range::DAY].
+* _int_ `$limit` - ограничить число результатов [default = 10],
+* _int_ `$offset` - пропустить n результатов [default = 0],
 
 ###### Ошибки
  * _FailedToPerformRequestException_ - если что-то пошло не так
@@ -45,11 +44,9 @@ $client->getEvents(10, 0, 'test1234')
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
- 
 $client = new EventClient();
 
-$client->getTopEventsByGuildFame()
+$client->getTopEventsByGuildFame(Realm::AMERICA)
     ->then(
         static function($events) {
             // Do something with event information
@@ -65,9 +62,10 @@ $client->getTopEventsByGuildFame()
 ### Топ по фейму игроков 
 
 ###### Метод
-`getTopEventsByPlayerFame(Range $range = null, int $limit = 10, int $offset = 0)` 
+`getTopEventsByPlayerFame()` 
 
 ###### Параметры
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
 * [Range](range.md) `$range` - одно из [Range](range.md) [default=Range::DAY].
 * _int_ `$limit` - ограничить число результатов [default = 10],
 * _int_ `$offset` - пропустить n результатов [default = 0],
@@ -78,11 +76,9 @@ $client->getTopEventsByGuildFame()
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
- 
 $client = new EventClient();
 
-$client->getTopEventsByPlayerFame()
+$client->getTopEventsByPlayerFame(Realm::AMERICA)
     ->then(
         static function($matches) {
             // Do something with battles information
@@ -100,9 +96,10 @@ $client->getTopEventsByPlayerFame()
 Нуждается в уточнении
 
 ###### Метод
-`getTopEventsByPlayerWeaponFame(Range $range = null, WeaponClass $weaponCategory = null, int $limit = 10, int $offset = 0)`
+`getTopEventsByPlayerWeaponFame()`
 
 ###### Параметры
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
 * [Range](range.md) `$range` - одно из [Range](range.md) [default=Range::DAY].
 * [WeaponClass](weaponClass.md) `$weaponCategory` - одно из [WeaponClass](weaponClass.md) [default=WeaponClass::ALL].
 * _int_ `$limit` - ограничить число результатов [default = 10],
@@ -114,11 +111,9 @@ $client->getTopEventsByPlayerFame()
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
- 
 $client = new EventClient();
 
-$client->getTopEventsByPlayerWeaponFame(Range::of(Range::WEEK), WeaponClass::of(WeaponClass::AXE))
+$client->getTopEventsByPlayerWeaponFame(Realm::AMERICA, Range::WEEK, WeaponClass::AXE)
     ->then(
         static function($events) {
             // Do something with event information
@@ -134,9 +129,10 @@ $client->getTopEventsByPlayerWeaponFame(Range::of(Range::WEEK), WeaponClass::of(
 ### Топ по общему дропу фейма
 
 ###### Метод
-`getTopEventsByKillFame(Range $range = null, int $limit = 10, int $offset = 0)`
+`getTopEventsByKillFame()`
 
 ###### Параметры
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
 * [Range](range.md) `$range` - одно из [Range](range.md) [default=Range::DAY].
 * _int_ `$limit` - ограничить число результатов [default = 10],
 * _int_ `$offset` - пропустить n результатов [default = 0],
@@ -147,11 +143,9 @@ $client->getTopEventsByPlayerWeaponFame(Range::of(Range::WEEK), WeaponClass::of(
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\EventClient;
- 
 $client = new EventClient();
 
-$client->getTopEventsByKillFame()
+$client->getTopEventsByKillFame(Realm::AMERICA)
     ->then(
         static function($events) {
             // Do something with events information

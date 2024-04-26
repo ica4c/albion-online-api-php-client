@@ -1,25 +1,25 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Domain;
 
-use Solid\Foundation\Enum;
-
-class WeaponClass extends Enum
+enum WeaponClass: string
 {
-    const ALL = 'all';
-    const ARCANE_STAFF = 'arcabestaff';
-    const AXE = 'axe';
-    const BOW = 'bow';
-    const CROSSBOW = 'crossbow';
-    const CURSE_STAFF = 'cursestaff';
-    const DAGGER = 'dagger';
-    const FIRE_STAFF = 'firestaff';
-    const FROST_STAFF = 'froststaff';
-    const HAMMER = 'hammer';
-    const HOLY_STAFF = 'holystaff';
-    const MACE = 'mace';
-    const NATURE_STAFF = 'naturestaff';
-    const QUARTER_STAFF = 'quarterstaff';
-    const SPEAR = 'spear';
-    const SWORD = 'sword';
+    case ALL = 'all';
+    case ARCANE_STAFF = 'arcanestaff';
+    case AXE = 'axe';
+    case BOW = 'bow';
+    case CROSSBOW = 'crossbow';
+    case CURSE_STAFF = 'cursestaff';
+    case DAGGER = 'dagger';
+    case FIRE_STAFF = 'firestaff';
+    case FROST_STAFF = 'froststaff';
+    case HAMMER = 'hammer';
+    case HOLY_STAFF = 'holystaff';
+    case MACE = 'mace';
+    case NATURE_STAFF = 'naturestaff';
+    case QUARTER_STAFF = 'quarterstaff';
+    case SPEAR = 'spear';
+    case SWORD = 'sword';
 }

@@ -1,6 +1,4 @@
-# Weapon classes
-
-Пример: ```WeaponClass::of(WeaponClass::ARCANE_STAFF)```
+# Класс вооружения
 
 Доступные сценарии:
  * ALL - все

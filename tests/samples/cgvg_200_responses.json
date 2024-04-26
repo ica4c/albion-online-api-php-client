@@ -1,0 +1,6086 @@
+[
+  [
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T21:00:10.065317300Z",
+      "winner": 2,
+      "team1Guild": null,
+      "team1Tickets": 0,
+      "team1Territory": null,
+      "team1Results": {
+        "ENR1HDvkRMiadKK9Dx1TVw": {
+          "PlayerId": "10d4751c-3be4-44c8-9a74-a2bd0f1d5357",
+          "Name": "Gigachad",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 4,
+          "Healing": null,
+          "Fame": 1362480000
+        },
+        "GbGJ8DWvRLef9UB552z_bQ": {
+          "PlayerId": "19b189f0-35af-44b7-9ff5-4079e76cff6d",
+          "Name": "Neexyy",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 4,
+          "Healing": null,
+          "Fame": 1509155984
+        },
+        "R8OkOpfETrG6plM82fqT6w": {
+          "PlayerId": "47c3a43a-97c4-4eb1-baa6-533cd9fa93eb",
+          "Name": "Krule",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 4,
+          "Healing": 7075.0,
+          "Fame": 10639961014
+        },
+        "8zW0UkQVT8O19Qb17h5OMA": {
+          "PlayerId": "f335b452-4415-4fc3-b5f5-06f5ee1e4e30",
+          "Name": "B15",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 1788044594
+        },
+        "s_wlgxRtTf2AtIZHqlkOSw": {
+          "PlayerId": "b3fc2583-146d-4dfd-80b4-8647aa590e4b",
+          "Name": "Merrore",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 909.0,
+          "Fame": 8803325680
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T21:00:40.065545300Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:00:58.014904300Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:12.736934100Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:28.459340500Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:37.275618100Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:01:42.909430600Z",
+          "Tickets": 130
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:44.556247700Z",
+          "Tickets": 124
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:02:00.222322200Z",
+          "Tickets": 123
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:01.705574300Z",
+          "Tickets": 117
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:04.018104800Z",
+          "Tickets": 111
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:12.713487700Z",
+          "Tickets": 105
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:15.365838600Z",
+          "Tickets": 99
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:23.557956100Z",
+          "Tickets": 93
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:02:40.065545300Z",
+          "Tickets": 53
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:40.186240600Z",
+          "Tickets": 47
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:40.949405500Z",
+          "Tickets": 41
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:02:52.544783900Z",
+          "Tickets": 40
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:00.438147700Z",
+          "Tickets": 34
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:03.294091300Z",
+          "Tickets": 28
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:03:08.310926500Z",
+          "Tickets": 27
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:13.166240800Z",
+          "Tickets": 21
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:14.703520700Z",
+          "Tickets": 15
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:03:17.314722500Z",
+          "Tickets": 14
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:17.772605600Z",
+          "Tickets": 8
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:40.174776300Z",
+          "Tickets": 2
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T21:03:44.195108800Z",
+          "Tickets": null
+        }
+      ],
+      "team1LeaderId": "s_wlgxRtTf2AtIZHqlkOSw",
+      "team2Guild": null,
+      "team2Tickets": 149,
+      "team2Territory": null,
+      "team2Results": {
+        "70_6Pjo5RQC27UscZCEDvA": {
+          "PlayerId": "ef4ffa3e-3a39-4500-b6ed-4b1c642103bc",
+          "Name": "Unknown10k",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 6,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 19192297335
+        },
+        "d9LHtmM-Szu0DImF73Tutg": {
+          "PlayerId": "77d2c7b6-633e-4b3b-b40c-8985ef74eeb6",
+          "Name": "grooooooooooooby",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": 22911.0,
+          "Fame": 19135465224
+        },
+        "CHDTuq2lSIau6t5OYoYTXw": {
+          "PlayerId": "0870d3ba-ada5-4886-aeea-de4e6286135f",
+          "Name": "Atak12",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 4,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 1850763681
+        },
+        "v3T0cNKsTX-F7MmWp7z7SA": {
+          "PlayerId": "bf74f470-d2ac-4d7f-85ec-c996a7bcfb48",
+          "Name": "Rafikon",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 18919621069
+        },
+        "wvcSMYRvQGyqOtGZHI7HJA": {
+          "PlayerId": "c2f71231-846f-406c-aa3a-d1991c8ec724",
+          "Name": "Czvilight",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 5,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 18226867851
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T21:00:40.065545300Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:00:57.947526400Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:02:40.065545300Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T21:03:44.195108800Z",
+          "Tickets": 149
+        }
+      ],
+      "team2LeaderId": "CHDTuq2lSIau6t5OYoYTXw",
+      "crystalLeagueLevel": 2,
+      "ttl": "PT1H",
+      "MatchId": "yGYJ8fZhR6uQDj5YZT9_xQ"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T21:00:10.051378200Z",
+      "winner": 2,
+      "team1Guild": null,
+      "team1Tickets": 0,
+      "team1Territory": null,
+      "team1Results": {
+        "NkADVEH1ToW5kIpvWLu9wA": {
+          "PlayerId": "36400354-41f5-4e85-b990-8a6f58bbbdc0",
+          "Name": "Gonchiro",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 173.0,
+          "Fame": 18529619177
+        },
+        "i1pZQxw9RGuVz4u6m4aaFw": {
+          "PlayerId": "8b5a5943-1c3d-446b-95cf-8bba9b869a17",
+          "Name": "Razule",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 66622.0,
+          "Fame": 18221657332
+        },
+        "vfxZA8DUR2OhBAaHBwIEEQ": {
+          "PlayerId": "bdfc5903-c0d4-4763-a104-068707020411",
+          "Name": "Gatsas",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 17241063237
+        },
+        "KPRePS2SSwmfzupo167U0g": {
+          "PlayerId": "28f45e3d-2d92-4b09-9fce-ea68d7aed4d2",
+          "Name": "Savas",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 16802157742
+        },
+        "nWccjjTMTyKvRWsVlOAkGw": {
+          "PlayerId": "9d671c8e-34cc-4f22-af45-6b1594e0241b",
+          "Name": "bendzio",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 16524424212
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T21:00:40.057580300Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:00:54.448088600Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:01:11.402811900Z",
+          "Tickets": 148
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:26.925911700Z",
+          "Tickets": 142
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:40.656886600Z",
+          "Tickets": 136
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:01:58.977382100Z",
+          "Tickets": 135
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:30.452980700Z",
+          "Tickets": 129
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:02:40.057580300Z",
+          "Tickets": 89
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:23.374088100Z",
+          "Tickets": 83
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:03:43.493966600Z",
+          "Tickets": 82
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:04:03.738750200Z",
+          "Tickets": 81
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:04:40.057580300Z",
+          "Tickets": 61
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:05:08.861955Z",
+          "Tickets": 60
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:05:54.543216700Z",
+          "Tickets": 59
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:06:16.502326500Z",
+          "Tickets": 53
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:06:23.449716600Z",
+          "Tickets": 47
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:06:33.378029900Z",
+          "Tickets": 46
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:06:39.503305800Z",
+          "Tickets": 40
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:06:40.057580300Z",
+          "Tickets": 20
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:06:51.285983300Z",
+          "Tickets": 14
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:06:54.705112600Z",
+          "Tickets": 13
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:06:57.814540800Z",
+          "Tickets": 12
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:07:09.173817200Z",
+          "Tickets": 11
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:07:42.279414500Z",
+          "Tickets": 5
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T21:07:55.492911500Z",
+          "Tickets": null
+        }
+      ],
+      "team1LeaderId": "i1pZQxw9RGuVz4u6m4aaFw",
+      "team2Guild": null,
+      "team2Tickets": 122,
+      "team2Territory": null,
+      "team2Results": {
+        "aZ2zgOTtSDyKRj9Ir1jQLg": {
+          "PlayerId": "699db380-e4ed-483c-8a46-3f48af58d02e",
+          "Name": "Art",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 1,
+          "Healing": 59252.0,
+          "Fame": 7864229338
+        },
+        "qNShr9CGSfi5TizXC_cB-g": {
+          "PlayerId": "a8d4a1af-d086-49f8-b94e-2cd70bf701fa",
+          "Name": "TheLastNAplayer",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 7824338175
+        },
+        "jbJGrOpBT52mfO_tHPlggA": {
+          "PlayerId": "8db246ac-ea41-4f9d-a67c-efed1cf96080",
+          "Name": "Ligma420",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 10857855846
+        },
+        "lQ95DAyPRBexzyZyF2tnXA": {
+          "PlayerId": "950f790c-0c8f-4417-b1cf-2672176b675c",
+          "Name": "Fate",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 7894500940
+        },
+        "2WsgHO4YQBWK-uI7FuxUDw": {
+          "PlayerId": "d96b201c-ee18-4015-8afa-e23b16ec540f",
+          "Name": "Fire",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 3721466455
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T21:00:40.057580300Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:00:58.055112400Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:25.170023800Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:17.515181100Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:29.322425800Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:02:40.057580300Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:03:11.297013400Z",
+          "Tickets": 130
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:03:34.715099200Z",
+          "Tickets": 129
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:04:40.057580300Z",
+          "Tickets": 129
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:05:11.921371700Z",
+          "Tickets": 123
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:06:00.689009900Z",
+          "Tickets": 122
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:06:40.057580300Z",
+          "Tickets": 122
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T21:07:55.492911500Z",
+          "Tickets": 122
+        }
+      ],
+      "team2LeaderId": "lQ95DAyPRBexzyZyF2tnXA",
+      "crystalLeagueLevel": 3,
+      "ttl": "PT1H",
+      "MatchId": "tJSNoRY5SEGMPi92TJ76Ug"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T21:00:10.050731600Z",
+      "winner": 1,
+      "team1Guild": null,
+      "team1Tickets": 149,
+      "team1Territory": null,
+      "team1Results": {
+        "3u45mTX7RjGJGQR-3u1RTg": {
+          "PlayerId": "deee3999-35fb-4631-8919-047edeed514e",
+          "Name": "Quazars",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 22964625215
+        },
+        "9zkDUcoASNGEa0A1SUcYow": {
+          "PlayerId": "f7390351-ca00-48d1-846b-4035494718a3",
+          "Name": "Legal",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 25202855670
+        },
+        "KW24o1gVTc2zXPA1gg1s9Q": {
+          "PlayerId": "296db8a3-5815-4dcd-b35c-f035820d6cf5",
+          "Name": "Sane",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 18503.0,
+          "Fame": 84179100
+        },
+        "hc99ZvXoT_S-hIuePCtNIw": {
+          "PlayerId": "85cf7d66-f5e8-4ff4-be84-8b9e3c2b4d23",
+          "Name": "SweetandSpicy",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 4,
+          "Deaths": 0,
+          "Healing": 314.0,
+          "Fame": 26591082780
+        },
+        "gRd4FVf3SFq_n-eGyqrciw": {
+          "PlayerId": "81177815-57f7-485a-bf9f-e786caaadc8b",
+          "Name": "Arepha",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 6,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 1675605340
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T21:00:40.058515900Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:00:55.152676200Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:02:40.058515900Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:04:40.058515900Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:04:40.060150100Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T21:04:40.060150100Z",
+          "Tickets": 149
+        }
+      ],
+      "team1LeaderId": "KW24o1gVTc2zXPA1gg1s9Q",
+      "team2Guild": null,
+      "team2Tickets": 0,
+      "team2Territory": null,
+      "team2Results": {
+        "x3nb-Cl4SZ29no3n2ssQ4g": {
+          "PlayerId": "c779dbf8-2978-499d-bd9e-8de7dacb10e2",
+          "Name": "RyomenSukuna",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 288.0,
+          "Fame": 8754352673
+        },
+        "cinAFj0lTEGt3yARenbhsQ": {
+          "PlayerId": "7229c016-3d25-4c41-addf-20117a76e1b1",
+          "Name": "yuraavatopor",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": null,
+          "Fame": 2076084171
+        },
+        "b7PWIv4oTq2z4SSsxz2e1w": {
+          "PlayerId": "6fb3d622-fe28-4ead-b3e1-24acc73d9ed7",
+          "Name": "Heison",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": null,
+          "Fame": 2782250940
+        },
+        "oUGXVqYDRDSRkJAp2D3sTA": {
+          "PlayerId": "a1419756-a603-4434-9190-9029d83dec4c",
+          "Name": "MilkyWay",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 2946473663
+        },
+        "ajv0HD-MTKyJ0yVg4S5fQg": {
+          "PlayerId": "6a3bf41c-3f8c-4cac-89d3-2560e12e5f42",
+          "Name": "GucciDeD",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 19048.0,
+          "Fame": 3210006850
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T21:00:40.058515900Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:00:57.739429100Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:33.212905900Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:37.477145200Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:45.895950300Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:01:46.530112100Z",
+          "Tickets": 130
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:50.181726100Z",
+          "Tickets": 124
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:51.617860800Z",
+          "Tickets": 118
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:02:00.634705800Z",
+          "Tickets": 117
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:39.693816500Z",
+          "Tickets": 111
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:02:40.058515900Z",
+          "Tickets": 71
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:49.292510300Z",
+          "Tickets": 65
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:01.250844100Z",
+          "Tickets": 59
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:03:08.839214200Z",
+          "Tickets": 58
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:03:11.542644Z",
+          "Tickets": 57
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:03:26.686918100Z",
+          "Tickets": 56
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:55.007316600Z",
+          "Tickets": 50
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:04:03.709563100Z",
+          "Tickets": 44
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:04:07.607172500Z",
+          "Tickets": 38
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:04:10.188070200Z",
+          "Tickets": 32
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:04:14.107718Z",
+          "Tickets": 26
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:04:40.058515900Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:04:40.060150100Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T21:04:40.060150100Z",
+          "Tickets": null
+        }
+      ],
+      "team2LeaderId": "oUGXVqYDRDSRkJAp2D3sTA",
+      "crystalLeagueLevel": 2,
+      "ttl": "PT1H",
+      "MatchId": "0V0urpxEQ8yvxJ7ZQp4wrw"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T21:00:10.045468600Z",
+      "winner": 1,
+      "team1Guild": null,
+      "team1Tickets": 112,
+      "team1Territory": null,
+      "team1Results": {
+        "SLO7cejERjy22lggyOPL9A": {
+          "PlayerId": "48b3bb71-e8c4-463c-b6da-5820c8e3cbf4",
+          "Name": "NellNore",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 2,
+          "Healing": 7632.032,
+          "Fame": 1879270712
+        },
+        "tQZsnZmITYyFEpUUpSBGyw": {
+          "PlayerId": "b5066c9d-9988-4d8c-8512-9514a52046cb",
+          "Name": "RedziKadzi",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 1941025054
+        },
+        "6nfP5Tu_R5upUMfsC9-B5g": {
+          "PlayerId": "ea77cfe5-3bbf-479b-a950-c7ec0bdf81e6",
+          "Name": "depressedSkuf",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 16144880956
+        },
+        "_aQm24W2Svuji3bLoOLEJg": {
+          "PlayerId": "fda426db-85b6-4afb-a38b-76cba0e2c426",
+          "Name": "MagistrGoyda",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 4,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 1542968050
+        },
+        "vTmv3XzQQqyn2QS0upoWmg": {
+          "PlayerId": "bd39afdd-7cd0-42ac-a7d9-04b4ba9a169a",
+          "Name": "chyrkabes",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": 93768.5,
+          "Fame": 18391105483
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T21:00:40.045717Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:02:06.720291400Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:02:40.045717Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:59.334508500Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:04:37.735264300Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:04:40.045717Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:05:10.758248400Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:05:20.553187600Z",
+          "Tickets": 125
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:05:30.616172600Z",
+          "Tickets": 119
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:06:29.003375300Z",
+          "Tickets": 118
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:06:40.045717Z",
+          "Tickets": 118
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:07:01.458001700Z",
+          "Tickets": 112
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:08:40.045717Z",
+          "Tickets": 112
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:08:40.045847400Z",
+          "Tickets": 112
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T21:08:40.045847400Z",
+          "Tickets": 112
+        }
+      ],
+      "team1LeaderId": "6nfP5Tu_R5upUMfsC9-B5g",
+      "team2Guild": null,
+      "team2Tickets": 0,
+      "team2Territory": null,
+      "team2Results": {
+        "1fBGqbB9TvuJTV40RpNeXg": {
+          "PlayerId": "d5f046a9-b07d-4efb-894d-5e3446935e5e",
+          "Name": "Eveling",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 10278047208
+        },
+        "74OAAClVRVKSweKXOsoV9A": {
+          "PlayerId": "ef838000-2955-4552-92c1-e2973aca15f4",
+          "Name": "Tetsu",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 8149855792
+        },
+        "Py6MZYzcT6e8XjootzfviQ": {
+          "PlayerId": "3f2e8c65-8cdc-4fa7-bc5e-3a28b737ef89",
+          "Name": "Repabliques",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 75890.3,
+          "Fame": 7787302992
+        },
+        "KeASoZKwR9iTtiqnNrcEJg": {
+          "PlayerId": "29e012a1-92b0-47d8-93b6-2aa736b70426",
+          "Name": "Godslayer",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 2,
+          "Healing": 412.0,
+          "Fame": 9034761448
+        },
+        "DMLl3r0wRDGHgtqxhFAtBg": {
+          "PlayerId": "0cc2e5de-bd30-4431-8782-dab184502d06",
+          "Name": "TolyaTop1",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 1,
+          "Healing": 11014.0,
+          "Fame": 8843100448
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T21:00:40.045717Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:14.342348700Z",
+          "Tickets": 144
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:31.068531900Z",
+          "Tickets": 138
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:01:42.136493Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:01:50.187192500Z",
+          "Tickets": 136
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:02:40.045717Z",
+          "Tickets": 116
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:38.133814600Z",
+          "Tickets": 110
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:52.072173900Z",
+          "Tickets": 104
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:04:01.306250700Z",
+          "Tickets": 103
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:04:17.496965500Z",
+          "Tickets": 102
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:04:19.846133Z",
+          "Tickets": 101
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:04:40.045717Z",
+          "Tickets": 61
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:05:25.287886500Z",
+          "Tickets": 55
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:05:47.593412900Z",
+          "Tickets": 49
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:05:58.921904600Z",
+          "Tickets": 48
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:06:04.216900Z",
+          "Tickets": 47
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:06:40.045717Z",
+          "Tickets": 27
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:07:56.948994500Z",
+          "Tickets": 21
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:08:13.238004700Z",
+          "Tickets": 15
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:08:30.404594600Z",
+          "Tickets": 14
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:08:31.305542500Z",
+          "Tickets": 13
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:08:40.045717Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:08:40.045847400Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T21:08:40.045847400Z",
+          "Tickets": null
+        }
+      ],
+      "team2LeaderId": "74OAAClVRVKSweKXOsoV9A",
+      "crystalLeagueLevel": 3,
+      "ttl": "PT1H",
+      "MatchId": "IIbelJ5WTNmpjccTXFnceg"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T21:00:10.032525600Z",
+      "winner": 2,
+      "team1Guild": null,
+      "team1Tickets": 0,
+      "team1Territory": null,
+      "team1Results": {
+        "IMsCy-S1TEyOcGkcvbmI4w": {
+          "PlayerId": "20cb02cb-e4b5-4c4c-8e70-691cbdb988e3",
+          "Name": "Dhivine",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": 15478.0,
+          "Fame": 16492678562
+        },
+        "jvlk-3qEQXuuxRjAmWp4yQ": {
+          "PlayerId": "8ef964fb-7a84-417b-aec5-18c0996a78c9",
+          "Name": "Mercig0d",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 17805839155
+        },
+        "kJMl0Ds8RkyHe_RX20CfaA": {
+          "PlayerId": "909325d0-3b3c-464c-877b-f457db409f68",
+          "Name": "CaStdOwN",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 4,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 29131299509
+        },
+        "pPCAenTbTi6xvFkkwbMLCw": {
+          "PlayerId": "a4f0807a-74db-4e2e-b1bc-5924c1b30b0b",
+          "Name": "Lars",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 28589470052
+        },
+        "_-eN9TuXTHyTm-7PogZvmg": {
+          "PlayerId": "ffe78df5-3b97-4c7c-939b-eecfa2066f9a",
+          "Name": "Edox",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 111058.0,
+          "Fame": 30181757328
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T21:00:40.032775100Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:00:55.986502900Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:01:46.171677500Z",
+          "Tickets": 148
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:02:40.032775100Z",
+          "Tickets": 128
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:02:53.002773Z",
+          "Tickets": 127
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:04:40.032775100Z",
+          "Tickets": 127
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:04:48.369745100Z",
+          "Tickets": 126
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:05:06.956562100Z",
+          "Tickets": 125
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:05:32.831262200Z",
+          "Tickets": 119
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:06:40.032775100Z",
+          "Tickets": 79
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:07:18.490996400Z",
+          "Tickets": 78
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:08:40.032775100Z",
+          "Tickets": 58
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:08:53.807805900Z",
+          "Tickets": 52
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:10:18.641633600Z",
+          "Tickets": 46
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:10:32.766636600Z",
+          "Tickets": 45
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:10:40.032775100Z",
+          "Tickets": 45
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:10:45.939805300Z",
+          "Tickets": 39
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:11:00.550096900Z",
+          "Tickets": 38
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:11:10.181994700Z",
+          "Tickets": 37
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:12:40.032775100Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:12:40.032883700Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T21:12:40.032883700Z",
+          "Tickets": null
+        }
+      ],
+      "team1LeaderId": "pPCAenTbTi6xvFkkwbMLCw",
+      "team2Guild": null,
+      "team2Tickets": 38,
+      "team2Territory": null,
+      "team2Results": {
+        "9ZsN8MF-TqaE9TcmcD_oRg": {
+          "PlayerId": "f59b0df0-c17e-4ea6-84f5-3726703fe846",
+          "Name": "Guess",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 11539174346
+        },
+        "FLn_UUZ1QzSUAA2Hdlq_Mg": {
+          "PlayerId": "14b9ff51-4675-4334-9400-0d87765abf32",
+          "Name": "Diglett",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 3,
+          "Healing": null,
+          "Fame": 12229440039
+        },
+        "Omn-jwSNS_mcdT-KNGMSxg": {
+          "PlayerId": "3a69fe8f-048d-4bf9-9c75-3f8a346312c6",
+          "Name": "Grafiese",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 11264165784
+        },
+        "f27INhKeS4ma7WYcSJWeEQ": {
+          "PlayerId": "7f6ec836-129e-4b89-9aed-661c48959e11",
+          "Name": "Dzeyo",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 11547816556
+        },
+        "vawjISC0QsuhTc_WK2yNEg": {
+          "PlayerId": "bdac2321-20b4-42cb-a14d-cfd62b6c8d12",
+          "Name": "Ice",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 106684.71,
+          "Fame": 11348107299
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T21:00:40.032775100Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:00:56.403525800Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:02:40.032775100Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:11.779953100Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:15.295655900Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:21.741310200Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:03:32.520118600Z",
+          "Tickets": 130
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:03:35.264548700Z",
+          "Tickets": 129
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:04:40.032775100Z",
+          "Tickets": 109
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:06:40.032775100Z",
+          "Tickets": 109
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:08:33.240698900Z",
+          "Tickets": 103
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:08:40.032775100Z",
+          "Tickets": 103
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:08:41.829887400Z",
+          "Tickets": 97
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:08:51.629952200Z",
+          "Tickets": 91
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:08:57.498964900Z",
+          "Tickets": 85
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:08:59.053078Z",
+          "Tickets": 79
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:09:05.546491500Z",
+          "Tickets": 78
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:09:08.709301500Z",
+          "Tickets": 77
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:09:16.023569500Z",
+          "Tickets": 76
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:10:40.032775100Z",
+          "Tickets": 56
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:11:45.928813400Z",
+          "Tickets": 50
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:12:15.155735800Z",
+          "Tickets": 44
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:12:19.837996300Z",
+          "Tickets": 38
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:12:40.032775100Z",
+          "Tickets": 38
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:12:40.032883700Z",
+          "Tickets": 38
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T21:12:40.032883700Z",
+          "Tickets": 38
+        }
+      ],
+      "team2LeaderId": "FLn_UUZ1QzSUAA2Hdlq_Mg",
+      "crystalLeagueLevel": 2,
+      "ttl": "PT1H",
+      "MatchId": "4MmHqIqPTMm93h_LfBiRAQ"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:30:10.043203700Z",
+      "winner": 1,
+      "team1Guild": null,
+      "team1Tickets": 64,
+      "team1Territory": null,
+      "team1Results": {
+        "NkADVEH1ToW5kIpvWLu9wA": {
+          "PlayerId": "36400354-41f5-4e85-b990-8a6f58bbbdc0",
+          "Name": "Gonchiro",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 18427010777
+        },
+        "i1pZQxw9RGuVz4u6m4aaFw": {
+          "PlayerId": "8b5a5943-1c3d-446b-95cf-8bba9b869a17",
+          "Name": "Razule",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 60216.0,
+          "Fame": 18215807332
+        },
+        "vfxZA8DUR2OhBAaHBwIEEQ": {
+          "PlayerId": "bdfc5903-c0d4-4763-a104-068707020411",
+          "Name": "Gatsas",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 6,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 17241063237
+        },
+        "KPRePS2SSwmfzupo167U0g": {
+          "PlayerId": "28f45e3d-2d92-4b09-9fce-ea68d7aed4d2",
+          "Name": "Savas",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 16742457742
+        },
+        "nWccjjTMTyKvRWsVlOAkGw": {
+          "PlayerId": "9d671c8e-34cc-4f22-af45-6b1594e0241b",
+          "Name": "bendzio",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 16517224212
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.050131100Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:30:56.514338800Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.050131100Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:53.227358400Z",
+          "Tickets": 148
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:44.513817600Z",
+          "Tickets": 142
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:34:00.713693400Z",
+          "Tickets": 141
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:34:23.032745800Z",
+          "Tickets": 140
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.050131100Z",
+          "Tickets": 100
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:35:01.626513Z",
+          "Tickets": 99
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:37.963535100Z",
+          "Tickets": 93
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:43.161993500Z",
+          "Tickets": 87
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:35:57.332336700Z",
+          "Tickets": 86
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:36:07.363589900Z",
+          "Tickets": 85
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:36:40.050131100Z",
+          "Tickets": 65
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:37:14.856233200Z",
+          "Tickets": 64
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:38:40.050131100Z",
+          "Tickets": 64
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:39:19.216174600Z",
+          "Tickets": 64
+        }
+      ],
+      "team1LeaderId": "i1pZQxw9RGuVz4u6m4aaFw",
+      "team2Guild": null,
+      "team2Tickets": 0,
+      "team2Territory": null,
+      "team2Results": {
+        "UY8vl3oYSxOP1Wm9kmRd-g": {
+          "PlayerId": "518f2f97-7a18-4b13-8fd5-69bd92645dfa",
+          "Name": "Xetic",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 1317.0,
+          "Fame": 7231495702
+        },
+        "V3fp5tM3R-mAsWw-QGfA5Q": {
+          "PlayerId": "5777e9e6-d337-47e9-80b1-6c3e4067c0e5",
+          "Name": "xYuumi",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": 62759.0,
+          "Fame": 8656552982
+        },
+        "XEgfBozIRrGiGAkh-HTJpA": {
+          "PlayerId": "5c481f06-8cc8-46b1-a218-0921f874c9a4",
+          "Name": "Lugzi",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 3,
+          "Healing": null,
+          "Fame": 11054967515
+        },
+        "umgurZFoTDa9bYSReY0Q8A": {
+          "PlayerId": "ba682ead-9168-4c36-bd6d-8491798d10f0",
+          "Name": "Rekna",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": 1564.0,
+          "Fame": 7836452421
+        },
+        "_OI2WklhTVO3mOI47zOblw": {
+          "PlayerId": "fce2365a-4961-4d53-b798-e238ef339b97",
+          "Name": "Clouud",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 7829976920
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.050131100Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:30:59.266851600Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:48.540576Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:31:56.279247600Z",
+          "Tickets": 142
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:58.634162200Z",
+          "Tickets": 136
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:03.359790300Z",
+          "Tickets": 130
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:14.451273600Z",
+          "Tickets": 129
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.050131100Z",
+          "Tickets": 89
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:51.923905900Z",
+          "Tickets": 88
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.050131100Z",
+          "Tickets": 88
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:34:54.750315400Z",
+          "Tickets": 87
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:36:17.246123500Z",
+          "Tickets": 86
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:36:30.917802200Z",
+          "Tickets": 80
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:36:40.050131100Z",
+          "Tickets": 80
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:37:01.237942300Z",
+          "Tickets": 74
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:37:02.387338200Z",
+          "Tickets": 68
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:37:17.233078300Z",
+          "Tickets": 62
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:37:18.371911700Z",
+          "Tickets": 61
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:37:31.544863900Z",
+          "Tickets": 60
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:38:20.582338800Z",
+          "Tickets": 54
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:38:32.131939700Z",
+          "Tickets": 48
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:38:40.050131100Z",
+          "Tickets": 8
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:38:48.376468500Z",
+          "Tickets": 7
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:38:50.117348800Z",
+          "Tickets": 6
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:39:00.183037Z",
+          "Tickets": 5
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:39:19.216174600Z",
+          "Tickets": null
+        }
+      ],
+      "team2LeaderId": "_OI2WklhTVO3mOI47zOblw",
+      "crystalLeagueLevel": 2,
+      "ttl": "PT1H",
+      "MatchId": "yurIXO7PRS6eyVO1FUqfHQ"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:30:10.043883600Z",
+      "winner": 1,
+      "team1Guild": null,
+      "team1Tickets": 144,
+      "team1Territory": null,
+      "team1Results": {
+        "SLO7cejERjy22lggyOPL9A": {
+          "PlayerId": "48b3bb71-e8c4-463c-b6da-5820c8e3cbf4",
+          "Name": "NellNore",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 6,
+          "Deaths": 0,
+          "Healing": 3826.0,
+          "Fame": 1879270712
+        },
+        "tQZsnZmITYyFEpUUpSBGyw": {
+          "PlayerId": "b5066c9d-9988-4d8c-8512-9514a52046cb",
+          "Name": "RedziKadzi",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 1941025054
+        },
+        "6nfP5Tu_R5upUMfsC9-B5g": {
+          "PlayerId": "ea77cfe5-3bbf-479b-a950-c7ec0bdf81e6",
+          "Name": "depressedSkuf",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 14250796786
+        },
+        "_aQm24W2Svuji3bLoOLEJg": {
+          "PlayerId": "fda426db-85b6-4afb-a38b-76cba0e2c426",
+          "Name": "MagistrGoyda",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 5,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 1409768050
+        },
+        "vTmv3XzQQqyn2QS0upoWmg": {
+          "PlayerId": "bd39afdd-7cd0-42ac-a7d9-04b4ba9a169a",
+          "Name": "chyrkabes",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 32792.152,
+          "Fame": 16564554223
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.051567800Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.051567800Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:34:26.628340400Z",
+          "Tickets": 144
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.051567800Z",
+          "Tickets": 144
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.052597Z",
+          "Tickets": 144
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:34:40.052597Z",
+          "Tickets": 144
+        }
+      ],
+      "team1LeaderId": "SLO7cejERjy22lggyOPL9A",
+      "team2Guild": null,
+      "team2Tickets": 0,
+      "team2Territory": null,
+      "team2Results": {
+        "wOtZXsDDQjGfcqenYHbB0A": {
+          "PlayerId": "c0eb595e-c0c3-4231-9f72-a7a76076c1d0",
+          "Name": "Nesslait",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 4,
+          "Healing": null,
+          "Fame": 8921772086
+        },
+        "SRA439luTjaQ71JuW1ijTg": {
+          "PlayerId": "491038df-d96e-4e36-90ef-526e5b58a34e",
+          "Name": "GamesSpirit",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 7250013614
+        },
+        "NNcfCRn5Rci0dfSGvCpbzA": {
+          "PlayerId": "34d71f09-19f9-45c8-b475-f486bc2a5bcc",
+          "Name": "Sphynxil",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 22804.0,
+          "Fame": 8514829805
+        },
+        "riW2D0fGTVC6SxMEdrHpyw": {
+          "PlayerId": "ae25b60f-47c6-4d50-ba4b-130476b1e9cb",
+          "Name": "JohnyBro",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 4,
+          "Healing": null,
+          "Fame": 7765343330
+        },
+        "qq4emYFDSXSyfTwZ2uZPpQ": {
+          "PlayerId": "aaae1e99-8143-4974-b27d-3c19dae64fa5",
+          "Name": "FRIIX",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 10726121244
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.051567800Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:05.155941800Z",
+          "Tickets": 144
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:10.843511400Z",
+          "Tickets": 138
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:25.094679600Z",
+          "Tickets": 132
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:31:42.128653Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:31:43.102710700Z",
+          "Tickets": 130
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:31:54.807584800Z",
+          "Tickets": 129
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:08.197126Z",
+          "Tickets": 123
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.051567800Z",
+          "Tickets": 83
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:44.520035800Z",
+          "Tickets": 77
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:47.129198500Z",
+          "Tickets": 71
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:48.941165500Z",
+          "Tickets": 65
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:33:12.719031800Z",
+          "Tickets": 64
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:33:18.158477800Z",
+          "Tickets": 63
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:33:18.190862500Z",
+          "Tickets": 62
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:24.651617600Z",
+          "Tickets": 56
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:32.384804700Z",
+          "Tickets": 50
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:33.784506300Z",
+          "Tickets": 44
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:37.538616300Z",
+          "Tickets": 38
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:40.095166600Z",
+          "Tickets": 32
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:34:18.730597800Z",
+          "Tickets": 26
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:34:24.909484500Z",
+          "Tickets": 20
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.051567800Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.052597Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:34:40.052597Z",
+          "Tickets": null
+        }
+      ],
+      "team2LeaderId": "riW2D0fGTVC6SxMEdrHpyw",
+      "crystalLeagueLevel": 2,
+      "ttl": "PT1H",
+      "MatchId": "vQGLT_XtQ3qK_pTsRWUkUg"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:30:10.039416100Z",
+      "winner": 2,
+      "team1Guild": null,
+      "team1Tickets": 0,
+      "team1Territory": null,
+      "team1Results": {
+        "1c395N8fQk27ZosHKP6DbA": {
+          "PlayerId": "d5cdfde4-df1f-424d-bb66-8b0728fe836c",
+          "Name": "SN0AX",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 301.0,
+          "Fame": 11484926617
+        },
+        "31Oz1J9PSceJwLGqJuLDSQ": {
+          "PlayerId": "df53b3d4-9f4f-49c7-89c0-b1aa26e2c349",
+          "Name": "Langshlong",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 15483.0,
+          "Fame": 10921486282
+        },
+        "dLKYXdDKQBa7_iIW2Ag7_g": {
+          "PlayerId": "74b2985d-d0ca-4016-bbfe-2216d8083bfe",
+          "Name": "Ossibaer",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 1908017560
+        },
+        "pA6qTVhUQH-aBGkX_Gxq4A": {
+          "PlayerId": "a40eaa4d-5854-407f-9a04-6917fc6c6ae0",
+          "Name": "Emperor",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 360.0,
+          "Fame": 10666333031
+        },
+        "lLv2j4m-Rw-cmNbUznLuIw": {
+          "PlayerId": "94bbf68f-89be-470f-9c98-d6d4ce72ee23",
+          "Name": "Zenshubo",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": null,
+          "Fame": 9418967338
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.040373400Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:30:58.310533200Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:08.258943Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:22.223222300Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:23.807325200Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:31.341348Z",
+          "Tickets": 125
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:31:43.925383Z",
+          "Tickets": 124
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:31:47.936021900Z",
+          "Tickets": 123
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:49.728902500Z",
+          "Tickets": 117
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:28.556635500Z",
+          "Tickets": 111
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:34.420997900Z",
+          "Tickets": 105
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:38.110433100Z",
+          "Tickets": 99
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.040373400Z",
+          "Tickets": 59
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:41.040601Z",
+          "Tickets": 53
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:57.609445600Z",
+          "Tickets": 52
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:58.836653300Z",
+          "Tickets": 51
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:33:12.886930700Z",
+          "Tickets": 50
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:40.239669800Z",
+          "Tickets": 44
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:44.094417100Z",
+          "Tickets": 38
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:34:04.709188400Z",
+          "Tickets": 32
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.040373400Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.040709800Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:34:40.040709800Z",
+          "Tickets": null
+        }
+      ],
+      "team1LeaderId": "1c395N8fQk27ZosHKP6DbA",
+      "team2Guild": null,
+      "team2Tickets": 149,
+      "team2Territory": null,
+      "team2Results": {
+        "d0g6MIRhQ6CkTVLSxb6-gg": {
+          "PlayerId": "77483a30-8461-43a0-a44d-52d2c5bebe82",
+          "Name": "faber",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 29118.28,
+          "Fame": 1051806672
+        },
+        "qKcjyDwFRUuIEiarohWxlQ": {
+          "PlayerId": "a8a723c8-3c05-454b-8812-26aba215b195",
+          "Name": "Pidg",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 1378861850
+        },
+        "XGyPW-HbRQyJPFb6-zkXnw": {
+          "PlayerId": "5c6c8f5b-e1db-450c-893c-56fafb39179f",
+          "Name": "ONESHOT",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 4,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 1794091394
+        },
+        "zpq1-EU2R0WTVGD7jXcPGQ": {
+          "PlayerId": "ce9ab5f8-4536-4745-9354-60fb8d770f19",
+          "Name": "Ghost",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 352039520
+        },
+        "K60cmICVSvSx8-1J_OgIYg": {
+          "PlayerId": "2bad1c98-8095-4af4-b1f3-ed49fce80862",
+          "Name": "Crowrage",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 5,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 7282441650
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.040373400Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:31:00.467583200Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.040373400Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.040373400Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.040709800Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:34:40.040709800Z",
+          "Tickets": 149
+        }
+      ],
+      "team2LeaderId": "XGyPW-HbRQyJPFb6-zkXnw",
+      "crystalLeagueLevel": 2,
+      "ttl": "PT1H",
+      "MatchId": "CgsHAN_IREukQpb9VQPkiQ"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:30:10.038062700Z",
+      "winner": 1,
+      "team1Guild": null,
+      "team1Tickets": 97,
+      "team1Territory": null,
+      "team1Results": {
+        "aZ2zgOTtSDyKRj9Ir1jQLg": {
+          "PlayerId": "699db380-e4ed-483c-8a46-3f48af58d02e",
+          "Name": "Art",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 1,
+          "Healing": 39957.656,
+          "Fame": 7864229338
+        },
+        "jbJGrOpBT52mfO_tHPlggA": {
+          "PlayerId": "8db246ac-ea41-4f9d-a67c-efed1cf96080",
+          "Name": "Ligma420",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 10857855846
+        },
+        "qNShr9CGSfi5TizXC_cB-g": {
+          "PlayerId": "a8d4a1af-d086-49f8-b94e-2cd70bf701fa",
+          "Name": "TheLastNAplayer",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 7824338175
+        },
+        "lQ95DAyPRBexzyZyF2tnXA": {
+          "PlayerId": "950f790c-0c8f-4417-b1cf-2672176b675c",
+          "Name": "Fate",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 7894500940
+        },
+        "2WsgHO4YQBWK-uI7FuxUDw": {
+          "PlayerId": "d96b201c-ee18-4015-8afa-e23b16ec540f",
+          "Name": "Fire",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 5,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 3721466455
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.038507800Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:30:56.186647600Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.038507800Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:57.409950400Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:15.248461300Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:18.854435400Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:24.379673600Z",
+          "Tickets": 125
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:39.407446800Z",
+          "Tickets": 119
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:33:42.961293100Z",
+          "Tickets": 118
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:33:48.169780100Z",
+          "Tickets": 117
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.038507800Z",
+          "Tickets": 97
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:36:40.038507800Z",
+          "Tickets": 97
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:36:49.346634800Z",
+          "Tickets": 97
+        }
+      ],
+      "team1LeaderId": "lQ95DAyPRBexzyZyF2tnXA",
+      "team2Guild": null,
+      "team2Tickets": 0,
+      "team2Territory": null,
+      "team2Results": {
+        "touC_8fPQ7ut9Zua-n0sdQ": {
+          "PlayerId": "b68b82ff-c7cf-43bb-adf5-9b9afa7d2c75",
+          "Name": "Pline",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 40791.0,
+          "Fame": 9304592719
+        },
+        "ZamYWCtfQr6uLTQpAw83yg": {
+          "PlayerId": "65a99858-2b5f-42be-ae2d-3429030f37ca",
+          "Name": "Deghf",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 3,
+          "Healing": 294.0,
+          "Fame": 3420048474
+        },
+        "cx6fC9HTTOezhoSjUVTgsw": {
+          "PlayerId": "731e9f0b-d1d3-4ce7-b386-84a35154e0b3",
+          "Name": "RomanKaban",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 7169074760
+        },
+        "JjGOfuQ5SNyrVRcqLAhUYA": {
+          "PlayerId": "26318e7e-e439-48dc-ab55-172a2c085460",
+          "Name": "loliumuloli",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 3,
+          "Healing": 2174.0,
+          "Fame": 10347277817
+        },
+        "QOhHk9FsQjyWqvAkbvALHg": {
+          "PlayerId": "40e84793-d16c-423c-96aa-f0246ef00b1e",
+          "Name": "Zitraks",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 1,
+          "Healing": 812.0,
+          "Fame": 7872551862
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.038507800Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:30:56.825017400Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:20.224561900Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:38.088382100Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:01.862568700Z",
+          "Tickets": 136
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:10.142232800Z",
+          "Tickets": 135
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.038507800Z",
+          "Tickets": 95
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:06.261921400Z",
+          "Tickets": 89
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:20.068577700Z",
+          "Tickets": 83
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:34:25.172141500Z",
+          "Tickets": 82
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.038507800Z",
+          "Tickets": 82
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:02.077830500Z",
+          "Tickets": 76
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:28.008673200Z",
+          "Tickets": 70
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:35.268212100Z",
+          "Tickets": 64
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:35:35.322324900Z",
+          "Tickets": 63
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:35:48.444324500Z",
+          "Tickets": 62
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:36:29.419691400Z",
+          "Tickets": 56
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:36:33.524260300Z",
+          "Tickets": 50
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:36:38.653643800Z",
+          "Tickets": 44
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:36:40.038507800Z",
+          "Tickets": 4
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:36:49.346634800Z",
+          "Tickets": null
+        }
+      ],
+      "team2LeaderId": "ZamYWCtfQr6uLTQpAw83yg",
+      "crystalLeagueLevel": 2,
+      "ttl": "PT1H",
+      "MatchId": "geyIo9ZvQ_-8q-XeX1u4jg"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:30:10.027467500Z",
+      "winner": 1,
+      "team1Guild": null,
+      "team1Tickets": 108,
+      "team1Territory": null,
+      "team1Results": {
+        "GbGJ8DWvRLef9UB552z_bQ": {
+          "PlayerId": "19b189f0-35af-44b7-9ff5-4079e76cff6d",
+          "Name": "Neexyy",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 1,
+          "Healing": 504.0,
+          "Fame": 1509155984
+        },
+        "ENR1HDvkRMiadKK9Dx1TVw": {
+          "PlayerId": "10d4751c-3be4-44c8-9a74-a2bd0f1d5357",
+          "Name": "Gigachad",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 1157205000
+        },
+        "R8OkOpfETrG6plM82fqT6w": {
+          "PlayerId": "47c3a43a-97c4-4eb1-baa6-533cd9fa93eb",
+          "Name": "Krule",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 53768.0,
+          "Fame": 10639961014
+        },
+        "8zW0UkQVT8O19Qb17h5OMA": {
+          "PlayerId": "f335b452-4415-4fc3-b5f5-06f5ee1e4e30",
+          "Name": "B15",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 1788044594
+        },
+        "s_wlgxRtTf2AtIZHqlkOSw": {
+          "PlayerId": "b3fc2583-146d-4dfd-80b4-8647aa590e4b",
+          "Name": "Merrore",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 5,
+          "Deaths": 1,
+          "Healing": 606.0,
+          "Fame": 8788129480
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.028426200Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:31:56.127254800Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:11.929790400Z",
+          "Tickets": 148
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.028426200Z",
+          "Tickets": 148
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:48.679499300Z",
+          "Tickets": 147
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.028426200Z",
+          "Tickets": 147
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:36:07.878194600Z",
+          "Tickets": 141
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:36:17.955807400Z",
+          "Tickets": 135
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:36:20.565151Z",
+          "Tickets": 129
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:36:36.366014600Z",
+          "Tickets": 123
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:36:40.028426200Z",
+          "Tickets": 123
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:36:45.063129Z",
+          "Tickets": 122
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:36:51.663214400Z",
+          "Tickets": 121
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:37:36.658229400Z",
+          "Tickets": 115
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:38:03.688642400Z",
+          "Tickets": 109
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:38:09.855748900Z",
+          "Tickets": 108
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:38:40.028426200Z",
+          "Tickets": 108
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:38:40.028783900Z",
+          "Tickets": 108
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:38:40.028783900Z",
+          "Tickets": 108
+        }
+      ],
+      "team1LeaderId": "R8OkOpfETrG6plM82fqT6w",
+      "team2Guild": null,
+      "team2Tickets": 0,
+      "team2Territory": null,
+      "team2Results": {
+        "5s_ChYwJQ7Slrg-lsH-sxQ": {
+          "PlayerId": "e6cfc285-8c09-43b4-a5ae-0fa5b07facc5",
+          "Name": "AnaL228",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": 47908.0,
+          "Fame": 1473208942
+        },
+        "tc39TihKQPixKawzlkkCdQ": {
+          "PlayerId": "b5cdfd4e-284a-40f8-b129-ac3396490275",
+          "Name": "Slaback",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 4,
+          "Healing": null,
+          "Fame": 3228143151
+        },
+        "J50TxqRYT6WxglC-rSKeXA": {
+          "PlayerId": "279d13c6-a458-4fa5-b182-50bead229e5c",
+          "Name": "AltExit",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 3,
+          "Healing": 393.0,
+          "Fame": 2309362967
+        },
+        "LUvGjX72R4On7sf3DAhqrQ": {
+          "PlayerId": "2d4bc68d-7ef6-4783-a7ee-c7f70c086aad",
+          "Name": "TwentySeven",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 1433130223
+        },
+        "CFpR0TE2Q0yPN3oSxkM2zA": {
+          "PlayerId": "085a51d1-3136-434c-8f37-7a12c64336cc",
+          "Name": "SERVER",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 5,
+          "Healing": 746.0,
+          "Fame": 2070665240
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.028426200Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:30:58.322017100Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:22.225183500Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:01.200841600Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:20.512774200Z",
+          "Tickets": 136
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:26.580545300Z",
+          "Tickets": 135
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.028426200Z",
+          "Tickets": 115
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:40.999680Z",
+          "Tickets": 114
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:48.049091Z",
+          "Tickets": 113
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:54.161033500Z",
+          "Tickets": 107
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:19.506785200Z",
+          "Tickets": 101
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:33.773104500Z",
+          "Tickets": 95
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:34:10.752587300Z",
+          "Tickets": 89
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:34:34.474081800Z",
+          "Tickets": 83
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.028426200Z",
+          "Tickets": 63
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:34:51.412229900Z",
+          "Tickets": 57
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:04.643506500Z",
+          "Tickets": 51
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:24.426989600Z",
+          "Tickets": 45
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:26.562800100Z",
+          "Tickets": 39
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:35:37.515748200Z",
+          "Tickets": 38
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:36:40.028426200Z",
+          "Tickets": 38
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:36:50.283184300Z",
+          "Tickets": 37
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:37:23.937232500Z",
+          "Tickets": 36
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:37:34.040018200Z",
+          "Tickets": 30
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:37:43.495056200Z",
+          "Tickets": 29
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:38:13.047530600Z",
+          "Tickets": 23
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:38:39.526266Z",
+          "Tickets": 17
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:38:40.028426200Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:38:40.028783900Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:38:40.028783900Z",
+          "Tickets": null
+        }
+      ],
+      "team2LeaderId": "J50TxqRYT6WxglC-rSKeXA",
+      "crystalLeagueLevel": 1,
+      "ttl": "PT1H",
+      "MatchId": "uYdjzMKESXG712pvo8dtRA"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:30:10.023960500Z",
+      "winner": 1,
+      "team1Guild": null,
+      "team1Tickets": 142,
+      "team1Territory": null,
+      "team1Results": {
+        "IMsCy-S1TEyOcGkcvbmI4w": {
+          "PlayerId": "20cb02cb-e4b5-4c4c-8e70-691cbdb988e3",
+          "Name": "Dhivine",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 1,
+          "Healing": 5109.0,
+          "Fame": 16492678562
+        },
+        "jvlk-3qEQXuuxRjAmWp4yQ": {
+          "PlayerId": "8ef964fb-7a84-417b-aec5-18c0996a78c9",
+          "Name": "Mercig0d",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 17805839155
+        },
+        "kJMl0Ds8RkyHe_RX20CfaA": {
+          "PlayerId": "909325d0-3b3c-464c-877b-f457db409f68",
+          "Name": "CaStdOwN",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 29131299509
+        },
+        "pPCAenTbTi6xvFkkwbMLCw": {
+          "PlayerId": "a4f0807a-74db-4e2e-b1bc-5924c1b30b0b",
+          "Name": "Lars",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 28589470052
+        },
+        "_-eN9TuXTHyTm-7PogZvmg": {
+          "PlayerId": "ffe78df5-3b97-4c7c-939b-eecfa2066f9a",
+          "Name": "Edox",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 56642.0,
+          "Fame": 30181757328
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.024047Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:30:57.579824Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.024047Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.024047Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:34:50.261902100Z",
+          "Tickets": 148
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:55.642338900Z",
+          "Tickets": 142
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:36:40.024047Z",
+          "Tickets": 142
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:36:59.667109400Z",
+          "Tickets": 142
+        }
+      ],
+      "team1LeaderId": "jvlk-3qEQXuuxRjAmWp4yQ",
+      "team2Guild": null,
+      "team2Tickets": 0,
+      "team2Territory": null,
+      "team2Results": {
+        "3u45mTX7RjGJGQR-3u1RTg": {
+          "PlayerId": "deee3999-35fb-4631-8919-047edeed514e",
+          "Name": "Quazars",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": null,
+          "Fame": 22952025215
+        },
+        "9zkDUcoASNGEa0A1SUcYow": {
+          "PlayerId": "f7390351-ca00-48d1-846b-4035494718a3",
+          "Name": "Legal",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 25170905670
+        },
+        "KW24o1gVTc2zXPA1gg1s9Q": {
+          "PlayerId": "296db8a3-5815-4dcd-b35c-f035820d6cf5",
+          "Name": "Sane",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": 45872.0,
+          "Fame": 84179100
+        },
+        "hc99ZvXoT_S-hIuePCtNIw": {
+          "PlayerId": "85cf7d66-f5e8-4ff4-be84-8b9e3c2b4d23",
+          "Name": "SweetandSpicy",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 59.0,
+          "Fame": 26591082780
+        },
+        "gRd4FVf3SFq_n-eGyqrciw": {
+          "PlayerId": "81177815-57f7-485a-bf9f-e786caaadc8b",
+          "Name": "Arepha",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 1583805340
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.024047Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:30:56.309978500Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:56.968535500Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:59.541358600Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:01.278594800Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:08.824244500Z",
+          "Tickets": 125
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:09.915939300Z",
+          "Tickets": 119
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:20.312221300Z",
+          "Tickets": 118
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:20.367508200Z",
+          "Tickets": 117
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.024047Z",
+          "Tickets": 77
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:33:31.884760500Z",
+          "Tickets": 76
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:34:01.196516600Z",
+          "Tickets": 70
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:34:13.894161900Z",
+          "Tickets": 64
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:34:29.047432400Z",
+          "Tickets": 63
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.024047Z",
+          "Tickets": 33
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:34:48.895189700Z",
+          "Tickets": 32
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:34:51.399624500Z",
+          "Tickets": 31
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:52.988138Z",
+          "Tickets": 25
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:36:40.024047Z",
+          "Tickets": 5
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:36:59.667109400Z",
+          "Tickets": null
+        }
+      ],
+      "team2LeaderId": "3u45mTX7RjGJGQR-3u1RTg",
+      "crystalLeagueLevel": 2,
+      "ttl": "PT1H",
+      "MatchId": "JRHGzceyTAmcrGgPz1CYCA"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:30:10.023960500Z",
+      "winner": 1,
+      "team1Guild": null,
+      "team1Tickets": 114,
+      "team1Territory": null,
+      "team1Results": {
+        "mRC6LapkSFCxlIqLu9xRnQ": {
+          "PlayerId": "9910ba2d-aa64-4850-b194-8a8bbbdc519d",
+          "Name": "Neko",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 2,
+          "Healing": 495.0,
+          "Fame": 11972984724
+        },
+        "wk6JL421Q2q2ONpnpZrTQQ": {
+          "PlayerId": "c24e892f-8db5-436a-b638-da67a59ad341",
+          "Name": "SoonSem",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": 69225.59,
+          "Fame": 1369391160
+        },
+        "YM4C1_vjR5a3Rs-ok9drVQ": {
+          "PlayerId": "60ce02d7-fbe3-4796-b746-cfa893d76b55",
+          "Name": "Dagger",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 5,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 12115730264
+        },
+        "nqx1wND8RRaDszBAcPIDZw": {
+          "PlayerId": "9eac75c0-d0fc-4516-83b3-304070f20367",
+          "Name": "viass",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 9383.0,
+          "Fame": 772203100
+        },
+        "Mw8stccnQ6mnYyEmhWQrTw": {
+          "PlayerId": "330f2cb5-c727-43a9-a763-212685642b4f",
+          "Name": "banca",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 5584537760
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.024047Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:30:56.245719400Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:31:42.382608900Z",
+          "Tickets": 148
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:47.494286Z",
+          "Tickets": 142
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.024047Z",
+          "Tickets": 142
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.024047Z",
+          "Tickets": 142
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:13.932319900Z",
+          "Tickets": 136
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:35:30.548892700Z",
+          "Tickets": 135
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:41.746333300Z",
+          "Tickets": 129
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:35:44.618494100Z",
+          "Tickets": 128
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:35:54.689831300Z",
+          "Tickets": 122
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:36:02.727607200Z",
+          "Tickets": 121
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:36:40.024047Z",
+          "Tickets": 121
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:36:42.403481800Z",
+          "Tickets": 115
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:36:54.694458800Z",
+          "Tickets": 114
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:38:40.024047Z",
+          "Tickets": 114
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:38:40.024807100Z",
+          "Tickets": 114
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:38:40.024807100Z",
+          "Tickets": 114
+        }
+      ],
+      "team1LeaderId": "nqx1wND8RRaDszBAcPIDZw",
+      "team2Guild": null,
+      "team2Tickets": 0,
+      "team2Territory": null,
+      "team2Results": {
+        "70_6Pjo5RQC27UscZCEDvA": {
+          "PlayerId": "ef4ffa3e-3a39-4500-b6ed-4b1c642103bc",
+          "Name": "Unknown10k",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 4,
+          "Healing": null,
+          "Fame": 18449264130
+        },
+        "d9LHtmM-Szu0DImF73Tutg": {
+          "PlayerId": "77d2c7b6-633e-4b3b-b40c-8985ef74eeb6",
+          "Name": "grooooooooooooby",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 76034.0,
+          "Fame": 18418256019
+        },
+        "CHDTuq2lSIau6t5OYoYTXw": {
+          "PlayerId": "0870d3ba-ada5-4886-aeea-de4e6286135f",
+          "Name": "Atak12",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 1215653220
+        },
+        "v3T0cNKsTX-F7MmWp7z7SA": {
+          "PlayerId": "bf74f470-d2ac-4d7f-85ec-c996a7bcfb48",
+          "Name": "Rafikon",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 18222148504
+        },
+        "wvcSMYRvQGyqOtGZHI7HJA": {
+          "PlayerId": "c2f71231-846f-406c-aa3a-d1991c8ec724",
+          "Name": "Czvilight",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 17520746646
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:30:40.024047Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:30:58.576955200Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:31:00.267969400Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:31:36.303606200Z",
+          "Tickets": 142
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:29.887621Z",
+          "Tickets": 141
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:32:30.718897500Z",
+          "Tickets": 135
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:32:40.024047Z",
+          "Tickets": 115
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:32:57.492851900Z",
+          "Tickets": 114
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:35.021818300Z",
+          "Tickets": 108
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:33:39.344993300Z",
+          "Tickets": 102
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:34:06.508618700Z",
+          "Tickets": 101
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:34:14.553029500Z",
+          "Tickets": 100
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:34:40.024047Z",
+          "Tickets": 60
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:34:43.663070Z",
+          "Tickets": 54
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:35:09.124639200Z",
+          "Tickets": 53
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:36:03.739791400Z",
+          "Tickets": 52
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:36:38.573544600Z",
+          "Tickets": 51
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:36:40.024047Z",
+          "Tickets": 31
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:36:48.190175Z",
+          "Tickets": 30
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:37:48.834402300Z",
+          "Tickets": 24
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:38:04.815394300Z",
+          "Tickets": 18
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:38:11.528146700Z",
+          "Tickets": 12
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:38:19.540569400Z",
+          "Tickets": 11
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:38:38.824230100Z",
+          "Tickets": 5
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:38:40.024047Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:38:40.024807100Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:38:40.024807100Z",
+          "Tickets": null
+        }
+      ],
+      "team2LeaderId": "v3T0cNKsTX-F7MmWp7z7SA",
+      "crystalLeagueLevel": 3,
+      "ttl": "PT1H",
+      "MatchId": "vBsHqBCASRWnEpGrJd0KiA"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:00:10.057960200Z",
+      "winner": 2,
+      "team1Guild": null,
+      "team1Tickets": 0,
+      "team1Territory": null,
+      "team1Results": {
+        "EmvrAU-JQtettS7XBUnmTA": {
+          "PlayerId": "126beb01-4f89-42d7-adb5-2ed70549e64c",
+          "Name": "OxycodonOlaf",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 505.0,
+          "Fame": 427240000
+        },
+        "zqStisM4SDWmUcozfmWsQg": {
+          "PlayerId": "cea4ad8a-c338-4835-a651-ca337e65ac42",
+          "Name": "Kripo",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 10868315049
+        },
+        "Gmcz_DETTLi-_EAJErBzeQ": {
+          "PlayerId": "1a6733fc-3113-4cb8-befc-400912b07379",
+          "Name": "Qti",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 2343.0,
+          "Fame": 8654918940
+        },
+        "1KYNj-DxRM2WRARi7iwiLw": {
+          "PlayerId": "d4a60d8f-e0f1-44cd-9644-0462ee2c222f",
+          "Name": "Antimi",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 9144830953
+        },
+        "GWly3Q8wS62GiQBWfcQURw": {
+          "PlayerId": "196972dd-0f30-4bad-8689-00567dc41447",
+          "Name": "Rickdolph",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 27884.0,
+          "Fame": 10535943579
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.066090800Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:00:56.756399900Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:38.647187300Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:48.126889100Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:01:48.646067400Z",
+          "Tickets": 136
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:48.839402200Z",
+          "Tickets": 130
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:52.624924600Z",
+          "Tickets": 124
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:04.526462Z",
+          "Tickets": 123
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.066090800Z",
+          "Tickets": 103
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:48.064487Z",
+          "Tickets": 102
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:56.684807600Z",
+          "Tickets": 101
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:03:32.513678600Z",
+          "Tickets": 95
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:04:21.977381700Z",
+          "Tickets": 94
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.066090800Z",
+          "Tickets": 74
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:04:47.901563200Z",
+          "Tickets": 73
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:04:48.545719600Z",
+          "Tickets": 72
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:05:39.220461200Z",
+          "Tickets": 66
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:05:41.442272300Z",
+          "Tickets": 60
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:05:51.170885700Z",
+          "Tickets": 54
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:06:08.900662800Z",
+          "Tickets": 53
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:06:40.066090800Z",
+          "Tickets": 13
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:08:26.130926900Z",
+          "Tickets": 7
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:08:40.066090800Z",
+          "Tickets": 7
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:08:47.022475300Z",
+          "Tickets": 1
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:09:01.416544600Z",
+          "Tickets": null
+        }
+      ],
+      "team1LeaderId": "zqStisM4SDWmUcozfmWsQg",
+      "team2Guild": null,
+      "team2Tickets": 104,
+      "team2Territory": null,
+      "team2Results": {
+        "UY8vl3oYSxOP1Wm9kmRd-g": {
+          "PlayerId": "518f2f97-7a18-4b13-8fd5-69bd92645dfa",
+          "Name": "Xetic",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": 1559.0,
+          "Fame": 7231495702
+        },
+        "V3fp5tM3R-mAsWw-QGfA5Q": {
+          "PlayerId": "5777e9e6-d337-47e9-80b1-6c3e4067c0e5",
+          "Name": "xYuumi",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 36174.0,
+          "Fame": 8530052582
+        },
+        "XEgfBozIRrGiGAkh-HTJpA": {
+          "PlayerId": "5c481f06-8cc8-46b1-a218-0921f874c9a4",
+          "Name": "Lugzi",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 11050212515
+        },
+        "umgurZFoTDa9bYSReY0Q8A": {
+          "PlayerId": "ba682ead-9168-4c36-bd6d-8491798d10f0",
+          "Name": "Rekna",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 5,
+          "Deaths": 0,
+          "Healing": 955.0,
+          "Fame": 7805746421
+        },
+        "_OI2WklhTVO3mOI47zOblw": {
+          "PlayerId": "fce2365a-4961-4d53-b798-e238ef339b97",
+          "Name": "Clouud",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 7829976920
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.066090800Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:00:59.186539400Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:35.015724400Z",
+          "Tickets": 148
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.066090800Z",
+          "Tickets": 148
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:04:35.914877500Z",
+          "Tickets": 147
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.066090800Z",
+          "Tickets": 147
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:06:40.066090800Z",
+          "Tickets": 147
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:06:57.570640900Z",
+          "Tickets": 146
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:07:02.852306200Z",
+          "Tickets": 145
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:07:28.732970200Z",
+          "Tickets": 144
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:08:40.066090800Z",
+          "Tickets": 104
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:09:01.416544600Z",
+          "Tickets": 104
+        }
+      ],
+      "team2LeaderId": "XEgfBozIRrGiGAkh-HTJpA",
+      "crystalLeagueLevel": 1,
+      "ttl": "PT1H",
+      "MatchId": "8J1awItQQOuiGQVn2NnOTA"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:00:10.056020800Z",
+      "winner": 2,
+      "team1Guild": null,
+      "team1Tickets": 0,
+      "team1Territory": null,
+      "team1Results": {
+        "aZ2zgOTtSDyKRj9Ir1jQLg": {
+          "PlayerId": "699db380-e4ed-483c-8a46-3f48af58d02e",
+          "Name": "Art",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 61928.0,
+          "Fame": 7864229338
+        },
+        "qNShr9CGSfi5TizXC_cB-g": {
+          "PlayerId": "a8d4a1af-d086-49f8-b94e-2cd70bf701fa",
+          "Name": "TheLastNAplayer",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 7824338175
+        },
+        "jbJGrOpBT52mfO_tHPlggA": {
+          "PlayerId": "8db246ac-ea41-4f9d-a67c-efed1cf96080",
+          "Name": "Ligma420",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 10857855846
+        },
+        "lQ95DAyPRBexzyZyF2tnXA": {
+          "PlayerId": "950f790c-0c8f-4417-b1cf-2672176b675c",
+          "Name": "Fate",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 7894500940
+        },
+        "2WsgHO4YQBWK-uI7FuxUDw": {
+          "PlayerId": "d96b201c-ee18-4015-8afa-e23b16ec540f",
+          "Name": "Fire",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 1,
+          "Healing": 756.0,
+          "Fame": 3721466455
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.057011300Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:00:56.282312500Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.057011300Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:03:39.724908900Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:04:08.453929700Z",
+          "Tickets": 142
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:04:13.779186600Z",
+          "Tickets": 141
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.057011300Z",
+          "Tickets": 121
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:05:18.099146900Z",
+          "Tickets": 115
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:05:35.131970600Z",
+          "Tickets": 114
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:05:50.366929Z",
+          "Tickets": 108
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:05:57.034977600Z",
+          "Tickets": 107
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:06:07.212968Z",
+          "Tickets": 106
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:06:40.057011300Z",
+          "Tickets": 66
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:07:36.398541200Z",
+          "Tickets": 60
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:07:46.014514200Z",
+          "Tickets": 54
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:07:49.501875600Z",
+          "Tickets": 48
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:08:02.293847900Z",
+          "Tickets": 47
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:08:04.199519300Z",
+          "Tickets": 46
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:08:11.485595600Z",
+          "Tickets": 45
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:08:40.057011300Z",
+          "Tickets": 5
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:08:58.276676300Z",
+          "Tickets": null
+        }
+      ],
+      "team1LeaderId": "lQ95DAyPRBexzyZyF2tnXA",
+      "team2Guild": null,
+      "team2Tickets": 76,
+      "team2Territory": null,
+      "team2Results": {
+        "3u45mTX7RjGJGQR-3u1RTg": {
+          "PlayerId": "deee3999-35fb-4631-8919-047edeed514e",
+          "Name": "Quazars",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 22609800215
+        },
+        "9zkDUcoASNGEa0A1SUcYow": {
+          "PlayerId": "f7390351-ca00-48d1-846b-4035494718a3",
+          "Name": "Legal",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 25156505670
+        },
+        "KW24o1gVTc2zXPA1gg1s9Q": {
+          "PlayerId": "296db8a3-5815-4dcd-b35c-f035820d6cf5",
+          "Name": "Sane",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": 61514.0,
+          "Fame": 84179100
+        },
+        "hc99ZvXoT_S-hIuePCtNIw": {
+          "PlayerId": "85cf7d66-f5e8-4ff4-be84-8b9e3c2b4d23",
+          "Name": "SweetandSpicy",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 2,
+          "Healing": 1312.0,
+          "Fame": 26591082780
+        },
+        "gRd4FVf3SFq_n-eGyqrciw": {
+          "PlayerId": "81177815-57f7-485a-bf9f-e786caaadc8b",
+          "Name": "Arepha",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 1530255340
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.057011300Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:00:56.514956200Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:37.256618100Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:58.160247400Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:02:00.217035300Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:09.660289100Z",
+          "Tickets": 130
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:24.453938600Z",
+          "Tickets": 129
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.057011300Z",
+          "Tickets": 89
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:02:55.514866900Z",
+          "Tickets": 83
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:04:13.478752600Z",
+          "Tickets": 82
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.057011300Z",
+          "Tickets": 82
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:06:40.057011300Z",
+          "Tickets": 82
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:07:07.769658700Z",
+          "Tickets": 76
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:08:40.057011300Z",
+          "Tickets": 76
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:08:58.276676300Z",
+          "Tickets": 76
+        }
+      ],
+      "team2LeaderId": "3u45mTX7RjGJGQR-3u1RTg",
+      "crystalLeagueLevel": 2,
+      "ttl": "PT1H",
+      "MatchId": "r9PDQ0oXRdeVliWVs3wuUQ"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:00:10.049Z",
+      "winner": 1,
+      "team1Guild": null,
+      "team1Tickets": 149,
+      "team1Territory": null,
+      "team1Results": {
+        "d0g6MIRhQ6CkTVLSxb6-gg": {
+          "PlayerId": "77483a30-8461-43a0-a44d-52d2c5bebe82",
+          "Name": "faber",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 25070.0,
+          "Fame": 1030371672
+        },
+        "qKcjyDwFRUuIEiarohWxlQ": {
+          "PlayerId": "a8a723c8-3c05-454b-8812-26aba215b195",
+          "Name": "Pidg",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 1367686850
+        },
+        "XGyPW-HbRQyJPFb6-zkXnw": {
+          "PlayerId": "5c6c8f5b-e1db-450c-893c-56fafb39179f",
+          "Name": "ONESHOT",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 4,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 1779691394
+        },
+        "zpq1-EU2R0WTVGD7jXcPGQ": {
+          "PlayerId": "ce9ab5f8-4536-4745-9354-60fb8d770f19",
+          "Name": "Ghost",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 352039520
+        },
+        "K60cmICVSvSx8-1J_OgIYg": {
+          "PlayerId": "2bad1c98-8095-4af4-b1f3-ed49fce80862",
+          "Name": "Crowrage",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 7282441650
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.056134800Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:01:15.771776100Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.056134800Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.056134800Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:06:02.232571400Z",
+          "Tickets": 149
+        }
+      ],
+      "team1LeaderId": "qKcjyDwFRUuIEiarohWxlQ",
+      "team2Guild": null,
+      "team2Tickets": 0,
+      "team2Territory": null,
+      "team2Results": {
+        "ShR7xfJwS_GqotmP0jIuIA": {
+          "PlayerId": "4a147bc5-f270-4bf1-aaa2-d98fd2322e20",
+          "Name": "Zinkqq",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": null,
+          "Fame": 7980644205
+        },
+        "t9mXhycHQAWgXEvY9yLmOg": {
+          "PlayerId": "b7d99787-2707-4005-a05c-4bd8f722e63a",
+          "Name": "WORLDBOSS",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 390.0,
+          "Fame": 15522454193
+        },
+        "8YMRVKgZTlOZMCeKJUD8_w": {
+          "PlayerId": "f1831154-a819-4e53-9930-278a2540fcff",
+          "Name": "GroRG",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 23654.0,
+          "Fame": 7272490905
+        },
+        "qecOFHMgQCGoDsE6a7EZfA": {
+          "PlayerId": "a9e70e14-7320-4021-a80e-c13a6bb1197c",
+          "Name": "partyK",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": 2203.0,
+          "Fame": 5496945305
+        },
+        "bMkzqTuQTPe5D815pBsuWw": {
+          "PlayerId": "6cc933a9-3b90-4cf7-b90f-cd79a41b2e5b",
+          "Name": "Uglyboy",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": 439.0,
+          "Fame": 7419776705
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.056134800Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:00:56.422621500Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:41.764892Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:51.899405Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:03.476200600Z",
+          "Tickets": 136
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:02:10.665665100Z",
+          "Tickets": 130
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:13.528064400Z",
+          "Tickets": 129
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.056134800Z",
+          "Tickets": 89
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:47.844197100Z",
+          "Tickets": 88
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:47.904990500Z",
+          "Tickets": 87
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:48.535025500Z",
+          "Tickets": 86
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:03:37.258872700Z",
+          "Tickets": 80
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:03:56.887130100Z",
+          "Tickets": 74
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:04:07.339787900Z",
+          "Tickets": 68
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.056134800Z",
+          "Tickets": 28
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:04:47.795963Z",
+          "Tickets": 27
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:05:01.902356400Z",
+          "Tickets": 21
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:05:29.354091700Z",
+          "Tickets": 15
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:05:39.276780500Z",
+          "Tickets": 9
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:05:43.712686200Z",
+          "Tickets": 3
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:05:56.237001300Z",
+          "Tickets": 2
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:06:02.232571400Z",
+          "Tickets": null
+        }
+      ],
+      "team2LeaderId": "ShR7xfJwS_GqotmP0jIuIA",
+      "crystalLeagueLevel": 2,
+      "ttl": "PT1H",
+      "MatchId": "OJRM-6sIQIGdCmcaSS27OA"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:00:10.048021600Z",
+      "winner": 2,
+      "team1Guild": null,
+      "team1Tickets": 0,
+      "team1Territory": null,
+      "team1Results": {
+        "IMsCy-S1TEyOcGkcvbmI4w": {
+          "PlayerId": "20cb02cb-e4b5-4c4c-8e70-691cbdb988e3",
+          "Name": "Dhivine",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": 17551.627,
+          "Fame": 16492678562
+        },
+        "jvlk-3qEQXuuxRjAmWp4yQ": {
+          "PlayerId": "8ef964fb-7a84-417b-aec5-18c0996a78c9",
+          "Name": "Mercig0d",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 17805839155
+        },
+        "kJMl0Ds8RkyHe_RX20CfaA": {
+          "PlayerId": "909325d0-3b3c-464c-877b-f457db409f68",
+          "Name": "CaStdOwN",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 29131299509
+        },
+        "_-eN9TuXTHyTm-7PogZvmg": {
+          "PlayerId": "ffe78df5-3b97-4c7c-939b-eecfa2066f9a",
+          "Name": "Edox",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 158668.38,
+          "Fame": 30181757328
+        },
+        "pPCAenTbTi6xvFkkwbMLCw": {
+          "PlayerId": "a4f0807a-74db-4e2e-b1bc-5924c1b30b0b",
+          "Name": "Lars",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 5,
+          "Healing": null,
+          "Fame": 28589470052
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.054241400Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:40.715670900Z",
+          "Tickets": 144
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:02:07.064662700Z",
+          "Tickets": 138
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:17.454196600Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:34.463646Z",
+          "Tickets": 136
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.054241400Z",
+          "Tickets": 106
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.054241400Z",
+          "Tickets": 106
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:05:36.183320100Z",
+          "Tickets": 105
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:06:40.054241400Z",
+          "Tickets": 105
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:08:40.054241400Z",
+          "Tickets": 105
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:09:13.372843400Z",
+          "Tickets": 99
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:09:32.726360800Z",
+          "Tickets": 98
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:09:34.785003300Z",
+          "Tickets": 97
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:10:40.054241400Z",
+          "Tickets": 77
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:11:07.978938Z",
+          "Tickets": 71
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:11:23.637074Z",
+          "Tickets": 65
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:11:43.844591700Z",
+          "Tickets": 64
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:11:51.187736400Z",
+          "Tickets": 63
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:12:40.054241400Z",
+          "Tickets": 43
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:14:09.180593300Z",
+          "Tickets": 37
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:14:40.054241400Z",
+          "Tickets": 37
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:14:48.561450Z",
+          "Tickets": 36
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:15:56.181506Z",
+          "Tickets": 35
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:16:40.054241400Z",
+          "Tickets": 15
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:16:50.173801500Z",
+          "Tickets": 9
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:17:05.167462600Z",
+          "Tickets": 3
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:17:17.528112800Z",
+          "Tickets": 2
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:17:22.099458500Z",
+          "Tickets": 1
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:17:35.070468600Z",
+          "Tickets": null
+        }
+      ],
+      "team1LeaderId": "_-eN9TuXTHyTm-7PogZvmg",
+      "team2Guild": null,
+      "team2Tickets": 75,
+      "team2Territory": null,
+      "team2Results": {
+        "1fBGqbB9TvuJTV40RpNeXg": {
+          "PlayerId": "d5f046a9-b07d-4efb-894d-5e3446935e5e",
+          "Name": "Eveling",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 10219382208
+        },
+        "74OAAClVRVKSweKXOsoV9A": {
+          "PlayerId": "ef838000-2955-4552-92c1-e2973aca15f4",
+          "Name": "Tetsu",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 1,
+          "Healing": null,
+          "Fame": 8149855792
+        },
+        "Py6MZYzcT6e8XjootzfviQ": {
+          "PlayerId": "3f2e8c65-8cdc-4fa7-bc5e-3a28b737ef89",
+          "Name": "Repabliques",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 185214.47,
+          "Fame": 7787302992
+        },
+        "DMLl3r0wRDGHgtqxhFAtBg": {
+          "PlayerId": "0cc2e5de-bd30-4431-8782-dab184502d06",
+          "Name": "TolyaTop1",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": 26098.0,
+          "Fame": 8843100448
+        },
+        "KeASoZKwR9iTtiqnNrcEJg": {
+          "PlayerId": "29e012a1-92b0-47d8-93b6-2aa736b70426",
+          "Name": "Godslayer",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 0,
+          "Healing": 731.0,
+          "Fame": 8892006448
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.054241400Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:00:56.554919100Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.054241400Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:41.549851700Z",
+          "Tickets": 148
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:04:32.667747500Z",
+          "Tickets": 142
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.054241400Z",
+          "Tickets": 122
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:04:59.765069900Z",
+          "Tickets": 121
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:05:07.451896100Z",
+          "Tickets": 120
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:05:07.542076300Z",
+          "Tickets": 119
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:06:40.054241400Z",
+          "Tickets": 99
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:07:24.960138400Z",
+          "Tickets": 98
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:08:40.054241400Z",
+          "Tickets": 98
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:09:41.386949200Z",
+          "Tickets": 97
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:10:40.054241400Z",
+          "Tickets": 97
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:11:51.852393400Z",
+          "Tickets": 96
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:12:40.054241400Z",
+          "Tickets": 96
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:14:40.054241400Z",
+          "Tickets": 76
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:14:51.922375400Z",
+          "Tickets": 75
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:16:40.054241400Z",
+          "Tickets": 75
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:17:35.070468600Z",
+          "Tickets": 75
+        }
+      ],
+      "team2LeaderId": "DMLl3r0wRDGHgtqxhFAtBg",
+      "crystalLeagueLevel": 3,
+      "ttl": "PT1H",
+      "MatchId": "oK3RNL-CToOzJturZK3rGw"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:00:10.042718300Z",
+      "winner": 1,
+      "team1Guild": null,
+      "team1Tickets": 149,
+      "team1Territory": null,
+      "team1Results": {
+        "NkADVEH1ToW5kIpvWLu9wA": {
+          "PlayerId": "36400354-41f5-4e85-b990-8a6f58bbbdc0",
+          "Name": "Gonchiro",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 4,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 18283926977
+        },
+        "i1pZQxw9RGuVz4u6m4aaFw": {
+          "PlayerId": "8b5a5943-1c3d-446b-95cf-8bba9b869a17",
+          "Name": "Razule",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 24853.0,
+          "Fame": 18215807332
+        },
+        "vfxZA8DUR2OhBAaHBwIEEQ": {
+          "PlayerId": "bdfc5903-c0d4-4763-a104-068707020411",
+          "Name": "Gatsas",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 17241063237
+        },
+        "KPRePS2SSwmfzupo167U0g": {
+          "PlayerId": "28f45e3d-2d92-4b09-9fce-ea68d7aed4d2",
+          "Name": "Savas",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 16704194542
+        },
+        "nWccjjTMTyKvRWsVlOAkGw": {
+          "PlayerId": "9d671c8e-34cc-4f22-af45-6b1594e0241b",
+          "Name": "bendzio",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 4,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 16517224212
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.049550500Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:01:30.463410300Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.049550500Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.049550500Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:05:32.676591Z",
+          "Tickets": 149
+        }
+      ],
+      "team1LeaderId": "i1pZQxw9RGuVz4u6m4aaFw",
+      "team2Guild": null,
+      "team2Tickets": 0,
+      "team2Territory": null,
+      "team2Results": {
+        "58gb572bR9u_t-1ygivCdQ": {
+          "PlayerId": "e7c81be7-bd9b-47db-bfb7-ed72822bc275",
+          "Name": "Levrette",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 170.0,
+          "Fame": 1501417945
+        },
+        "HEjE5246TuedP3gAg62u3w": {
+          "PlayerId": "1c48c4e7-6e3a-4ee7-9d3f-780083adaedf",
+          "Name": "ElKite",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 4,
+          "Healing": 1113.0,
+          "Fame": 3080371328
+        },
+        "PlSGftYpRYeO_aUeYI2BKg": {
+          "PlayerId": "3e54867e-d629-4587-8efd-a51e608d812a",
+          "Name": "exotique",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 16712.0,
+          "Fame": 1651207000
+        },
+        "ss-Iw18uT8CY-YzhtcdBZA": {
+          "PlayerId": "b2cf88c3-5f2e-4fc0-98f9-8ce1b5c74164",
+          "Name": "Fouliane",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 2022628338
+        },
+        "GEDHaXCmROmhvFddbx2-9w": {
+          "PlayerId": "1840c769-70a6-44e9-a1bc-575d6f1dbef7",
+          "Name": "Pnb",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 2462.0,
+          "Fame": 1753508711
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.049550500Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:00:58.697967900Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:10.041479900Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:19.873662800Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:30.272940700Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:01:37.753685900Z",
+          "Tickets": 130
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:02:33.478625700Z",
+          "Tickets": 124
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:02:38.256106600Z",
+          "Tickets": 118
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.049550500Z",
+          "Tickets": 98
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:02:50.603446400Z",
+          "Tickets": 92
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:02:50.790354Z",
+          "Tickets": 86
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:55.023357300Z",
+          "Tickets": 85
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:03:02.198326600Z",
+          "Tickets": 79
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:03:05.071108600Z",
+          "Tickets": 78
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:03:08.482348100Z",
+          "Tickets": 77
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:04:12.609638Z",
+          "Tickets": 71
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:04:25.419431500Z",
+          "Tickets": 65
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:04:26.461570300Z",
+          "Tickets": 59
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.049550500Z",
+          "Tickets": 19
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:04:56.831707Z",
+          "Tickets": 18
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:05:00.887374800Z",
+          "Tickets": 17
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:05:10.286169400Z",
+          "Tickets": 11
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:05:28.639303600Z",
+          "Tickets": 5
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:05:32.676591Z",
+          "Tickets": null
+        }
+      ],
+      "team2LeaderId": "ss-Iw18uT8CY-YzhtcdBZA",
+      "crystalLeagueLevel": 1,
+      "ttl": "PT1H",
+      "MatchId": "mzLsAqusQs25MNSNTyVdQA"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:00:10.037614Z",
+      "winner": 1,
+      "team1Guild": null,
+      "team1Tickets": 124,
+      "team1Territory": null,
+      "team1Results": {
+        "mRC6LapkSFCxlIqLu9xRnQ": {
+          "PlayerId": "9910ba2d-aa64-4850-b194-8a8bbbdc519d",
+          "Name": "Neko",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": 216.0,
+          "Fame": 11972984724
+        },
+        "wk6JL421Q2q2ONpnpZrTQQ": {
+          "PlayerId": "c24e892f-8db5-436a-b638-da67a59ad341",
+          "Name": "SoonSem",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": 40546.5,
+          "Fame": 1369391160
+        },
+        "YM4C1_vjR5a3Rs-ok9drVQ": {
+          "PlayerId": "60ce02d7-fbe3-4796-b746-cfa893d76b55",
+          "Name": "Dagger",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 3,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 12115730264
+        },
+        "Mw8stccnQ6mnYyEmhWQrTw": {
+          "PlayerId": "330f2cb5-c727-43a9-a763-212685642b4f",
+          "Name": "banca",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 5339842760
+        },
+        "nqx1wND8RRaDszBAcPIDZw": {
+          "PlayerId": "9eac75c0-d0fc-4516-83b3-304070f20367",
+          "Name": "viass",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 0,
+          "Healing": 4237.0,
+          "Fame": 772203100
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.045196100Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:00:57.887120800Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:28.306998300Z",
+          "Tickets": 148
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:31.085854600Z",
+          "Tickets": 147
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.045196100Z",
+          "Tickets": 127
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:03:25.485946Z",
+          "Tickets": 126
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.045196100Z",
+          "Tickets": 126
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:04:48.651271400Z",
+          "Tickets": 125
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:05:23.745651700Z",
+          "Tickets": 124
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:06:40.045196100Z",
+          "Tickets": 124
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:06:52.600746900Z",
+          "Tickets": 124
+        }
+      ],
+      "team1LeaderId": "Mw8stccnQ6mnYyEmhWQrTw",
+      "team2Guild": null,
+      "team2Tickets": 0,
+      "team2Territory": null,
+      "team2Results": {
+        "ZxerwgCPT0uMNdv2Wt57Mw": {
+          "PlayerId": "6717abc2-008f-4f4b-8c35-dbf65ade7b33",
+          "Name": "Hiru",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 904.0,
+          "Fame": 8579671154
+        },
+        "IQEqi9V7Rgmfq-5Mz77puA": {
+          "PlayerId": "21012a8b-d57b-4609-9fab-ee4ccfbee9b8",
+          "Name": "Skerpioen",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": null,
+          "Fame": 7458840520
+        },
+        "elKDKXWVRvCTJSGPAJR9Fg": {
+          "PlayerId": "7a528329-7595-46f0-9325-218f00947d16",
+          "Name": "Daekus",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 24292.0,
+          "Fame": 7646948501
+        },
+        "ObvbAaxoSjm59etgGvYWEw": {
+          "PlayerId": "39bbdb01-ac68-4a39-b9f5-eb601af61613",
+          "Name": "Anomalus",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 6753814152
+        },
+        "s_Oc33_5QMucMtgctBT3oQ": {
+          "PlayerId": "b3f39cdf-7ff9-40cb-9c32-d81cb414f7a1",
+          "Name": "Azimov",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 1508037912
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.045196100Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:00:57.889112800Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:21.656554600Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:26.333610300Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:30.108822200Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:01:42.913067200Z",
+          "Tickets": 130
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:01:51.392498700Z",
+          "Tickets": 129
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.045196100Z",
+          "Tickets": 129
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:03:02.863443300Z",
+          "Tickets": 123
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:03:21.991152Z",
+          "Tickets": 117
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:03:28.668457500Z",
+          "Tickets": 116
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:03:42.639916400Z",
+          "Tickets": 110
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:03:50.521927500Z",
+          "Tickets": 104
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:04:15.470240600Z",
+          "Tickets": 103
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.045196100Z",
+          "Tickets": 63
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:04:45.912677600Z",
+          "Tickets": 57
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:05:02.441554200Z",
+          "Tickets": 56
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:05:04.947167700Z",
+          "Tickets": 55
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:06:01.436984300Z",
+          "Tickets": 49
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:06:15.509433300Z",
+          "Tickets": 48
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:06:15.857749100Z",
+          "Tickets": 42
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:06:27.660642200Z",
+          "Tickets": 41
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:06:40.045196100Z",
+          "Tickets": 1
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:06:52.600746900Z",
+          "Tickets": null
+        }
+      ],
+      "team2LeaderId": "ObvbAaxoSjm59etgGvYWEw",
+      "crystalLeagueLevel": 2,
+      "ttl": "PT1H",
+      "MatchId": "P6gJzhd0Q9K_bPgi5HnZzw"
+    },
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T20:00:10.033537700Z",
+      "winner": 1,
+      "team1Guild": null,
+      "team1Tickets": 149,
+      "team1Territory": null,
+      "team1Results": {
+        "wOtZXsDDQjGfcqenYHbB0A": {
+          "PlayerId": "c0eb595e-c0c3-4231-9f72-a7a76076c1d0",
+          "Name": "Nesslait",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 6,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 8837721686
+        },
+        "NNcfCRn5Rci0dfSGvCpbzA": {
+          "PlayerId": "34d71f09-19f9-45c8-b475-f486bc2a5bcc",
+          "Name": "Sphynxil",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": 18774.63,
+          "Fame": 8489419805
+        },
+        "SRA439luTjaQ71JuW1ijTg": {
+          "PlayerId": "491038df-d96e-4e36-90ef-526e5b58a34e",
+          "Name": "GamesSpirit",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 4,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 7250013614
+        },
+        "riW2D0fGTVC6SxMEdrHpyw": {
+          "PlayerId": "ae25b60f-47c6-4d50-ba4b-130476b1e9cb",
+          "Name": "JohnyBro",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 7758143330
+        },
+        "qq4emYFDSXSyfTwZ2uZPpQ": {
+          "PlayerId": "aaae1e99-8143-4974-b27d-3c19dae64fa5",
+          "Name": "FRIIX",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 10579483644
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.040551900Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:00:58.474784800Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.040551900Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.040551900Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.042454Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:04:40.042454Z",
+          "Tickets": 149
+        }
+      ],
+      "team1LeaderId": "wOtZXsDDQjGfcqenYHbB0A",
+      "team2Guild": null,
+      "team2Tickets": 0,
+      "team2Territory": null,
+      "team2Results": {
+        "grnYqC6OTfOS0-d-VKCavw": {
+          "PlayerId": "82b9d8a8-2e8e-4df3-92d3-e77e54a09abf",
+          "Name": "Kollimak",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 6850274973
+        },
+        "d50JZBs4T5KaY56BrpwyJA": {
+          "PlayerId": "779d0964-1b38-4f92-9a63-9e81ae9c3224",
+          "Name": "Kaparo4",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 503.0,
+          "Fame": 6893748745
+        },
+        "HaNfil58T96YGaCpNldHWw": {
+          "PlayerId": "1da35f8a-5e7c-4fde-9819-a0a93657475b",
+          "Name": "HedgehogD",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 21689.0,
+          "Fame": 6796195076
+        },
+        "VlWOddFPStOJoeMKkYAu9Q": {
+          "PlayerId": "56558e75-d14f-4ad3-89a1-e30a91802ef5",
+          "Name": "NeSSuNoita",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": 727.0,
+          "Fame": 6149843884
+        },
+        "79eeDeuPTnWVkA0pZkhuMA": {
+          "PlayerId": "efd79e0d-eb8f-4e75-9590-0d2966486e30",
+          "Name": "xVrakel",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 179.0,
+          "Fame": 4685113043
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T20:00:40.040551900Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:14.577152300Z",
+          "Tickets": 144
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:14.898321Z",
+          "Tickets": 138
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:24.315050Z",
+          "Tickets": 132
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:01:27.712536900Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:01:31.288887300Z",
+          "Tickets": 125
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:01:40.678543200Z",
+          "Tickets": 124
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:01:46.360625300Z",
+          "Tickets": 123
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:02:18.256678300Z",
+          "Tickets": 117
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:02:20.461865200Z",
+          "Tickets": 111
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:02:32.110319400Z",
+          "Tickets": 105
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:02:40.040551900Z",
+          "Tickets": 65
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:54.346902400Z",
+          "Tickets": 64
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:02:59.446028300Z",
+          "Tickets": 63
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T20:03:09.846612700Z",
+          "Tickets": 62
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:04:20.192259600Z",
+          "Tickets": 56
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:04:22.952509400Z",
+          "Tickets": 50
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:04:23.662772300Z",
+          "Tickets": 44
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:04:26.180672500Z",
+          "Tickets": 38
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T20:04:29.765586Z",
+          "Tickets": 32
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.040551900Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T20:04:40.042454Z",
+          "Tickets": null
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T20:04:40.042454Z",
+          "Tickets": null
+        }
+      ],
+      "team2LeaderId": "d50JZBs4T5KaY56BrpwyJA",
+      "crystalLeagueLevel": 1,
+      "ttl": "PT1H",
+      "MatchId": "8OjGJ8pCTkWjbW-542U_Tw"
+    }
+  ],
+  [
+    {
+      "matchType": "CrystalLeague",
+      "category": "crystal_league_nonlethal",
+      "startTime": "2024-04-24T21:00:10.065317300Z",
+      "winner": 2,
+      "team1Guild": null,
+      "team1Tickets": 0,
+      "team1Territory": null,
+      "team1Results": {
+        "ENR1HDvkRMiadKK9Dx1TVw": {
+          "PlayerId": "10d4751c-3be4-44c8-9a74-a2bd0f1d5357",
+          "Name": "Gigachad",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 4,
+          "Healing": null,
+          "Fame": 1362480000
+        },
+        "GbGJ8DWvRLef9UB552z_bQ": {
+          "PlayerId": "19b189f0-35af-44b7-9ff5-4079e76cff6d",
+          "Name": "Neexyy",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 4,
+          "Healing": null,
+          "Fame": 1509155984
+        },
+        "R8OkOpfETrG6plM82fqT6w": {
+          "PlayerId": "47c3a43a-97c4-4eb1-baa6-533cd9fa93eb",
+          "Name": "Krule",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 4,
+          "Healing": 7075.0,
+          "Fame": 10639961014
+        },
+        "8zW0UkQVT8O19Qb17h5OMA": {
+          "PlayerId": "f335b452-4415-4fc3-b5f5-06f5ee1e4e30",
+          "Name": "B15",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 2,
+          "Healing": null,
+          "Fame": 1788044594
+        },
+        "s_wlgxRtTf2AtIZHqlkOSw": {
+          "PlayerId": "b3fc2583-146d-4dfd-80b4-8647aa590e4b",
+          "Name": "Merrore",
+          "Team": "ATTACKER",
+          "IsMercenary": null,
+          "Kills": 0,
+          "Deaths": 3,
+          "Healing": 909.0,
+          "Fame": 8803325680
+        }
+      },
+      "team1Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T21:00:40.065545300Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:00:58.014904300Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:12.736934100Z",
+          "Tickets": 143
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:28.459340500Z",
+          "Tickets": 137
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:37.275618100Z",
+          "Tickets": 131
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:01:42.909430600Z",
+          "Tickets": 130
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:01:44.556247700Z",
+          "Tickets": 124
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:02:00.222322200Z",
+          "Tickets": 123
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:01.705574300Z",
+          "Tickets": 117
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:04.018104800Z",
+          "Tickets": 111
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:12.713487700Z",
+          "Tickets": 105
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:15.365838600Z",
+          "Tickets": 99
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:23.557956100Z",
+          "Tickets": 93
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:02:40.065545300Z",
+          "Tickets": 53
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:40.186240600Z",
+          "Tickets": 47
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:02:40.949405500Z",
+          "Tickets": 41
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:02:52.544783900Z",
+          "Tickets": 40
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:00.438147700Z",
+          "Tickets": 34
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:03.294091300Z",
+          "Tickets": 28
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:03:08.310926500Z",
+          "Tickets": 27
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:13.166240800Z",
+          "Tickets": 21
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:14.703520700Z",
+          "Tickets": 15
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:03:17.314722500Z",
+          "Tickets": 14
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:17.772605600Z",
+          "Tickets": 8
+        },
+        {
+          "EventType": "2",
+          "TimeStamp": "2024-04-24T21:03:40.174776300Z",
+          "Tickets": 2
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T21:03:44.195108800Z",
+          "Tickets": null
+        }
+      ],
+      "team1LeaderId": "s_wlgxRtTf2AtIZHqlkOSw",
+      "team2Guild": null,
+      "team2Tickets": 149,
+      "team2Territory": null,
+      "team2Results": {
+        "70_6Pjo5RQC27UscZCEDvA": {
+          "PlayerId": "ef4ffa3e-3a39-4500-b6ed-4b1c642103bc",
+          "Name": "Unknown10k",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 6,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 19192297335
+        },
+        "d9LHtmM-Szu0DImF73Tutg": {
+          "PlayerId": "77d2c7b6-633e-4b3b-b40c-8985ef74eeb6",
+          "Name": "grooooooooooooby",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 1,
+          "Deaths": 0,
+          "Healing": 22911.0,
+          "Fame": 19135465224
+        },
+        "CHDTuq2lSIau6t5OYoYTXw": {
+          "PlayerId": "0870d3ba-ada5-4886-aeea-de4e6286135f",
+          "Name": "Atak12",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 4,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 1850763681
+        },
+        "v3T0cNKsTX-F7MmWp7z7SA": {
+          "PlayerId": "bf74f470-d2ac-4d7f-85ec-c996a7bcfb48",
+          "Name": "Rafikon",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 2,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 18919621069
+        },
+        "wvcSMYRvQGyqOtGZHI7HJA": {
+          "PlayerId": "c2f71231-846f-406c-aa3a-d1991c8ec724",
+          "Name": "Czvilight",
+          "Team": "DEFENDER",
+          "IsMercenary": null,
+          "Kills": 5,
+          "Deaths": 0,
+          "Healing": null,
+          "Fame": 18226867851
+        }
+      },
+      "team2Timeline": [
+        {
+          "EventType": null,
+          "TimeStamp": "2024-04-24T21:00:40.065545300Z",
+          "Tickets": 150
+        },
+        {
+          "EventType": "3",
+          "TimeStamp": "2024-04-24T21:00:57.947526400Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "4",
+          "TimeStamp": "2024-04-24T21:02:40.065545300Z",
+          "Tickets": 149
+        },
+        {
+          "EventType": "1",
+          "TimeStamp": "2024-04-24T21:03:44.195108800Z",
+          "Tickets": 149
+        }
+      ],
+      "team2LeaderId": "CHDTuq2lSIau6t5OYoYTXw",
+      "crystalLeagueLevel": 2,
+      "ttl": "PT1H",
+      "MatchId": "yGYJ8fZhR6uQDj5YZT9_xQ"
+    }
+  ]
+]

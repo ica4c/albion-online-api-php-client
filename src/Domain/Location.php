@@ -1,15 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Albion\API\Domain;
 
-use Solid\Foundation\Enum;
-
-class Location extends Enum
+enum Location: string
 {
-    const BRIDGEWATHCH = 'bridgewatch';
-    const LYMHURST = 'lymhurst';
-    const FORT_STERLING = 'fort_sterling';
-    const THETFORD = 'thetford';
-    const MARTLOCK = 'martlock';
-    const CAERLEON = 'caerleon';
+    case BRIDGEWATCH = 'bridgewatch';
+    case LYMHURST = 'lymhurst';
+    case FORT_STERLING = 'fort_sterling';
+    case THETFORD = 'thetford';
+    case MARTLOCK = 'martlock';
+    case CAERLEON = 'caerleon';
 }

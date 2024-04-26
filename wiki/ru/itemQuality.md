@@ -1,4 +1,4 @@
-# Item quality
+# Качество предмета
 
 Пример ```ItemQuality::of(ItemQuality::GOOD)```
 

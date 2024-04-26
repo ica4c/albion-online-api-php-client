@@ -7,22 +7,22 @@
 ### Информация об альянсе
 
 ###### Метод
-`getAllianceInfo(string $allianceId)`
+`getAllianceInfo()`
 
 ###### Параметры
+* [Realm](realm.md) `$realm` - одно из [Realm](realm.md).
 * _string_ `$allianceId` - alliance identifier 
 
 ###### Пример
 
 ```
-use Albion\OnlineDataProject\Infrastructure\GameInfo\AllianceClient;
-
 // Можно получить например из информации о пользователе или гильдии 
 $allianceId = 'AllianceId';
+$realm = Realm::AMERICA;
 
 $client = new AllianceClient();
 
-$client->getAllianceInfo($allianceId)
+$client->getAllianceInfo($realm, $allianceId)
     ->then(
         static function($data) {
             // Do something with data

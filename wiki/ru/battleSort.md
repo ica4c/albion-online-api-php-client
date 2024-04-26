@@ -1,6 +1,4 @@
-# Battle sort
-
-Пример: ```BattleSortType::of(BattleSortType::recent)```
+# Сортировка сражений
 
 Возможные сценарии:
  * `BattleSortType::TOTAL_FAME` - сортировать по общему фейму

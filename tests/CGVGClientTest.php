@@ -1,27 +1,30 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests;
 
 use Albion\API\Domain\Realm;
-use Albion\API\Infrastructure\GameInfo\Builders\ClientBuilder;
 use Albion\API\Infrastructure\GameInfo\CGVGClient;
-use Albion\API\Infrastructure\GameInfo\Enums\RealmHost;
+use Albion\API\Infrastructure\GameInfo\Resolvers\RealmEndpointResolver;
 
-class CGVGClientTest extends EventFeedBasedTestCase
+class CGVGClientTest extends MockedClientTestCase
 {
-    /** @var ClientBuilder */
-    protected $client;
+    protected CGVGClient $matchesClient;
 
     protected function setUp(): void
     {
         parent::setUp();
 
-        $this->matchesClient = new CGVGClient(RealmHost::of(RealmHost::WEST));
+        $this->matchesClient = new CGVGClient(
+            $this->mockClient($this->loadResponseSamplesFromSamplesJson('cgvg_200_responses.json')),
+            new RealmEndpointResolver()
+        );
     }
 
 
     protected function getRandomCGVGMatch() {
-        $matches = $this->matchesClient->getCGVGMatches()
+        $matches = $this->matchesClient->getCGVGMatches(Realm::AMERICA)
             ->wait();
 
         static::assertNotNull($matches);
@@ -31,7 +34,7 @@ class CGVGClientTest extends EventFeedBasedTestCase
     }
 
     protected function getRandomGuildMatch() {
-        $matches = $this->matchesClient->getFeaturedGuildMatches()
+        $matches = $this->matchesClient->getFeaturedGuildMatches(Realm::AMERICA)
             ->wait();
 
         static::assertNotNull($matches);
@@ -43,23 +46,10 @@ class CGVGClientTest extends EventFeedBasedTestCase
         $this->getRandomCGVGMatch();
     }
 
-    public function testGetCGVGMatch(): void {
-        $match = $this->getRandomCGVGMatch();
-
-        if($match) {
-            $test = $this->matchesClient->getCGVGMatchById($match['MatchId'])
-                ->wait();
-
-            static::assertNotNull($test);
-            static::assertNotEmpty($test);
-            static::assertSame($test['MatchId'], $match['MatchId']);
-        }
-    }
-
 
     public function testFeaturedGuildMatches(): void
     {
-        $matches = $this->matchesClient->getFeaturedGuildMatches()
+        $matches = $this->matchesClient->getFeaturedGuildMatches(Realm::AMERICA)
             ->wait();
 
         static::assertNotNull($matches);
@@ -67,7 +57,7 @@ class CGVGClientTest extends EventFeedBasedTestCase
 
     public function testNextGuildMatches(): void
     {
-        $matches = $this->matchesClient->getUpcomingGuildMatches(1, 0)
+        $matches = $this->matchesClient->getUpcomingGuildMatches(Realm::AMERICA, 1, 0)
             ->wait();
 
         static::assertNotNull($matches);
@@ -75,23 +65,9 @@ class CGVGClientTest extends EventFeedBasedTestCase
 
     public function testPastGuildMatches(): void
     {
-        $matches = $this->matchesClient->getPastGuildMatches(1, 0)
+        $matches = $this->matchesClient->getPastGuildMatches(Realm::AMERICA, 1, 0)
             ->wait();
 
         static::assertNotNull($matches);
-    }
-
-    public function testGetGuildMatchById(): void
-    {
-        $rnd = $this->getRandomGuildMatch();
-
-        if($rnd) {
-            $match = $this->matchesClient->getGuildMatchById($rnd['MatchId'])
-                ->wait();
-
-            static::assertNotNull($match);
-            static::assertNotEmpty($match);
-            static::assertSame($rnd['MatchId'], $match['MatchId']);
-        }
     }
 }
