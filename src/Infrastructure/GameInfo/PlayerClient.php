@@ -216,7 +216,6 @@ class PlayerClient extends AbstractClient
     public function searchPlayer(Realm $realm, string $query): PromiseInterface
     {
         $url = $this->resolver->gameinfoApiEndpoint($realm, 'search');
-        $query = urlencode($query);
 
         return $this->http->getAsync($url, ['query' => ['q' => $query]])
             ->otherwise(
