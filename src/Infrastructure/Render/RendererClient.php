@@ -45,7 +45,11 @@ class RendererClient
                         'locale' => $locale ?: 'en'
                     ]
                 )
-            )
+            ),
+            false,
+            stream_context_create([
+                'timeout' => 5
+            ])
         );
 
         if ($contents === false) {
