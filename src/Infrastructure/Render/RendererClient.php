@@ -48,7 +48,9 @@ class RendererClient
             ),
             false,
             stream_context_create([
-                'timeout' => 5
+                'http' => [
+                    'timeout' => 5
+                ]
             ])
         );
 
