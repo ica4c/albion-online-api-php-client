@@ -6,10 +6,17 @@ namespace Albion\API\Infrastructure\Render;
 
 use Albion\API\Domain\ItemQuality;
 use Albion\API\Infrastructure\GameInfo\Exceptions\ItemNotFoundException;
+use GuzzleHttp\Client;
+use GuzzleHttp\Promise\PromiseInterface;
+use Psr\Http\Message\ResponseInterface;
 
 class RendererClient
 {
     protected const BASE = "https://render.albiononline.com/v1/item/";
+
+    public function __construct(protected Client $http)
+    {
+    }
 
     /**
      * Resolve item icon from render service
@@ -20,7 +27,7 @@ class RendererClient
      * @param int $size
      * @param string $locale
      *
-     * @return string
+     * @return PromiseInterface<string>
      *
      * @throws ItemNotFoundException
      */
@@ -30,34 +37,29 @@ class RendererClient
         int $enchantment = 0,
         int $size = 217,
         string $locale = 'en'
-    ): string {
+    ): PromiseInterface {
         $enchantment = max(min($enchantment, 3), 0);
-
-        $contents = file_get_contents(
-            sprintf(
-                "%s/%s?%s",
-                static::BASE,
-                str_contains($itemId, '@') ? "${itemId}.png" : "${itemId}@${enchantment}.png",
-                http_build_query(
-                    [
-                        'quality' => $quality?->value ?: ItemQuality::NORMAL->value,
-                        'size' => max(32, min($size, 217)),
-                        'locale' => $locale ?: 'en'
-                    ]
-                )
-            ),
-            false,
-            stream_context_create([
-                'http' => [
-                    'timeout' => 5
-                ]
-            ])
+        $url = sprintf(
+            "%s/%s",
+            static::BASE,
+            str_contains($itemId, '@') ? "${itemId}.png" : "${itemId}@${enchantment}.png",
         );
 
-        if ($contents === false) {
-            throw new ItemNotFoundException($itemId);
-        }
-
-        return $contents;
+        return $this->http->requestAsync(
+            $url,
+            [
+                'query' => [
+                    'quality' => $quality?->value ?: ItemQuality::NORMAL->value,
+                    'size' => max(32, min($size, 217)),
+                    'locale' => $locale ?: 'en'
+                ]
+            ]
+        )
+            ->otherwise(
+                static fn (\Throwable $e) => throw new ItemNotFoundException($itemId, $e)
+            )
+            ->then(
+                static fn (ResponseInterface $response) => $response->getBody()->getContents()
+            );
     }
 }
