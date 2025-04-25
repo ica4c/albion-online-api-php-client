@@ -46,6 +46,7 @@ class RendererClient
         );
 
         return $this->http->requestAsync(
+            'GET',
             $url,
             [
                 'query' => [
