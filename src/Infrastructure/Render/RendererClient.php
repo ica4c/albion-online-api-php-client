@@ -60,7 +60,16 @@ class RendererClient
                 static fn (\Throwable $e) => throw new ItemNotFoundException($itemId, $e)
             )
             ->then(
-                static fn (ResponseInterface $response) => $response->getBody()->getContents()
+                static function (ResponseInterface $response) use ($itemId) {
+                    $header = $response->getBody()->read(4);
+
+                    if ($header !== hex2bin('89504E47')) {
+                        throw new ItemNotFoundException($itemId);
+                    }
+
+                    $response->getBody()->rewind();
+                    return $response->getBody()->getContents();
+                }
             );
     }
 }
