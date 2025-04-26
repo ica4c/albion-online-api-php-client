@@ -61,13 +61,14 @@ class RendererClient
             )
             ->then(
                 static function (ResponseInterface $response) use ($itemId) {
-                    $content = $response->getBody()->getContents();
+                    $header = $response->getBody()->read(4);
 
-                    if (!str_starts_with($content, 89504E47)) {
+                    if ($header !== hex2bin('89504E47')) {
                         throw new ItemNotFoundException($itemId);
                     }
 
-                    return $content;
+                    $response->getBody()->rewind();
+                    return $response->getBody()->getContents();
                 }
             );
     }
