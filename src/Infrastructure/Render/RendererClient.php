@@ -60,7 +60,15 @@ class RendererClient
                 static fn (\Throwable $e) => throw new ItemNotFoundException($itemId, $e)
             )
             ->then(
-                static fn (ResponseInterface $response) => $response->getBody()->getContents()
+                static function (ResponseInterface $response) use ($itemId) {
+                    $content = $response->getBody()->getContents();
+
+                    if (!str_starts_with($content, 89504E47)) {
+                        throw new ItemNotFoundException($itemId);
+                    }
+
+                    return $content;
+                }
             );
     }
 }
